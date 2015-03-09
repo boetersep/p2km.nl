@@ -7,7 +7,7 @@
 		</layout>
 	</appender>
 
-	<logger name="cc.boeters.p2000monitor" level="TRACE" />
+	<logger name="cc.boeters.p2000monitor" level="INFO" />
 
 
 	<root level="debug">

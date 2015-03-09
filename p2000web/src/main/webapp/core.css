@@ -7,6 +7,11 @@ body {
 	color: #333;
 }
 
+a {
+	color: #333;
+	text-decoration: none;
+}
+
 div#top {
 	position: fixed;
 	top: 0;
@@ -33,13 +38,21 @@ div#search input {
 }
 
 div#left {
+	float: left;
 	margin-left: 70px;
 	width: 650px;
+	min-height: 10px;
+}
+
+div#right {
+	float: left;
+	padding: 10px;
 }
 
 ul.messages {
 	list-style: none;
 	padding: 0px;
+	margin: 0px;
 }
 
 ul.messages li {
