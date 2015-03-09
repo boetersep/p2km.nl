@@ -1,13 +1,13 @@
 package cc.boeters.p2000monitor.support;
 
-public final class EnvironmentReolver {
+public final class StageResolver {
 
-	enum Environment {
+	public enum Stage {
 		PRODUCTION("prod"), DEVElOPMENT("dev");
 
 		private final String text;
 
-		private Environment(String text) {
+		private Stage(String text) {
 			this.text = text;
 		}
 
@@ -18,18 +18,18 @@ public final class EnvironmentReolver {
 	}
 
 	public static boolean isDevelopment() {
-		return resolve() == Environment.DEVElOPMENT;
+		return resolve() == Stage.DEVElOPMENT;
 	}
 
 	public static boolean isProduction() {
-		return resolve() == Environment.PRODUCTION;
+		return resolve() == Stage.PRODUCTION;
 	}
 
-	public static Environment resolve() {
+	public static Stage resolve() {
 		if (System.getProperty("os.name", "").toLowerCase().contains("windows")) {
-			return Environment.DEVElOPMENT;
+			return Stage.DEVElOPMENT;
 		}
-		return Environment.PRODUCTION;
+		return Stage.PRODUCTION;
 	}
 
 }

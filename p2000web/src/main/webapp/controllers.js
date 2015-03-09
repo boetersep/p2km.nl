@@ -2,9 +2,10 @@
 
 /* Controllers */
 
-var p2000App = angular.module('p2000App', []);
+var p2000Controllers = angular.module('p2000Controllers', []);
 
-p2000App.controller('MessageListCtrl', function($scope) {
+p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
+  function($scope, $http) {
 	$scope.messages = [];
 	
 	var ws = new WebSocket("ws://" + window.location.host + window.location.pathname + "messages/live");
@@ -19,9 +20,9 @@ p2000App.controller('MessageListCtrl', function($scope) {
 		});
 		$scope.$apply();
 	};
-});
+  }]);
 
-p2000App.controller('MessageDetailCtrl', function($scope) {
-	 
-	
-});
+p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.messageId = $routeParams.messageId;
+  }]);
