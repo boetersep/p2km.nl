@@ -14,7 +14,7 @@ import cc.boeters.p2000monitor.model.CapcodeInfo;
 @Singleton
 public class CapcodeDatabase {
 
-	private static final Map<Integer, CapcodeInfo> DB;
+	private static Map<Integer, CapcodeInfo> DB;
 
 	private static final String SOURCE = "/data/capcodes.csv";
 
@@ -35,11 +35,21 @@ public class CapcodeDatabase {
 				Integer capcode = Integer.valueOf(tokens[0]
 						.replaceAll("\"", ""));
 				info.setCapcode(capcode);
-				info.setDiscipline(tokens[1].replaceAll("\"", ""));
-				info.setRegion(tokens[2].replaceAll("\"", ""));
-				info.setSector(tokens[3].replaceAll("\"", ""));
-				info.setDescription(tokens[4].replaceAll("\"", ""));
-				info.setShortdesc(tokens[5].replaceAll("\"", ""));
+				if (tokens.length >= 2) {
+					info.setDiscipline(tokens[1].replaceAll("\"", ""));
+				}
+				if (tokens.length >= 3) {
+					info.setRegion(tokens[2].replaceAll("\"", ""));
+				}
+				if (tokens.length >= 4) {
+					info.setSector(tokens[3].replaceAll("\"", ""));
+				}
+				if (tokens.length >= 5) {
+					info.setDescription(tokens[4].replaceAll("\"", ""));
+				}
+				if (tokens.length >= 6) {
+					info.setShortdesc(tokens[5].replaceAll("\"", ""));
+				}
 				DB.put(capcode, info);
 			}
 		} catch (IOException e) {

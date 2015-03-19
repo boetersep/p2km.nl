@@ -1,1 +1,5 @@
-<span>{{messageId}}</span>
+<span>{{message.message}}</span>
+
+<openlayers ol-center="messageLocation" width="640" height="480">
+	<ol-marker ng-repeat="marker in markers" lat="marker.lat" lon="marker.lon"></ol-marker>
+</openlayers>

@@ -22,7 +22,33 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 	};
   }]);
 
-p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.messageId = $routeParams.messageId;
+p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $scope.hash = $routeParams.hash;
+   
+    $http.get('messages/detail/' + $routeParams.hash).
+    success(function(data) {
+        $scope.message = data;
+        
+        if (data.metadata && data.metadata.lat && data.metadata.lon) {
+        
+	        $scope.messageLocation = {
+	        	lat: data.metadata.lat,
+	        	lon: data.metadata.lon,
+	        	zoom: 16
+	        };
+
+	        $scope.markers = [{
+		       	lat: data.metadata.lat,
+		       	lon: data.metadata.lon,
+		       	label: {
+                    message: data.message,
+                    show: false,
+                    showOnMouseOver: true
+                }
+		    }];
+	        
+        }
+    });
+    
   }]);

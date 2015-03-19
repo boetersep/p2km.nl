@@ -23,12 +23,10 @@ import org.slf4j.LoggerFactory;
 import cc.boeters.p2000monitor.model.CapcodeInfo;
 import cc.boeters.p2000monitor.model.Message;
 import cc.boeters.p2000monitor.support.LimitedQueue;
-import cc.boeters.p2000monitor.support.Stage;
 import cc.boeters.p2000monitor.support.annotation.NewMessage;
 import cc.boeters.p2000monitor.support.annotation.Property;
 
 @Singleton
-@Stage(cc.boeters.p2000monitor.support.StageResolver.Stage.PRODUCTION)
 public class MonitorConnectorImpl implements MonitorConnector {
 
 	enum MessageToken {
@@ -171,7 +169,10 @@ public class MonitorConnectorImpl implements MonitorConnector {
 			} else if (currentMessage.isAlphaMessage()) {
 				currentMessage.getGroup().addAll(group);
 				group.clear();
+				long start = System.currentTimeMillis();
 				event.fire(new MonitorEvent(currentMessage));
+				System.out.println((System.currentTimeMillis() - start)
+						+ "ms <FIRE EVENT>");
 				messagesQueue.add(currentMessage);
 			}
 

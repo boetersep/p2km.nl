@@ -54,6 +54,19 @@ public class CapcodeInfo {
 		this.shortdesc = shortdesc;
 	}
 
+	public String toCompositeString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(" ");
+		sb.append(region);
+		sb.append(" ");
+		sb.append(sector);
+		sb.append(" ");
+		sb.append(description);
+		sb.append(" ");
+		return sb.toString();
+
+	}
+
 	@Override
 	public String toString() {
 		return "CapcodeInfo [capcode=" + capcode + ", discipline=" + discipline

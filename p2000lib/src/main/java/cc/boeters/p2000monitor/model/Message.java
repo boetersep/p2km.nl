@@ -1,7 +1,11 @@
 package cc.boeters.p2000monitor.model;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Message {
 
@@ -25,8 +29,11 @@ public class Message {
 
 	private CapcodeInfo capcodeInfo;
 
+	private final Map<String, Object> metadata;
+
 	public Message() {
 		group = new ArrayList<CapcodeInfo>(10);
+		metadata = new HashMap<String, Object>();
 	}
 
 	public int getCapcode() {
@@ -49,6 +56,10 @@ public class Message {
 		return message;
 	}
 
+	public Map<String, Object> getMetadata() {
+		return metadata;
+	}
+
 	public String getTime() {
 		return time;
 	}
@@ -61,10 +72,12 @@ public class Message {
 		return type;
 	}
 
+	@JsonIgnore
 	public boolean isAlphaMessage() {
 		return type == MessageType.ALPHA;
 	}
 
+	@JsonIgnore
 	public boolean isGroupMessage() {
 		return type == MessageType.GROUP;
 	}

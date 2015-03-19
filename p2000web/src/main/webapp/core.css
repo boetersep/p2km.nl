@@ -20,6 +20,7 @@ div#top {
 	height: 48px;
 	background-color: rgba(227, 227, 227,0.6);
 	border-bottom: 1px solid #e3e3e3;
+	z-index: 1;
 }
 
 div#search {

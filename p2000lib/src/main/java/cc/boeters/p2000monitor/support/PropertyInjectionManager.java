@@ -14,7 +14,8 @@ public class PropertyInjectionManager {
 
 	public PropertyInjectionManager() throws IOException {
 		String propertiesFile = "/connector."
-				+ StageResolver.resolve().getText() + ".properties";
+				+ StageResolver.resolve().toString().toLowerCase()
+				+ ".properties";
 		properties = new Properties();
 		properties.load(PropertyInjectionManager.class
 				.getResourceAsStream(propertiesFile));
