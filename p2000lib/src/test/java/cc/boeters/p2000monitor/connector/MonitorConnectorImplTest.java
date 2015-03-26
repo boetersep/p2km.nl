@@ -8,6 +8,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class MonitorConnectorImplTest implements Runnable {
@@ -99,6 +100,7 @@ public class MonitorConnectorImplTest implements Runnable {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void test() {
 		new MonitorConnectorImplTest().run();

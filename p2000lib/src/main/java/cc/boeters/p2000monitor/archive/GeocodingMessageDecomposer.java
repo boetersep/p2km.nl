@@ -1,5 +1,6 @@
 package cc.boeters.p2000monitor.archive;
 
+import static cc.boeters.p2000monitor.archive.HectopaalQueryBuilder.newHectopaalQuery;
 import static cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.newPostcodeQuery;
 
 import java.sql.Connection;
@@ -22,29 +23,30 @@ import javax.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.MatchType;
-import cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.MessageSource;
-import cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.PostcodeQuery;
+import cc.boeters.p2000monitor.archive.QueryBuilder.MatchType;
+import cc.boeters.p2000monitor.archive.QueryBuilder.MessageSource;
+import cc.boeters.p2000monitor.archive.QueryBuilder.Query;
 import cc.boeters.p2000monitor.model.Message;
 import cc.boeters.p2000monitor.support.annotation.Property;
 
 @Singleton
-public class PostcodeDbMessageDecomposer implements MessageDecomposer {
+public class GeocodingMessageDecomposer implements MessageDecomposer {
 
 	enum DecomposeMethod {
-		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR;
+		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR, ROAD_HECTO_RPE, ROAD_HECTO, ROAD_CITY_STREET;
 
 		public static final EnumSet<DecomposeMethod> ORDERED = EnumSet.of(
 				POSTCODE, STREETCITY, STREETCAPCODE, STREETSECTOR,
-				STREETPARTIALPOSTCODE);
+				STREETPARTIALPOSTCODE, ROAD_HECTO_RPE, ROAD_HECTO,
+				ROAD_CITY_STREET);
 	}
 
 	public static void main(String[] args) {
-		new PostcodeDbMessageDecomposer();
+		new GeocodingMessageDecomposer();
 	}
 
 	static final Logger LOG = LoggerFactory
-			.getLogger(PostcodeDbMessageDecomposer.class);
+			.getLogger(GeocodingMessageDecomposer.class);
 
 	private double succesful;
 
@@ -101,7 +103,7 @@ public class PostcodeDbMessageDecomposer implements MessageDecomposer {
 		return new HashMap<String, Object>(0);
 	}
 
-	private List<Map<String, Object>> executeQuery(PostcodeQuery query) {
+	private List<Map<String, Object>> executeQuery(Query query) {
 		List<Map<String, Object>> metadata = new ArrayList<Map<String, Object>>();
 		try {
 			PreparedStatement prepareStatement = connection
@@ -152,6 +154,10 @@ public class PostcodeDbMessageDecomposer implements MessageDecomposer {
 	public Integer findHouseNumber(String message, String metadataColumn,
 			Map<String, Object> metadata) {
 
+		if (!metadata.containsKey(metadataColumn)) {
+			return null;
+		}
+
 		message = message.toLowerCase();
 		String metadataColumnValue = (String) metadata.get(metadataColumn);
 		metadataColumnValue = metadataColumnValue.toLowerCase();
@@ -187,7 +193,7 @@ public class PostcodeDbMessageDecomposer implements MessageDecomposer {
 	private void findMetaDataBy(DecomposeMethod method, Message message,
 			List<Map<String, Object>> metadata) throws SQLException {
 
-		PostcodeQueryBuilder queryBuilder = null;
+		QueryBuilder queryBuilder = null;
 		switch (method) {
 		case POSTCODE:
 			queryBuilder = newPostcodeQuery();
@@ -228,12 +234,50 @@ public class PostcodeDbMessageDecomposer implements MessageDecomposer {
 					.mapColumn("pnum", MessageSource.MESSAGE, message,
 							MatchType.LIKE);
 			break;
+		case ROAD_HECTO_RPE:
+			queryBuilder = newHectopaalQuery()
+					.mapColumn("weg", MessageSource.MESSAGE, message,
+							MatchType.LIKE)
+					.and(newHectopaalQuery()
+							.mapColumn("hectometrering_comma",
+									MessageSource.MESSAGE, message,
+									MatchType.LIKE)
+							.or()
+							.mapColumn("hectometrering_dot",
+									MessageSource.MESSAGE, message,
+									MatchType.LIKE))
+					.and()
+					.mapColumn("rpe_code", MessageSource.MESSAGE, message,
+							MatchType.LIKE);
+			break;
+		case ROAD_HECTO:
+			queryBuilder = newHectopaalQuery().mapColumn("weg",
+					MessageSource.MESSAGE, message, MatchType.LIKE).and(
+					newHectopaalQuery()
+							.mapColumn("hectometrering_comma",
+									MessageSource.MESSAGE, message,
+									MatchType.LIKE)
+							.or()
+							.mapColumn("hectometrering_dot",
+									MessageSource.MESSAGE, message,
+									MatchType.LIKE));
+			break;
+		case ROAD_CITY_STREET:
+			queryBuilder = newHectopaalQuery().mapColumn("weg",
+					MessageSource.MESSAGE, message, MatchType.LIKE).and(
+					newHectopaalQuery()
+							.mapColumn("city", MessageSource.MESSAGE, message,
+									MatchType.LIKE)
+							.or()
+							.mapColumn("street", MessageSource.MESSAGE,
+									message, MatchType.LIKE));
+			break;
 		default:
 			break;
 		}
 
 		if (queryBuilder != null) {
-			PostcodeQuery query = queryBuilder.get();
+			Query query = queryBuilder.get();
 
 			List<Map<String, Object>> result = executeQuery(query);
 			List<Map<String, Object>> filtered = filterHouseNo(result,

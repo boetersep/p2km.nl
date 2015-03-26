@@ -16,9 +16,7 @@ public class ElasticsearchMessageConsumer {
 
 	@Asynchronous
 	public void consumeMessage(@Observes @NewMessage MonitorEvent monitorEvent) {
-		long start = System.currentTimeMillis();
 		archive.storeMessage(monitorEvent.getMessage());
-		System.out.println((System.currentTimeMillis() - start) + "ms <STORE>");
 	}
 
 }

@@ -110,7 +110,7 @@ public class MonitorConnectorImpl implements MonitorConnector {
 
 	}
 
-	private static final String CAPCODE_UNKOWN = "???????";
+	private static final String CAPCODE_UNKOWN = "???";
 
 	@Inject
 	private CapcodeDatabase capcodeDatabase;
@@ -150,7 +150,7 @@ public class MonitorConnectorImpl implements MonitorConnector {
 			break;
 		case CAPCODE:
 			val = line.split("Capcode: ")[1];
-			if (CAPCODE_UNKOWN.equals(val))
+			if (val == null || val.contains(CAPCODE_UNKOWN))
 				break;
 
 			Integer capcode = Integer.valueOf(val);
@@ -169,10 +169,7 @@ public class MonitorConnectorImpl implements MonitorConnector {
 			} else if (currentMessage.isAlphaMessage()) {
 				currentMessage.getGroup().addAll(group);
 				group.clear();
-				long start = System.currentTimeMillis();
 				event.fire(new MonitorEvent(currentMessage));
-				System.out.println((System.currentTimeMillis() - start)
-						+ "ms <FIRE EVENT>");
 				messagesQueue.add(currentMessage);
 			}
 
