@@ -1,4 +1,4 @@
-package cc.boeters.p2000monitor.archive;
+package cc.boeters.p2000monitor.processing;
 
 import java.util.ArrayList;
 import java.util.List;

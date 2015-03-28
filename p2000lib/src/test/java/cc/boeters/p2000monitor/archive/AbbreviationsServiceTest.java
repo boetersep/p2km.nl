@@ -3,6 +3,8 @@ package cc.boeters.p2000monitor.archive;
 import org.junit.Before;
 import org.junit.Test;
 
+import cc.boeters.p2000monitor.processing.AbbreviationsService;
+
 public class AbbreviationsServiceTest {
 
 	private AbbreviationsService service;

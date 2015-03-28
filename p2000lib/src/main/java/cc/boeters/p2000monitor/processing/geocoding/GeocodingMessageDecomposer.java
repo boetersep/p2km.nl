@@ -1,7 +1,7 @@
-package cc.boeters.p2000monitor.archive;
+package cc.boeters.p2000monitor.processing.geocoding;
 
-import static cc.boeters.p2000monitor.archive.HectopaalQueryBuilder.newHectopaalQuery;
-import static cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.newPostcodeQuery;
+import static cc.boeters.p2000monitor.processing.geocoding.HectopaalQueryBuilder.newHectopaalQuery;
+import static cc.boeters.p2000monitor.processing.geocoding.PostcodeQueryBuilder.newPostcodeQuery;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,22 +23,23 @@ import javax.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cc.boeters.p2000monitor.archive.QueryBuilder.MatchType;
-import cc.boeters.p2000monitor.archive.QueryBuilder.MessageSource;
-import cc.boeters.p2000monitor.archive.QueryBuilder.Query;
 import cc.boeters.p2000monitor.model.Message;
+import cc.boeters.p2000monitor.processing.MessageDecomposer;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MatchType;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MessageSource;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.Query;
 import cc.boeters.p2000monitor.support.annotation.Property;
 
 @Singleton
 public class GeocodingMessageDecomposer implements MessageDecomposer {
 
 	enum DecomposeMethod {
-		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR, ROAD_HECTO_RPE, ROAD_HECTO, ROAD_CITY_STREET;
+		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR, ROAD_HECTO_RPE, ROAD_HECTO, ROAD_CITY_STREET_RPE, ROAD_CITY_STREET;
 
 		public static final EnumSet<DecomposeMethod> ORDERED = EnumSet.of(
 				POSTCODE, STREETCITY, STREETCAPCODE, STREETSECTOR,
 				STREETPARTIALPOSTCODE, ROAD_HECTO_RPE, ROAD_HECTO,
-				ROAD_CITY_STREET);
+				ROAD_CITY_STREET_RPE, ROAD_CITY_STREET);
 	}
 
 	public static void main(String[] args) {
@@ -262,6 +263,21 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 									MessageSource.MESSAGE, message,
 									MatchType.LIKE));
 			break;
+		case ROAD_CITY_STREET_RPE:
+			queryBuilder = newHectopaalQuery()
+					.mapColumn("weg", MessageSource.MESSAGE, message,
+							MatchType.LIKE)
+					.and(newHectopaalQuery()
+							.mapColumn("city", MessageSource.MESSAGE, message,
+									MatchType.LIKE)
+							.or()
+							.mapColumn("street", MessageSource.MESSAGE,
+									message, MatchType.LIKE))
+					.and()
+					.mapColumn("rpe_code", MessageSource.MESSAGE, message,
+							MatchType.LIKE);
+			;
+			break;
 		case ROAD_CITY_STREET:
 			queryBuilder = newHectopaalQuery().mapColumn("weg",
 					MessageSource.MESSAGE, message, MatchType.LIKE).and(
@@ -297,5 +313,10 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 				metadata.addAll(result);
 			}
 		}
+	}
+
+	@Override
+	public String getName() {
+		return "geodata";
 	}
 }

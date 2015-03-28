@@ -3,6 +3,8 @@ package cc.boeters.p2000monitor.archive;
 import java.io.IOException;
 
 import javax.annotation.PreDestroy;
+import javax.enterprise.inject.Any;
+import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -15,6 +17,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import cc.boeters.p2000monitor.model.Message;
+import cc.boeters.p2000monitor.processing.AbbreviationsService;
+import cc.boeters.p2000monitor.processing.MessageDecomposer;
+import cc.boeters.p2000monitor.processing.NoAbbrMessageDecorator;
 import cc.boeters.p2000monitor.support.annotation.Property;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -30,7 +35,8 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 	private boolean enable;
 
 	@Inject
-	private MessageDecomposer decomposer;
+	@Any
+	private Instance<MessageDecomposer> decomposers;
 
 	@Inject
 	private AbbreviationsService abbreviationsService;
@@ -88,7 +94,10 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 		hash.append(message.getTimestamp());
 		String id = hash.toString();
 
-		message.getMetadata().putAll(decomposer.decompose(message));
+		for (MessageDecomposer decomposer : decomposers) {
+			message.getMetadata().put(decomposer.getName(),
+					decomposer.decompose(message));
+		}
 
 		try {
 			String jsonMessage = objectMapper.writeValueAsString(message);

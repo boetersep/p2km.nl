@@ -1,16 +1,16 @@
 package cc.boeters.p2000monitor.archive;
 
-import static cc.boeters.p2000monitor.archive.HectopaalQueryBuilder.newHectopaalQuery;
-import static cc.boeters.p2000monitor.archive.PostcodeQueryBuilder.newPostcodeQuery;
+import static cc.boeters.p2000monitor.processing.geocoding.HectopaalQueryBuilder.newHectopaalQuery;
+import static cc.boeters.p2000monitor.processing.geocoding.PostcodeQueryBuilder.newPostcodeQuery;
 import junit.framework.Assert;
 
 import org.junit.Test;
 
-import cc.boeters.p2000monitor.archive.QueryBuilder.MatchType;
-import cc.boeters.p2000monitor.archive.QueryBuilder.MessageSource;
-import cc.boeters.p2000monitor.archive.QueryBuilder.Query;
 import cc.boeters.p2000monitor.model.CapcodeInfo;
 import cc.boeters.p2000monitor.model.Message;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MatchType;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MessageSource;
+import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.Query;
 
 public class QueryBuilderTest {
 

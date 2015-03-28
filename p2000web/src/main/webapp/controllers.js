@@ -48,6 +48,23 @@ p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams', '$ht
                 }
 		    }];
 	        
+	        $scope.regions =  [ {
+                name: 'Regio\'s',
+                source: {
+                    type: 'GeoJSON',
+                    url: 'inc/regions.json'
+                },
+                style: {
+                    fill: {
+                        color: 'rgba(0, 255, 0, 0.6)'
+                    },
+                    stroke: {
+                        color: 'white',
+                        width: 3
+                    }
+                }
+            }];
+	        
         }
     });
     

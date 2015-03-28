@@ -1,4 +1,4 @@
-package cc.boeters.p2000monitor.archive;
+package cc.boeters.p2000monitor.processing;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,8 +10,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.inject.Singleton;
-
-import cc.boeters.p2000monitor.connector.CapcodeDatabase;
 
 @Singleton
 public class AbbreviationsService {
@@ -26,7 +24,8 @@ public class AbbreviationsService {
 	static {
 		DB = new HashMap<String, String>(200);
 
-		InputStream stream = CapcodeDatabase.class.getResourceAsStream(SOURCE);
+		InputStream stream = AbbreviationsService.class
+				.getResourceAsStream(SOURCE);
 
 		BufferedReader reader = new BufferedReader(
 				new InputStreamReader(stream));
