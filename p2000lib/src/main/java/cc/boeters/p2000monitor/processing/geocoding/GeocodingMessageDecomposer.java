@@ -33,10 +33,10 @@ import cc.boeters.p2000monitor.support.annotation.Property;
 @Singleton
 public class GeocodingMessageDecomposer implements MessageDecomposer {
 
-	enum DecomposeMethod {
+	enum GeocodingMethod {
 		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR, ROAD_HECTO_RPE, ROAD_HECTO, ROAD_CITY_STREET_RPE, ROAD_CITY_STREET;
 
-		public static final EnumSet<DecomposeMethod> ORDERED = EnumSet.of(
+		public static final EnumSet<GeocodingMethod> ORDERED = EnumSet.of(
 				POSTCODE, STREETCITY, STREETCAPCODE, STREETSECTOR,
 				STREETPARTIALPOSTCODE, ROAD_HECTO_RPE, ROAD_HECTO,
 				ROAD_CITY_STREET_RPE, ROAD_CITY_STREET);
@@ -81,7 +81,7 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 		total++;
 
 		List<Map<String, Object>> metadata = new ArrayList<Map<String, Object>>();
-		for (DecomposeMethod method : DecomposeMethod.ORDERED) {
+		for (GeocodingMethod method : GeocodingMethod.ORDERED) {
 			try {
 				findMetaDataBy(method, message, metadata);
 			} catch (SQLException e) {
@@ -191,7 +191,7 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 		return null;
 	}
 
-	private void findMetaDataBy(DecomposeMethod method, Message message,
+	private void findMetaDataBy(GeocodingMethod method, Message message,
 			List<Map<String, Object>> metadata) throws SQLException {
 
 		QueryBuilder queryBuilder = null;

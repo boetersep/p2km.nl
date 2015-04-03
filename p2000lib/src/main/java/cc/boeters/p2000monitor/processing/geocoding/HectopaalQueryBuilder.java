@@ -29,6 +29,8 @@ public class HectopaalQueryBuilder extends QueryBuilder {
 		msg = msg.replace("/", " ");
 		msg = msg.replace("\\", " ");
 		msg = msg.replace("+", " ");
+		msg = msg.replace(" LINKS ", " L ");
+		msg = msg.replace(" RECHTS ", " R ");
 		return " " + msg + " ";
 	}
 
