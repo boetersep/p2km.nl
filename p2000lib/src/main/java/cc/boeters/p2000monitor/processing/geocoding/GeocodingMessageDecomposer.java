@@ -4,21 +4,21 @@ import static cc.boeters.p2000monitor.processing.geocoding.HectopaalQueryBuilder
 import static cc.boeters.p2000monitor.processing.geocoding.PostcodeQueryBuilder.newPostcodeQuery;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.EnumSet;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.inject.Inject;
+import javax.annotation.Resource;
 import javax.inject.Singleton;
+import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,56 +28,39 @@ import cc.boeters.p2000monitor.processing.MessageDecomposer;
 import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MatchType;
 import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.MessageSource;
 import cc.boeters.p2000monitor.processing.geocoding.QueryBuilder.Query;
-import cc.boeters.p2000monitor.support.annotation.Property;
 
 @Singleton
 public class GeocodingMessageDecomposer implements MessageDecomposer {
 
 	enum GeocodingMethod {
-		POSTCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETCAPCODE, STREETSECTOR, ROAD_HECTO_RPE, ROAD_HECTO, ROAD_CITY_STREET_RPE, ROAD_CITY_STREET;
+		POSTCODE, ROAD_CITY_STREET, ROAD_CITY_STREET_RPE, ROAD_HECTO, ROAD_HECTO_RPE, STREETCAPCODE, STREETCITY, STREETPARTIALPOSTCODE, STREETSECTOR;
 
-		public static final EnumSet<GeocodingMethod> ORDERED = EnumSet.of(
+		public static final List<GeocodingMethod> ORDERED = Arrays.asList(
 				POSTCODE, STREETCITY, STREETCAPCODE, STREETSECTOR,
 				STREETPARTIALPOSTCODE, ROAD_HECTO_RPE, ROAD_HECTO,
 				ROAD_CITY_STREET_RPE, ROAD_CITY_STREET);
 	}
 
+	static final Logger LOG = LoggerFactory
+			.getLogger(GeocodingMessageDecomposer.class);
+
+	private static final Pattern PATTERN_POSTCODE = Pattern
+			.compile("([1-9]{1}[0-9]{3}[A-Z]{2})");
+
 	public static void main(String[] args) {
 		new GeocodingMessageDecomposer();
 	}
 
-	static final Logger LOG = LoggerFactory
-			.getLogger(GeocodingMessageDecomposer.class);
+	@Resource(name = "jdbc/postcodeDb")
+	private DataSource postcodeDb;
 
 	private double succesful;
 
 	private double total;
 
-	private static final Pattern PATTERN_POSTCODE = Pattern
-			.compile("([1-9]{1}[0-9]{3}[A-Z]{2})");
-
-	private Connection connection;
-
-	@Inject
-	private void createConnection(@Property("mysql.host") String host,
-			@Property("mysql.port") String port,
-			@Property("mysql.user") String user,
-			@Property("mysql.password") String password,
-			@Property("mysql.database") String database) {
-
-		try {
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-			connection = DriverManager.getConnection("jdbc:mysql://" + host
-					+ "/" + database + "?" + "user=" + user + "&password="
-					+ password);
-		} catch (InstantiationException | IllegalAccessException
-				| ClassNotFoundException | SQLException e) {
-			LOG.error("Unable to connect to MySQL database.", e);
-		}
-	}
-
 	@Override
 	public Map<String, Object> decompose(Message message) {
+		Map<String, Object> decomposed = new HashMap<String, Object>(2);
 		total++;
 
 		List<Map<String, Object>> metadata = new ArrayList<Map<String, Object>>();
@@ -94,21 +77,30 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 
 		if (!metadata.isEmpty()) {
 			succesful++;
-			return metadata.get(0);
+			decomposed.put("source", metadata);
+			if (metadata.get(0).containsKey("lat")
+					&& metadata.get(0).containsKey("lon")) {
+				Map<String, Double> location = new HashMap<String, Double>(2);
+				location.put("lat", (Double) metadata.get(0).get("lat"));
+				location.put("lon", (Double) metadata.get(0).get("lon"));
+				decomposed.put("location", location);
+			}
 		}
 
 		if (total % 100 == 0) {
 			LOG.info("Percent decomposed: " + ((succesful / total) * 100.0));
 		}
 
-		return new HashMap<String, Object>(0);
+		return decomposed;
 	}
 
 	private List<Map<String, Object>> executeQuery(Query query) {
 		List<Map<String, Object>> metadata = new ArrayList<Map<String, Object>>();
 		try {
+			Connection connection = postcodeDb.getConnection();
 			PreparedStatement prepareStatement = connection
 					.prepareStatement(query.getQuery());
+			prepareStatement.closeOnCompletion();
 			for (int index = 0; index < query.getValues().size(); index++) {
 				prepareStatement.setString(index + 1,
 						query.getValues().get(index));
@@ -124,6 +116,7 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 				metadata.add(row);
 			}
 			executeQuery.close();
+			connection.close();
 		} catch (SQLException e) {
 			LOG.error("No valid query build.", e);
 		}
@@ -137,17 +130,13 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 
 		for (Map<String, Object> metadata : result) {
 			Integer houseNumber = findHouseNumber(message, "street", metadata);
-			if (houseNumber != null) {
-				metadata.put("housenumber", houseNumber);
-				filtered.add(metadata);
-			} else {
+			if (houseNumber == null) {
 				houseNumber = findHouseNumber(message, "postcode", metadata);
 			}
 			if (houseNumber != null) {
 				metadata.put("housenumber", houseNumber);
 				filtered.add(metadata);
 			}
-
 		}
 		return filtered;
 	}

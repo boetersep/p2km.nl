@@ -28,32 +28,28 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Singleton
 public class ElasticsearchMessageArchive implements MessageArchive {
 
+	static final Logger LOG = LoggerFactory
+			.getLogger(ElasticsearchMessageArchive.class);
+
+	@Inject
+	private AbbreviationsService abbreviationsService;
+
 	private Client client;
-
-	private final ObjectMapper objectMapper = new ObjectMapper();
-
-	private boolean enable;
 
 	@Inject
 	@Any
 	private Instance<MessageDecomposer> decomposers;
 
-	@Inject
-	private AbbreviationsService abbreviationsService;
-
-	static final Logger LOG = LoggerFactory
-			.getLogger(ElasticsearchMessageArchive.class);
+	private final ObjectMapper objectMapper = new ObjectMapper();
 
 	@Inject
-	private void createClient(@Property("es.enable") String enable,
-			@Property("es.host") String host, @Property("es.port") String port,
+	@Property("es.index")
+	private String p2000Index;
+
+	@Inject
+	private void createClient(@Property("es.host") String host,
+			@Property("es.port") String port,
 			@Property("es.cluster") String cluster) {
-
-		this.enable = Boolean.valueOf(enable);
-
-		if (!this.enable) {
-			return;
-		}
 
 		Settings settings = ImmutableSettings.settingsBuilder()
 				.put("cluster.name", cluster).build();
@@ -70,7 +66,7 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 
 	@Override
 	public Message retrieveMessage(String hash) {
-		String src = client.prepareGet("p2000", "message", hash).get()
+		String src = client.prepareGet(p2000Index, "message", hash).get()
 				.getSourceAsString();
 		try {
 			return objectMapper.readValue(src, Message.class);
@@ -82,9 +78,6 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 
 	@Override
 	public String storeMessage(Message message) {
-		if (!this.enable) {
-			return null;
-		}
 
 		message = new NoAbbrMessageDecorator(message, abbreviationsService);
 
@@ -101,8 +94,8 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 
 		try {
 			String jsonMessage = objectMapper.writeValueAsString(message);
-			client.prepareIndex("p2000", "message", id).setSource(jsonMessage)
-					.get();
+			client.prepareIndex(p2000Index, "message", id)
+					.setSource(jsonMessage).get();
 		} catch (JsonProcessingException e) {
 			LOG.error("Unable to marshall Elasticsearch source.", e);
 

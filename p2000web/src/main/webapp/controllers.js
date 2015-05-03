@@ -30,17 +30,17 @@ p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams', '$ht
     success(function(data) {
         $scope.message = data;
         
-        if (data.metadata && data.metadata.lat && data.metadata.lon) {
+        if (data.metadata && data.metadata.geodata && data.metadata.geodata.location) {
         
 	        $scope.messageLocation = {
-	        	lat: data.metadata.lat,
-	        	lon: data.metadata.lon,
+	        	lat: data.metadata.geodata.location.lat,
+	        	lon: data.metadata.geodata.location.lon,
 	        	zoom: 16
 	        };
 
 	        $scope.markers = [{
-		       	lat: data.metadata.lat,
-		       	lon: data.metadata.lon,
+		       	lat: data.metadata.geodata.location.lat,
+		       	lon: data.metadata.geodata.location.lon,
 		       	label: {
                     message: data.message,
                     show: false,

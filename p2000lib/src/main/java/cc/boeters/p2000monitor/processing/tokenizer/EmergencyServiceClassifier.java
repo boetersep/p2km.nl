@@ -16,11 +16,18 @@ public class EmergencyServiceClassifier implements MessageDecomposer {
 		HIGH, MEDIUM, LOW
 	}
 
+	private final Map<Pattern, Urgency> PRIO_MAPPINGS = new HashMap<Pattern, EmergencyServiceClassifier.Urgency>();
+
 	private final Pattern PRIO_1 = Pattern
 			.compile("A1|A 1|HV1|HV 1|Prio 1|P1|P 1|PR1|PR 1|BR1|BR 1");
+
 	private final Pattern PRIO_2 = Pattern
 			.compile("A2|A 2|HV2|HV 2|Prio 2|P2|P 2|PR2|PR 2|BR2|BR 2");
 	private final Pattern PRIO_3 = Pattern.compile("A3|A 3|HV3|HV 3|BR3|BR 3");
+
+	public EmergencyServiceClassifier() {
+
+	}
 
 	@Override
 	public Map<String, Object> decompose(Message message) {
