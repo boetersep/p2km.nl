@@ -146,11 +146,8 @@
 103068;Brandweer;Zaanstreek-Waterland;RBZW;Commandant Uitgangsstelling RBZW
 103070;Brandweer;Zaanstreek-Waterland;;MDT 0290 - OvD West
 103071;Brandweer;Zaanstreek-Waterland;RBZW;Compagniescommandant Waterland RBZW
-103071;Brandweer;Zaanstreek-Waterland;;MDT 0291 - OvD Oost
 103072;Brandweer;Zaanstreek-Waterland;RBZW;Pelotonscommandant 100 RBZW
-103072;Brandweer;Zaanstreek-Waterland;;MDT 0292 - OvD
 103073;Brandweer;Zaanstreek-Waterland;RBZW;Pelotonscommandant 200 RBZW
-103073;Brandweer;Zaanstreek-Waterland;;MDT 0220 - ROGS
 103074;Brandweer;Zaanstreek-Waterland;RBZW;Commandant Uitgangsstelling RBZW
 103100;Brandweer;Zaanstreek-Waterland;Oosthuizen;Blusploeg
 103105;Brandweer;Zaanstreek-Waterland;Oosthuizen;Lichtkrant
@@ -390,10 +387,10 @@
 106631;KNRM;Kennemerland;Wijk aan Zee;Bemanning reddingboot Donateur
 106632;KNRM;Kennemerland;Wijk aan Zee;Bemanning Kusthulpverleningsvoertuig
 106699;KNRM;Kennemerland;;Proefalarm
-106701;Reddingsbrigade;Kennemerland;IJmuiden;Strandploeg
-106711;Reddingsbrigade;Kennemerland;Zandvoort;Strandploeg
-106721;Reddingsbrigade;Kennemerland;Bloemendaal;Strandploeg
-106731;Reddingsbrigade;Kennemerland;Wijk aan Zee;Strandploeg
+106701;KNRM;Kennemerland;IJmuiden;Strandploeg
+106711;KNRM;Kennemerland;Zandvoort;Strandploeg
+106721;KNRM;Kennemerland;Bloemendaal;Strandploeg
+106731;KNRM;Kennemerland;Wijk aan Zee;Strandploeg
 106999;Brandweer;Kennemerland;;Monitorcode
 107000;Brandweer;Kennemerland;Haarlem;Commandant
 107011;Brandweer;Kennemerland;Haarlem;Beroeps West
@@ -602,14 +599,13 @@
 120250;Ambulance;Amsterdam-Amstelland;;Leiding Nederlandse Rode Kruis
 120251;Ambulance;Amsterdam-Amstelland;;Opvang en Verzorging Rode Kruis Amsterdam
 120359;Ambulance;Amsterdam-Amstelland;;MICU 13-359 (Karperweg) 
-120359;Ambulance;Amsterdam-Amstelland;;MICU 13-359 (Karperweg) 
 120401;Ambulance;Amsterdam-Amstelland;;Zorgambulance 13-401 (Karperweg)
 120402;Ambulance;Amsterdam-Amstelland;;Zorgambulance 13-402 (Karperweg)
 120452;Ambulance;Amsterdam-Amstelland;;Zorgambulance-13-452 VZA Amsterdam
-120454;Ambulance;Amsterdam-Amstelland;Amsterdam;Zorgambulance-13-454;
-120740;Ambulance;Amsterdam-Amstelland;Zaanstad;Bruggen Algemeen;
-120811;Ambulance;Amsterdam-Amstelland;;OvD-G 811;
-120812;Ambulance;Amsterdam-Amstelland;;OvD-G 812;
+120454;Ambulance;Amsterdam-Amstelland;Amsterdam;Zorgambulance-13-454
+120740;Ambulance;Amsterdam-Amstelland;Zaanstad;Bruggen Algemeen
+120811;Ambulance;Amsterdam-Amstelland;;OvD-G 811
+120812;Ambulance;Amsterdam-Amstelland;;OvD-G 812
 120813;Ambulance;Amsterdam-Amstelland;;OvD-G 813;
 120814;Ambulance;Amsterdam-Amstelland;;OvD-G 814;
 120846;Ambulance;Amsterdam-Amstelland;;Lijkberging;
@@ -622,10 +618,10 @@
 126129;Ambulance;Kennemerland;;Ambulance 12-129 (Post Haarlem);
 126131;Ambulance;Kennemerland;;Ambulance 12-131 (Post Haarlem);
 126132;Ambulance;Kennemerland;;Ambulance 12-132 (Post Haarlem);
-126134;Ambulance;Kennemerland;;Ambulance 12-134 (Post Haarlem)
-126141;Ambulance;Kennemerland;;12-141 (GGD)
-126143;Ambulance;Kennemerland;;Ambulance 12-143 (Post Haarlem)
-126145;Ambulance;Kennemerland;;Ambulance 12-145 (Post Haarlem)
+126134;Ambulance;Kennemerland;;Ambulance 12-134 (Post Haarlem);
+126141;Ambulance;Kennemerland;;12-141 (GGD);
+126143;Ambulance;Kennemerland;;Ambulance 12-143 (Post Haarlem);
+126145;Ambulance;Kennemerland;;Ambulance 12-145 (Post Haarlem);
 126146;Ambulance;Kennemerland;;Ambulance 12-146 (Post Haarlem)
 126147;Ambulance;Kennemerland;;Ambulance 12-147 (Post Haarlem)
 126151;Ambulance;Kennemerland;;Ambulance 12-151 (Post Heemskerk/Velsen)
@@ -643,12 +639,12 @@
 126186;Ambulance;Kennemerland;Hoofddorp;12-186 VZA
 126321;Ambulance;Kennemerland;;Motorambulance 12-321 (Post Haarlem)
 126322;Ambulance;Kennemerland;;Motorambulance 12-322 (Post Velsen)
-126410;Reddingsbrigade;Kennemerland;Wijk aan Zee;Strandambulance 57-10
-126420;Reddingsbrigade;Kennemerland;IJmuiden;Strandambulance 52-20
-126430;Reddingsbrigade;Kennemerland;IJmuiden;Strandambulance 52-30
-126440;Reddingsbrigade;Kennemerland;Bloemendaal;Strandambulance 28-20
-126460;Reddingsbrigade;Kennemerland;Zandvoort;Strandambulance 60-30
-126470;Reddingsbrigade;Kennemerland;Zandvoort;Strandambulance
+126410;KNRM;Kennemerland;Wijk aan Zee;Strandambulance 57-10
+126420;KNRM;Kennemerland;IJmuiden;Strandambulance 52-20
+126430;KNRM;Kennemerland;IJmuiden;Strandambulance 52-30
+126440;KNRM;Kennemerland;Bloemendaal;Strandambulance 28-20
+126460;KNRM;Kennemerland;Zandvoort;Strandambulance 60-30
+126470;KNRM;Kennemerland;Zandvoort;Strandambulance
 126801;Ambulance;Kennemerland;;OvD-G 801 - GGD Haarlem
 126802;Ambulance;Kennemerland;;OvD-G 802 - Reserve GHOR
 126803;Ambulance;Kennemerland;;OvD-G 803 - ADK Kennemerland
@@ -746,7 +742,6 @@
 200035;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code centralist meldkamer
 200036;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code centralist meldkamer
 200037;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code centralist meldkamer
-200051;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code overig personeel meldkamer
 200051;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code overig personeel meldkamer
 200052;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code overig personeel meldkamer
 200053;Brandweer;Noord-Holland Noord;RAC NHN;Persoonlijke code overig personeel meldkamer
@@ -867,38 +862,38 @@
 200195;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering
 200196;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering
 200197;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering
-200198;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering
-200199;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering
-200258;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Adriaan Hendrik, Egmond aan Zee
-200260;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Egmond aan Zee
-200268;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Dolfijn, Petten
-200270;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Petten
-200278;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Gul, Callantsoog
-200280;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Callantsoog
-200288;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Johannes Frederik, Den Helder
-200289;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Dorus Rijkers, Den Helder
-200298;KNRM;Noord-Holland Noord;via meldkamer NHN;Redingsboot Zalm, De Koog (Texel)
+200198;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering;
+200199;Brandweer;Noord-Holland Noord;aansturing via P2000;Code tbv schakeling/activering;
+200258;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Adriaan Hendrik, Egmond aan Zee;
+200260;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Egmond aan Zee;
+200268;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Dolfijn, Petten;
+200270;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Petten;
+200278;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Gul, Callantsoog;
+200280;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, Callantsoog;
+200288;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Johannes Frederik, Den Helder;
+200289;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Dorus Rijkers, Den Helder;
+200298;KNRM;Noord-Holland Noord;via meldkamer NHN;Redingsboot Zalm, De Koog (Texel);
 200300;KNRM;Noord-Holland Noord;via meldkamer NHN;Kusthulpverleningsvoertuig, De Koog (Texel);
 200308;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Beursplein 5, De Cocksdorp;
 200478;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Watersport, Enkhuizen;
 200488;KNRM;Noord-Holland Noord;via meldkamer NHN;Reddingsboot Narwal, Den Oever;
 200501;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Operationeel leider;CACO LO
-200502;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Regionaal commandant van dienst;
-200503;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Staf;
-200504;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Crisisbeheersing;
-200505;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Operationele voorbereiding;
-200506;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Beheer;
-200508;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Algemeen Commdant Brandweerzorg;
-200511;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Regionaal commandant;
-200512;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200513;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200514;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200515;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200516;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200517;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200518;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200519;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
-200521;Brandweer;Noord-Holland Noord;;Pro-actiegroep;
+200502;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Regionaal commandant van dienst
+200503;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Staf
+200504;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Crisisbeheersing
+200505;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Operationele voorbereiding
+200506;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Beheer
+200508;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Algemeen Commdant Brandweerzorg
+200511;Brandweer;Noord-Holland Noord;Brandweer NHN (regionaal);Regionaal commandant
+200512;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200513;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200514;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200515;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200516;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200517;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200518;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200519;Brandweer;Noord-Holland Noord;;Persoonlijke code officier
+200521;Brandweer;Noord-Holland Noord;;Pro-actiegroep
 200522;Brandweer;Noord-Holland Noord;;Persoonlijke code officier;
 200540;Brandweer;Noord-Holland Noord;;Actiecentrum Brandweer;
 200591;Brandweer;Noord-Holland Noord;;Commando team plaats incident GRIP1;
@@ -910,11 +905,11 @@
 200611;Brandweer;Noord-Holland Noord;;Compagniescdt Kop van Noord Holland;
 200612;Brandweer;Noord-Holland Noord;;Pelotonscdt Kop van Noord Holland-Noord;
 200613;Brandweer;Noord-Holland Noord;;Pelotonscdt Kop van Noord Holland-Zuid;
-200614;Brandweer;Noord-Holland Noord;;Pelotonscdt ondersteuningspeloton Kop van Noord Holland
-200615;Brandweer;Noord-Holland Noord;;Commandant uitgangsstelling Kop van Noord Holland
-200621;Brandweer;Noord-Holland Noord;;Compagniescdt West Friesland
-200622;Brandweer;Noord-Holland Noord;;Pelotonscdt West Friesland-Oost
-200623;Brandweer;Noord-Holland Noord;;Pelotonscdt West Friesland-West
+200614;Brandweer;Noord-Holland Noord;;Pelotonscdt ondersteuningspeloton Kop van Noord Holland;
+200615;Brandweer;Noord-Holland Noord;;Commandant uitgangsstelling Kop van Noord Holland;
+200621;Brandweer;Noord-Holland Noord;;Compagniescdt West Friesland;
+200622;Brandweer;Noord-Holland Noord;;Pelotonscdt West Friesland-Oost;
+200623;Brandweer;Noord-Holland Noord;;Pelotonscdt West Friesland-West;
 200624;Brandweer;Noord-Holland Noord;;Pelotonscdt ondersteuningspeloton West Friesland
 200625;Brandweer;Noord-Holland Noord;;Commandant uitgangsstelling West Friesland
 200631;Brandweer;Noord-Holland Noord;;Compagniescdt Noord Kennemerland
@@ -1022,22 +1017,21 @@
 200810;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Hoorn
 200811;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Heerhugowaard
 200812;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Heiloo
-200813;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Langedijk;
-200814;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Medemblik;
-200815;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Niedorp;
-200816;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Noorder Koggenland;
-200817;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Obdam;
-200818;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Opmeer;
-200818;Brandweer;Noord-Holland Noord;Opmeer;WvD team brandweer Opmeer;10W002
-200819;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Schagen;
-200820;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Schermer;
-200821;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Stede Broec;
-200822;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Texel;
-200823;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Venhuizen;
-200824;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wervershoof;
-200825;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wester Koggenland;
-200826;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wieringen;
-200827;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst;
+200813;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Langedijk
+200814;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Medemblik
+200815;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Niedorp
+200816;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Noorder Koggenland
+200817;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Obdam
+200818;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Opmeer
+200819;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Schagen
+200820;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Schermer
+200821;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Stede Broec
+200822;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Texel
+200823;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Venhuizen
+200824;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wervershoof
+200825;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wester Koggenland
+200826;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wieringen
+200827;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst
 200828;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Wognum
 200829;Brandweer;Noord-Holland Noord;;Waarschuwings-/Verkenningsdienst Zijpe
 200850;Brandweer;Noord-Holland Noord;;OGS (gaspakdragers) Alkmaar
@@ -1348,32 +1342,32 @@
 201713;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Blokker
 201714;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Zwaag
 201715;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Risdam
-201716;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Noord
-201717;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Grote Waal
-201718;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Centrum
-201721;Brandweer;Noord-Holland Noord;Hoorn;Commandant
-201722;Brandweer;Noord-Holland Noord;Hoorn;Plaatsvervangend commandant
-201723;Brandweer;Noord-Holland Noord;Hoorn;Officier
-201724;Brandweer;Noord-Holland Noord;Hoorn;Officier
-201725;Brandweer;Noord-Holland Noord;Hoorn;Officier
-201726;Brandweer;Noord-Holland Noord;Hoorn;Officier
-201727;Brandweer;Noord-Holland Noord;Hoorn;Officier
+201716;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Noord;
+201717;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Grote Waal;
+201718;Brandweer;Noord-Holland Noord;Hoorn;Bevelvoerders Centrum;
+201721;Brandweer;Noord-Holland Noord;Hoorn;Commandant;
+201722;Brandweer;Noord-Holland Noord;Hoorn;Plaatsvervangend commandant;
+201723;Brandweer;Noord-Holland Noord;Hoorn;Officier;
+201724;Brandweer;Noord-Holland Noord;Hoorn;Officier;
+201725;Brandweer;Noord-Holland Noord;Hoorn;Officier;
+201726;Brandweer;Noord-Holland Noord;Hoorn;Officier;
+201727;Brandweer;Noord-Holland Noord;Hoorn;Officier;
 201749;Brandweer;Noord-Holland Noord;Hoorn;;";"
 201753;Brandweer;Noord-Holland Noord;Hoorn;Bedrijfshulpverleningsploeg Westfries gasthuis;
 201756;Brandweer;Noord-Holland Noord;Hoorn;Kadergroep reddingsbrigade;
 201757;Brandweer;Noord-Holland Noord;Hoorn;Reddingsbrigade;
 201758;Brandweer;Noord-Holland Noord;Hoorn;Monitor reddingsbrigade;
 201763;Brandweer;Noord-Holland Noord;Hoorn;Logistiekploeg ('s avonds) Blokker;
-201764;Brandweer;Noord-Holland Noord;Hoorn;Duikploeg Zwaag;
-201768;Brandweer;Noord-Holland Noord;Hoorn;Duikploeg Centrum;
-201769;Brandweer;Noord-Holland Noord;Hoorn;Logistiekploeg (overdag);
-201771;Brandweer;Noord-Holland Noord;Hoorn;Beroepsploeg (overdag);
-201772;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg (overdag);
-201773;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Blokker;
-201774;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Zwaag;
-201775;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Risdam;
-201776;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Noord;
-201777;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Grote Waal;
+201764;Brandweer;Noord-Holland Noord;Hoorn;Duikploeg Zwaag
+201768;Brandweer;Noord-Holland Noord;Hoorn;Duikploeg Centrum
+201769;Brandweer;Noord-Holland Noord;Hoorn;Logistiekploeg (overdag)
+201771;Brandweer;Noord-Holland Noord;Hoorn;Beroepsploeg (overdag)
+201772;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg (overdag)
+201773;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Blokker
+201774;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Zwaag
+201775;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Risdam
+201776;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Noord
+201777;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Grote Waal
 201778;Brandweer;Noord-Holland Noord;Hoorn;Blusploeg Centrum
 201780;Brandweer;Noord-Holland Noord;Hoorn;Pelotonscode
 201783;Brandweer;Noord-Holland Noord;Hoorn;Monitor kazerne Blokker
@@ -1502,12 +1496,12 @@
 202139;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Monitor gemeente
 202146;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Kazernealarm Sijbekarspel
 202147;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Kazernealarm Opperdoes
-202148;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Kazernealarm Midwoud;
-202149;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Alarm gemeente;
-202153;Brandweer;Noord-Holland Noord;Obdam;Commandant van Dienst;
-202161;Brandweer;Noord-Holland Noord;Obdam;Commandant;
-202162;Brandweer;Noord-Holland Noord;Obdam;Plaatsvervangend commandant;
-202168;Brandweer;Noord-Holland Noord;Obdam;Bevelvoerders;
+202148;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Kazernealarm Midwoud
+202149;Brandweer;Noord-Holland Noord;Noorder-Koggenland;Alarm gemeente
+202153;Brandweer;Noord-Holland Noord;Obdam;Commandant van Dienst
+202161;Brandweer;Noord-Holland Noord;Obdam;Commandant
+202162;Brandweer;Noord-Holland Noord;Obdam;Plaatsvervangend commandant
+202168;Brandweer;Noord-Holland Noord;Obdam;Bevelvoerders
 202177;Brandweer;Noord-Holland Noord;Obdam;Hulpverleningsploeg;
 202178;Brandweer;Noord-Holland Noord;Obdam;Blusploeg;
 202180;Brandweer;Noord-Holland Noord;Obdam;Pelotonscode;
@@ -1518,12 +1512,12 @@
 202209;Brandweer;Noord-Holland Noord;Opmeer;Contact alarmcentrale;OPM911
 202211;Brandweer;Noord-Holland Noord;Opmeer;Persoonlijke code;
 202213;Brandweer;Noord-Holland Noord;Opmeer;Persoonlijke code;
-202219;Brandweer;Noord-Holland Noord;Opmeer;Bevelvoerder
-202223;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 1
-202224;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 2
-202225;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 3
-202226;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 4
-202229;Brandweer;Noord-Holland Noord;Opmeer;Korpscode
+202219;Brandweer;Noord-Holland Noord;Opmeer;Bevelvoerder;
+202223;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 1;
+202224;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 2;
+202225;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 3;
+202226;Brandweer;Noord-Holland Noord;Opmeer;Ploeg 4;
+202229;Brandweer;Noord-Holland Noord;Opmeer;Korpscode;
 202239;Brandweer;Noord-Holland Noord;Opmeer;Monitorcode brandweer Opmeer
 202249;Brandweer;Noord-Holland Noord;Opmeer;Noodcode brandweer Opmeer
 202253;Brandweer;Noord-Holland Noord;Schagen;Commandant van Dienst
@@ -1844,16 +1838,16 @@
 220191;Ambulance;Noord-Holland Noord;;Ambulance 10-191 (Alkmaar / De Mossel)
 220320;Ambulance;Noord-Holland Noord;;Motor ambulance 10-320 (Alkmaar) reserve
 220323;Ambulance;Noord-Holland Noord;;Motor ambulance 10-323 (Alkmaar)
-220341;Ambulance;Noord-Holland Noord;;Rapid responder 10-341 (Wognum)
-220342;Ambulance;Noord-Holland Noord;;Rapid responder 10-342 (Alkmaar)
-220431;Ambulance;Noord-Holland Noord;;B-ambulance 10-431 (Alkmaar)
-220552;Ambulance;Noord-Holland Noord;;Ambulance 12-152 via CPA Noord Holland Noord
-220553;Ambulance;Noord-Holland Noord;;Ambulance 12-153 via CPA Noord Holland Noord
-220599;Ambulance;Noord-Holland Noord;;Monitorcode ambulance Kennemerland via CPA Noord Holland Noo
-220701;Ambulance;Noord-Holland Noord;;Forensisch Geneeskundige
-220723;Ambulance;Noord-Holland Noord;;SEPH NHN Oost
-220731;Ambulance;Noord-Holland Noord;;HAP 10-701 (Alkmaar)
-220732;Ambulance;Noord-Holland Noord;;HAP 10-702 (Alkmaar)
+220341;Ambulance;Noord-Holland Noord;;Rapid responder 10-341 (Wognum);
+220342;Ambulance;Noord-Holland Noord;;Rapid responder 10-342 (Alkmaar);
+220431;Ambulance;Noord-Holland Noord;;B-ambulance 10-431 (Alkmaar);
+220552;Ambulance;Noord-Holland Noord;;Ambulance 12-152 via CPA Noord Holland Noord;
+220553;Ambulance;Noord-Holland Noord;;Ambulance 12-153 via CPA Noord Holland Noord;
+220599;Ambulance;Noord-Holland Noord;;Monitorcode ambulance Kennemerland via CPA Noord Holland Noo;
+220701;Ambulance;Noord-Holland Noord;;Forensisch Geneeskundige;
+220723;Ambulance;Noord-Holland Noord;;SEPH NHN Oost;
+220731;Ambulance;Noord-Holland Noord;;HAP 10-701 (Alkmaar);
+220732;Ambulance;Noord-Holland Noord;;HAP 10-702 (Alkmaar);
 220735;Ambulance;Noord-Holland Noord;;HAP 10-705 (???);
 220800;Ambulance;Noord-Holland Noord;;Monitorcode OvDG Noord Holland Noord;
 220802;Ambulance;Noord-Holland Noord;;OvDG 10-802 (regionaal) reserve;OvDG NHN
@@ -1870,12 +1864,12 @@
 303000;Brandweer;Friesland;;Wekelijks Proefalarm Brandweer Friesland;
 303004;Brandweer;Friesland;;Alle RCVD's en HOVD's;
 303005;Brandweer;Friesland;;RCvD Friesland (Regionaal Commandant van Dienst) D;
-303010;Brandweer;Friesland;;Hoofdofficieren Noord Friesland
-303011;Brandweer;Friesland;;HOvD Noord Friesland
-303020;Brandweer;Friesland;;Hoofdofficieren Zuid Friesland
-303021;Brandweer;Friesland;;HOvD Zuid Friesland
-303030;Brandweer;Friesland;;LMPO (Leider Meetplan Organisatie)
-303040;Brandweer;Friesland;;RCC, Regionaal Commando Centrum
+303010;Brandweer;Friesland;;Hoofdofficieren Noord Friesland;
+303011;Brandweer;Friesland;;HOvD Noord Friesland;
+303020;Brandweer;Friesland;;Hoofdofficieren Zuid Friesland;
+303021;Brandweer;Friesland;;HOvD Zuid Friesland;
+303030;Brandweer;Friesland;;LMPO (Leider Meetplan Organisatie);
+303040;Brandweer;Friesland;;RCC, Regionaal Commando Centrum;
 303060;Brandweer;Friesland;;OVD Zuid West Friesland
 303061;Brandweer;Friesland;;OVD Noord Oost Friesland
 303062;Brandweer;Friesland;;OVD Noord West Friesland
@@ -3824,7 +3818,6 @@
 610906;Brandweer;IJsselland;Raalte - Heino;Blusgroep
 610915;Brandweer;IJsselland;Raalte - Heino;Verzorgingsgroep
 610929;Brandweer;IJsselland;Raalte - Heino;Logistiek
-610929;Brandweer;IJsselland;Raalte - Heino;Logistiek
 610930;Brandweer;IJsselland;Raalte - Heino;Monitorcode
 610943;Brandweer;IJsselland;Raalte - Heeten;Bevelvoerders
 610945;Brandweer;IJsselland;Raalte - Heeten;Lichtkrant Kazerne
@@ -4021,7 +4014,7 @@
 700230;Brandweer;Flevoland;Almere-Buiten;Blusgroep 3
 700231;Brandweer;Flevoland;Almere-Buiten;Bevelvoerders 3
 700240;Brandweer;Flevoland;Almere-Buiten;Dagdienst
-700280;Reddingsbrigade;Flevoland;Almere;Reddingsbrigade
+700280;KNRM;Flevoland;Almere;Reddingsbrigade
 700291;Brandweer;Flevoland;Almere-Buiten;Tankautospuit-641
 700292;Brandweer;Flevoland;Almere-Stad;Tankautospuit-642
 700293;Brandweer;Flevoland;Almere-Stad;Tankautospuit-643
@@ -4042,7 +4035,7 @@
 700334;Brandweer;Flevoland;Dronten;Groep 2
 700350;Brandweer;Flevoland;Dronten - Biddinghuizen;Blusgroep
 700370;Brandweer;Flevoland;Dronten - Swifterbant;Blusgroep
-700380;Reddingsbrigade;Flevoland;Dronten - Biddinghuizen;Reddingsbrigade Veluwemeer Biddinghuizen
+700380;KNRM;Flevoland;Dronten - Biddinghuizen;Reddingsbrigade Veluwemeer Biddinghuizen
 700390;Brandweer;Flevoland;Dronten;Logistiek
 700395;Brandweer;Flevoland;Dronten;Officier van Dienst
 700400;Brandweer;Flevoland;Lelystad;Korpsalarm
@@ -4137,8 +4130,8 @@
 703017;Brandweer;Gooi en Vechtstreek;Huizen;Commandant
 703018;Brandweer;Gooi en Vechtstreek;Huizen;??
 703019;Brandweer;Gooi en Vechtstreek;Huizen;Korpsalarm
-703025;Reddingsbrigade;Gooi en Vechtstreek;Huizen;Centralisten
-703029;Reddingsbrigade;Gooi en Vechtstreek;Huizen;Bemanning Reddingsboot Nikolaas Wijsenbeek
+703025;KNRM;Gooi en Vechtstreek;Huizen;Centralisten
+703029;KNRM;Gooi en Vechtstreek;Huizen;Bemanning Reddingsboot Nikolaas Wijsenbeek
 703031;Brandweer;Gooi en Vechtstreek;Huizen;Blusgroep 1
 703032;Brandweer;Gooi en Vechtstreek;Huizen;Blusgroep 2
 703033;Brandweer;Gooi en Vechtstreek;Huizen;Blusgroep 3
@@ -4204,7 +4197,7 @@
 703305;Brandweer;Gooi en Vechtstreek;Naarden;Commandant
 703306;Brandweer;Gooi en Vechtstreek;Naarden;Reddingsbrigade
 703307;Brandweer;Gooi en Vechtstreek;Naarden;Reddingsbrigade
-703309;Reddingsbrigade;Gooi en Vechtstreek;Naarden;Reddingsboten Ronduit & Johanna Smidt
+703309;KNRM;Gooi en Vechtstreek;Naarden;Reddingsboten Ronduit & Johanna Smidt
 703310;Brandweer;Gooi en Vechtstreek;Naarden;Korpsalarm
 703351;Brandweer;Gooi en Vechtstreek;Muiden;Blusgroep
 703352;Brandweer;Gooi en Vechtstreek;Muiderberg;Blusgroep
@@ -4220,16 +4213,15 @@
 703408;Brandweer;Gooi en Vechtstreek;Weesp;Brugwachters
 703409;Brandweer;Gooi en Vechtstreek;Weesp;Commandant
 703411;Brandweer;Gooi en Vechtstreek;Weesp;Korpsalarm
-703411;Brandweer;Gooi en Vechtstreek;Weesp;Korpsalarm
 703412;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 1
-703413;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 2;
-703414;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 3;
-703415;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 4;
-703450;Brandweer;Gooi en Vechtstreek;;OVD cluster 1;
-703451;Brandweer;Gooi en Vechtstreek;;OVD cluster 2;
-703452;Brandweer;Gooi en Vechtstreek;;OVD cluster 3;
-703453;Brandweer;Gooi en Vechtstreek;;HOVD;
-703454;Brandweer;Gooi en Vechtstreek;;Commandant;
+703413;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 2
+703414;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 3
+703415;Brandweer;Gooi en Vechtstreek;Weesp;Chauffeurs Groep 4
+703450;Brandweer;Gooi en Vechtstreek;;OVD cluster 1
+703451;Brandweer;Gooi en Vechtstreek;;OVD cluster 2
+703452;Brandweer;Gooi en Vechtstreek;;OVD cluster 3
+703453;Brandweer;Gooi en Vechtstreek;;HOVD
+703454;Brandweer;Gooi en Vechtstreek;;Commandant
 703455;Brandweer;Gooi en Vechtstreek;;ROGS;
 703456;Brandweer;Gooi en Vechtstreek;;Centralisten;
 703457;Brandweer;Gooi en Vechtstreek;;Rampenbeheersing;
@@ -4238,14 +4230,14 @@
 703478;Brandweer;Gooi en Vechtstreek;Weesp;Waarschuwings- en Verkenningsdienst;WVD
 703479;Brandweer;Gooi en Vechtstreek;Weesp;Waarschuwings- en Verkenningsdienst;WVD
 703480;Brandweer;Gooi en Vechtstreek;;Ademlucht ??;
-703486;Brandweer;Gooi en Vechtstreek;Hilversum;Duiksectie
-703487;Brandweer;Gooi en Vechtstreek;Hilversum;Duiksectie
-703488;Brandweer;Gooi en Vechtstreek;Naarden;Duiksectie Naarden
-703490;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Duiksectie
-703491;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Duiksectie
-703901;Brandweer;Gooi en Vechtstreek;Huizen;Lichtkrant
-703904;Brandweer;Gooi en Vechtstreek;Hilversum;Lichtkrant
-703907;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Lichtkrant
+703486;Brandweer;Gooi en Vechtstreek;Hilversum;Duiksectie;
+703487;Brandweer;Gooi en Vechtstreek;Hilversum;Duiksectie;
+703488;Brandweer;Gooi en Vechtstreek;Naarden;Duiksectie Naarden;
+703490;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Duiksectie;
+703491;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Duiksectie;
+703901;Brandweer;Gooi en Vechtstreek;Huizen;Lichtkrant;
+703904;Brandweer;Gooi en Vechtstreek;Hilversum;Lichtkrant;
+703907;Brandweer;Gooi en Vechtstreek;Nederhorst den Berg;Lichtkrant;
 703908;Brandweer;Gooi en Vechtstreek;Bussum;Lichtkrant
 703909;Brandweer;Gooi en Vechtstreek;Naarden;Lichtkrant
 703910;Brandweer;Gooi en Vechtstreek;Muiden;Lichtkrant
@@ -4262,14 +4254,14 @@
 704599;Brandweer;Gooi en Vechtstreek;Naarden;Brugwachters
 704690;Brandweer;Gooi en Vechtstreek;Weesp;Commandant
 704725;Brandweer;Gooi en Vechtstreek;;RMVD-1
-704940;Brandweer;Gooi en Vechtstreek;Huizen;TS 1341
-704943;Brandweer;Gooi en Vechtstreek;Huizen ;Hoofdpost HW 1351
-704974;Brandweer;Gooi en Vechtstreek;Naarden;TS 1631
-704983;Brandweer;Gooi en Vechtstreek;Blaricum;2e TS
-704992;Brandweer;Gooi en Vechtstreek;;Monitorcode OvD
-704994;Brandweer;Gooi en Vechtstreek;;Lichtkrant AC Utrecht
-704998;Brandweer;Gooi en Vechtstreek;;GMS Koppelcode
-704999;Brandweer;Gooi en Vechtstreek;;Monitorcode GMK
+704940;Brandweer;Gooi en Vechtstreek;Huizen;TS 1341;
+704943;Brandweer;Gooi en Vechtstreek;Huizen ;Hoofdpost HW 1351;
+704974;Brandweer;Gooi en Vechtstreek;Naarden;TS 1631;
+704983;Brandweer;Gooi en Vechtstreek;Blaricum;2e TS;
+704992;Brandweer;Gooi en Vechtstreek;;Monitorcode OvD;
+704994;Brandweer;Gooi en Vechtstreek;;Lichtkrant AC Utrecht;
+704998;Brandweer;Gooi en Vechtstreek;;GMS Koppelcode;
+704999;Brandweer;Gooi en Vechtstreek;;Monitorcode GMK;
 706000;Brandweer;Utrecht;;Proefalarm;BUT proefa
 706001;Brandweer;Utrecht;;Monitorcode;
 706002;Brandweer;Utrecht;Abcoude;Commandant;
@@ -4278,14 +4270,14 @@
 706005;Brandweer;Utrecht;Vecht & Venen;DOvD ;
 706006;Brandweer;Utrecht;Abcoude;Korpsalarm;
 706051;Brandweer;Utrecht;Amerongen;Commando ;
-706052;Brandweer;Utrecht;Amerongen;Blusgroep 1 ;
-706053;Brandweer;Utrecht;Amerongen;Blusgroep 2 ;
-706054;Brandweer;Utrecht;Amerongen;Korpsalarm ;
-706118;Brandweer;Utrecht;Amersfoort;OvD ;
-706119;Brandweer;Utrecht;Amersfoort;Kazernealarm brand hoofdpost;
-706120;Brandweer;Utrecht;Amersfoort;Kazernealarm hulpverlening hoofdpost;
-706121;Brandweer;Utrecht;Amersfoort;Kazernealarm duikers hoofdpost;
-706122;Brandweer;Utrecht;Amersfoort;Kazerneomroep hoofdpost;
+706052;Brandweer;Utrecht;Amerongen;Blusgroep 1 
+706053;Brandweer;Utrecht;Amerongen;Blusgroep 2 
+706054;Brandweer;Utrecht;Amerongen;Korpsalarm 
+706118;Brandweer;Utrecht;Amersfoort;OvD 
+706119;Brandweer;Utrecht;Amersfoort;Kazernealarm brand hoofdpost
+706120;Brandweer;Utrecht;Amersfoort;Kazernealarm hulpverlening hoofdpost
+706121;Brandweer;Utrecht;Amersfoort;Kazernealarm duikers hoofdpost
+706122;Brandweer;Utrecht;Amersfoort;Kazerneomroep hoofdpost
 706123;Brandweer;Utrecht;Amersfoort;Vrijwilligers dagdienst hoofdpost
 706124;Brandweer;Utrecht;Amersfoort;Dagdienstkring vrijwilligers noord
 706125;Brandweer;Utrecht;Amersfoort;Bevelvoerders vrijwillig hoofdpost
@@ -4646,14 +4638,14 @@
 709116;Brandweer;Utrecht;De Waarden - Woerden;Chauffeurs HA
 709117;Brandweer;Utrecht;Woerden;Lichtkrant
 709124;Brandweer;Utrecht;De Waarden - Woerden;Piketploeg
-709125;Brandweer;Utrecht;De Waarden - Woerden;Duikploeg
-709281;Brandweer;Utrecht;Woudenberg;Commandant 
-709282;Brandweer;Utrecht;Woudenberg;Commando 
-709283;Brandweer;Utrecht;Woudenberg;Blusgroep 1 
-709284;Brandweer;Utrecht;Woudenberg;Blusgroep 2 
-709285;Brandweer;Utrecht;Woudenberg;Blusgroep 3 
-709286;Brandweer;Utrecht;Woudenberg;Bemanning HA 
-709287;Brandweer;Utrecht;Woudenberg;Bevelvoerders 
+709125;Brandweer;Utrecht;De Waarden - Woerden;Duikploeg;
+709281;Brandweer;Utrecht;Woudenberg;Commandant ;
+709282;Brandweer;Utrecht;Woudenberg;Commando ;
+709283;Brandweer;Utrecht;Woudenberg;Blusgroep 1 ;
+709284;Brandweer;Utrecht;Woudenberg;Blusgroep 2 ;
+709285;Brandweer;Utrecht;Woudenberg;Blusgroep 3 ;
+709286;Brandweer;Utrecht;Woudenberg;Bemanning HA ;
+709287;Brandweer;Utrecht;Woudenberg;Bevelvoerders ;
 709288;Brandweer;Utrecht;Woudenberg;Korpsalarm ;
 709347;Brandweer;Utrecht;Zeist;Zeist CDT;CDT
 709349;Brandweer;Utrecht;Zeist;COT;COT
@@ -4662,14 +4654,14 @@
 709354;Brandweer;Utrecht;Zeist;Kanspiket 2 ;
 709355;Brandweer;Utrecht;Zeist;Bijzonder piket;
 709357;Brandweer;Utrecht;Zeist;Kazernealarm;
-709358;Brandweer;Utrecht;Zeist;Beroeps dagdienst;
-709361;Brandweer;Utrecht;Zeist;Noodalarm;
-709362;Brandweer;Utrecht;Den Dolder;Korpsalarm ;
-709498;Brandweer;Utrecht;;AGS;
-709499;Brandweer;Utrecht;;Functionaris LMPO;
-709500;Brandweer;Utrecht;;HOvD West;
-709501;Brandweer;Utrecht;;HOvD Oost;
-709503;Brandweer;Utrecht;;Centralisten (groep);
+709358;Brandweer;Utrecht;Zeist;Beroeps dagdienst
+709361;Brandweer;Utrecht;Zeist;Noodalarm
+709362;Brandweer;Utrecht;Den Dolder;Korpsalarm 
+709498;Brandweer;Utrecht;;AGS
+709499;Brandweer;Utrecht;;Functionaris LMPO
+709500;Brandweer;Utrecht;;HOvD West
+709501;Brandweer;Utrecht;;HOvD Oost
+709503;Brandweer;Utrecht;;Centralisten (groep)
 709504;Brandweer;Utrecht;;Peleton Eemland-Zuid
 709505;Brandweer;Utrecht;;Piket Bosbrand
 709507;Brandweer;Utrecht;;Centralisten
@@ -4702,15 +4694,14 @@
 709536;Brandweer;Utrecht;Hilversum;alarmering vanuit RAC Utrecht
 709539;Brandweer;Utrecht;;CvD
 709545;Brandweer;Utrecht;;CvD
-709560;Brandweer;Utrecht;;Monitorcode District Eemland;
-709561;Brandweer;Utrecht;;Monitorcode District Binnensticht - Lekstroom;
-709562;Brandweer;Utrecht;;Monitorcode District Heuvelrug;
-709563;Brandweer;Utrecht;;Monitorcode District Utrecht;
-709564;Brandweer;Utrecht;;Monitorcode District Rijn & Venen;
-709564;Ambulance;Amsterdam-Amstelland;;Monitorcode District Rijn en Venen;
-709602;Brandweer;Utrecht;;Staatsbosbeheer - boswachters;
-709606;Brandweer;Utrecht;;Koppelcode Hollands-Midden;
-709608;Brandweer;Utrecht;;Piket BGC;
+709560;Brandweer;Utrecht;;Monitorcode District Eemland
+709561;Brandweer;Utrecht;;Monitorcode District Binnensticht - Lekstroom
+709562;Brandweer;Utrecht;;Monitorcode District Heuvelrug
+709563;Brandweer;Utrecht;;Monitorcode District Utrecht
+709564;Brandweer;Utrecht;;Monitorcode District Rijn & Venen
+709602;Brandweer;Utrecht;;Staatsbosbeheer - boswachters
+709606;Brandweer;Utrecht;;Koppelcode Hollands-Midden
+709608;Brandweer;Utrecht;;Piket BGC
 709609;Brandweer;Utrecht;;Persvoorlichter Regio;
 709615;Brandweer;Utrecht;;Beheer;
 709689;Brandweer;Utrecht;De Waarden - Woerden;Waarschuwings- en Verkenningsdienst;WVD
@@ -4727,13 +4718,13 @@
 720006;Ambulance;Flevoland;;Ambuteam;
 720007;Ambulance;Flevoland;;Sigma-team;
 720009;Ambulance;Flevoland;;Coordinator gewondenvervoer;
-720010;Ambulance;Flevoland;;Hoofd Psychosociale Hulpverleningsorganisatie;
-720011;Ambulance;Flevoland;;GRIP 1;
-720012;Ambulance;Flevoland;;GRIP 2;
-720013;Ambulance;Flevoland;;GRIP 3;
-720014;Ambulance;Flevoland;;GRIP 4;
-720016;Ambulance;Flevoland;;Actiecentrum GHOR;
-720017;Ambulance;Flevoland;;Persvoorlichter;
+720010;Ambulance;Flevoland;;Hoofd Psychosociale Hulpverleningsorganisatie
+720011;Ambulance;Flevoland;;GRIP 1
+720012;Ambulance;Flevoland;;GRIP 2
+720013;Ambulance;Flevoland;;GRIP 3
+720014;Ambulance;Flevoland;;GRIP 4
+720016;Ambulance;Flevoland;;Actiecentrum GHOR
+720017;Ambulance;Flevoland;;Persvoorlichter
 720019;Ambulance;Flevoland;;Infectieziekten
 720022;Ambulance;Flevoland;;Leiding Meldkamer
 720023;Ambulance;Flevoland;;Onderhoud Meldkamer
@@ -4761,7 +4752,6 @@
 726126;Ambulance;Utrecht;;Ambulance-09-126
 726127;Ambulance;Utrecht;;Ambulance-09-127
 726128;Ambulance;Utrecht;Maarsen;Ambulance-09-128 Maarssen
-726128;Ambulance;Utrecht;;Ambulance-09-128
 726129;Ambulance;Utrecht;;Ambulance-09-129
 726133;Ambulance;Utrecht;;Ambulance-09-133
 726134;Brandweer;Utrecht;Amersfoort;09-134
@@ -4798,32 +4788,32 @@
 736052;Politie;Utrecht;;ME peloton 2
 736053;Politie;Utrecht;;ME peloton 3
 736054;Politie;Utrecht;;ME BraTra
-736055;Politie;Utrecht;;Aanhoudings Eenheid;
-736056;Politie;Utrecht;;Video Eenheid;
-736057;Politie;Utrecht;;Hondengeleiders;
-736080;Politie;Utrecht;;Bureau Confict en Crisisbeheersing;
-736081;Politie;Utrecht;;Bureau Confict en Crisisbeheersing (groep);
-736085;Politie;Utrecht;;Team Explosieven Verkenning District West;
-736086;Politie;Utrecht;;Team Exploxieven Verkenning District Midden;
-736087;Politie;Utrecht;;Team Explosieven Verkenning District Oost;
-736089;Politie;Utrecht;;Bijzondere wetten (piket);
-736090;Politie;Utrecht;;Persalarm;
+736055;Politie;Utrecht;;Aanhoudings Eenheid
+736056;Politie;Utrecht;;Video Eenheid
+736057;Politie;Utrecht;;Hondengeleiders
+736080;Politie;Utrecht;;Bureau Confict en Crisisbeheersing
+736081;Politie;Utrecht;;Bureau Confict en Crisisbeheersing (groep)
+736085;Politie;Utrecht;;Team Explosieven Verkenning District West
+736086;Politie;Utrecht;;Team Exploxieven Verkenning District Midden
+736087;Politie;Utrecht;;Team Explosieven Verkenning District Oost
+736089;Politie;Utrecht;;Bijzondere wetten (piket)
+736090;Politie;Utrecht;;Persalarm
 736900;Politie;Utrecht;;Monitorcode;PUT monitor
 736901;Politie;Utrecht;;Proefalarm;
 736992;Politie;Utrecht;;Beheer;
 736993;Politie;Utrecht;;Beheer;
 770316;Politie;Flevoland;;Persinfo;
 773601;Politie;Utrecht;;Bureau Confict en Crisisbeheersing ;
-803000;Brandweer;Noord- en Oost-Gelderland;;Regionaal Proefalarm Brandweer
-803001;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Aalten
-803002;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Winterswijk
-803003;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Oost Gelre
-803004;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Berkelland
-803005;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Oude IJsselstreek
-803006;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Montferland
-803007;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Doetinchem
-803008;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Bronckhorst
-803009;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Brummen
+803000;Brandweer;Noord- en Oost-Gelderland;;Regionaal Proefalarm Brandweer;
+803001;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Aalten;
+803002;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Winterswijk;
+803003;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Oost Gelre;
+803004;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Berkelland;
+803005;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Oude IJsselstreek;
+803006;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Montferland;
+803007;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Doetinchem;
+803008;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Bronckhorst;
+803009;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Brummen;
 803010;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Zutphen
 803011;Brandweer;Noord- en Oost-Gelderland;;Korpsalarm Lochem
 803012;Brandweer;Noord- en Oost-Gelderland;;Alle Korpsen Gemeente ??
@@ -4937,7 +4927,6 @@
 803608;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Blusgroep-3
 803609;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Blusgroep-4
 803610;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Bevelvoerders Kazerneploeg
-803610;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Bevelvoerders Kazerneploeg
 803611;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Kazerneploeg
 803612;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Korpsalarm
 803630;Brandweer;Noord- en Oost-Gelderland;Doetinchem;Monitorcode
@@ -4990,33 +4979,33 @@
 803910;Brandweer;Noord- en Oost-Gelderland;Barchem;Monitorcode
 803923;Brandweer;Noord- en Oost-Gelderland;Laren;Bevelvoerders
 803925;Brandweer;Noord- en Oost-Gelderland;Laren;Lichtkrant
-803926;Brandweer;Noord- en Oost-Gelderland;Laren;Blusgroep;
-803950;Brandweer;Noord- en Oost-Gelderland;Laren;Monitorcode;
-803961;Brandweer;Noord- en Oost-Gelderland;Almen;Postcoordinator;
-803963;Brandweer;Noord- en Oost-Gelderland;Almen;Bevelvoerders;
-803965;Brandweer;Noord- en Oost-Gelderland;Almen;Lichtkrant;
-803966;Brandweer;Noord- en Oost-Gelderland;Almen;Blusgroep;
-803990;Brandweer;Noord- en Oost-Gelderland;Almen;Monitorcode;
-804003;Brandweer;Noord- en Oost-Gelderland;Gorssel;Bevelvoerders;
-804005;Brandweer;Noord- en Oost-Gelderland;Gorssel;Lichtkrant;
-804006;Brandweer;Noord- en Oost-Gelderland;Gorssel;Blusgroep-1;
-804007;Brandweer;Noord- en Oost-Gelderland;Gorssel;Blusgroep-2;
+803926;Brandweer;Noord- en Oost-Gelderland;Laren;Blusgroep
+803950;Brandweer;Noord- en Oost-Gelderland;Laren;Monitorcode
+803961;Brandweer;Noord- en Oost-Gelderland;Almen;Postcoordinator
+803963;Brandweer;Noord- en Oost-Gelderland;Almen;Bevelvoerders
+803965;Brandweer;Noord- en Oost-Gelderland;Almen;Lichtkrant
+803966;Brandweer;Noord- en Oost-Gelderland;Almen;Blusgroep
+803990;Brandweer;Noord- en Oost-Gelderland;Almen;Monitorcode
+804003;Brandweer;Noord- en Oost-Gelderland;Gorssel;Bevelvoerders
+804005;Brandweer;Noord- en Oost-Gelderland;Gorssel;Lichtkrant
+804006;Brandweer;Noord- en Oost-Gelderland;Gorssel;Blusgroep-1
+804007;Brandweer;Noord- en Oost-Gelderland;Gorssel;Blusgroep-2
 804012;Brandweer;Noord- en Oost-Gelderland;Gorssel;Korpsalarm;
 804015;Brandweer;Noord- en Oost-Gelderland;Gorssel;Veetakel;
 804028;Brandweer;Noord- en Oost-Gelderland;Gorssel;Waarschuwings- en Verkenningsdienst (Meetgroep);WVD
 804030;Brandweer;Noord- en Oost-Gelderland;Gorssel;Monitorcode;
 804041;Brandweer;Noord- en Oost-Gelderland;Zutphen;Postcoordinator;
-804043;Brandweer;Noord- en Oost-Gelderland;Zutphen;Bevelvoerders
-804045;Brandweer;Noord- en Oost-Gelderland;Zutphen;Lichtkrant
-804046;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-1
-804047;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-2
-804048;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-3
-804049;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-4
-804050;Brandweer;Noord- en Oost-Gelderland;Zutphen;Kazerneploeg
-804053;Brandweer;Noord- en Oost-Gelderland;Zutphen;Duikgroep
-804055;Brandweer;Noord- en Oost-Gelderland;Zutphen;Hoogwerkergroep
-804070;Brandweer;Noord- en Oost-Gelderland;Zutphen;Monitorcode
-804071;Brandweer;Noord- en Oost-Gelderland;Zutphen;Monitorcode Gemeente
+804043;Brandweer;Noord- en Oost-Gelderland;Zutphen;Bevelvoerders;
+804045;Brandweer;Noord- en Oost-Gelderland;Zutphen;Lichtkrant;
+804046;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-1;
+804047;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-2;
+804048;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-3;
+804049;Brandweer;Noord- en Oost-Gelderland;Zutphen;Blusgroep-4;
+804050;Brandweer;Noord- en Oost-Gelderland;Zutphen;Kazerneploeg;
+804053;Brandweer;Noord- en Oost-Gelderland;Zutphen;Duikgroep;
+804055;Brandweer;Noord- en Oost-Gelderland;Zutphen;Hoogwerkergroep;
+804070;Brandweer;Noord- en Oost-Gelderland;Zutphen;Monitorcode;
+804071;Brandweer;Noord- en Oost-Gelderland;Zutphen;Monitorcode Gemeente;
 804083;Brandweer;Noord- en Oost-Gelderland;Brummen;Bevelvoerders
 804085;Brandweer;Noord- en Oost-Gelderland;Brummen;Lichtkrant
 804086;Brandweer;Noord- en Oost-Gelderland;Brummen;Blusgroep
@@ -5177,11 +5166,11 @@
 805271;Brandweer;Noord- en Oost-Gelderland;Putten;Monitorcode Gemeente
 805272;Brandweer;Noord- en Oost-Gelderland;Putten;Monitorcode Middel Incident
 805273;Brandweer;Noord- en Oost-Gelderland;Putten;Monitorcode Groot Incident
-805281;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Postcoordinator
-805282;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Postalarm
-805283;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Bevelvoerders
-805285;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Lichtkrant
-805286;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Blusgroep-1
+805281;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Postcoordinator;
+805282;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Postalarm;
+805283;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Bevelvoerders;
+805285;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Lichtkrant;
+805286;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Blusgroep-1;
 805287;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Blusgroep-2;
 805292;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Korpsalarm;
 805295;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Hulpverleningsgroep-1;
@@ -5193,11 +5182,11 @@
 805311;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Gemeente;
 805312;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Middel Incident;
 805313;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Groot Incident;
-805314;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Zeer Groot Incident;
-805315;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Extreem Weer;
-805321;Brandweer;Noord- en Oost-Gelderland;Elspeet;Postcoordinator;
-805322;Brandweer;Noord- en Oost-Gelderland;Elspeet;Postalarm;
-805323;Brandweer;Noord- en Oost-Gelderland;Elspeet;Bevelvoerders;
+805314;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Zeer Groot Incident
+805315;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Monitorcode Extreem Weer
+805321;Brandweer;Noord- en Oost-Gelderland;Elspeet;Postcoordinator
+805322;Brandweer;Noord- en Oost-Gelderland;Elspeet;Postalarm
+805323;Brandweer;Noord- en Oost-Gelderland;Elspeet;Bevelvoerders
 805325;Brandweer;Noord- en Oost-Gelderland;Elspeet;Lichtkrant
 805326;Brandweer;Noord- en Oost-Gelderland;Elspeet;Blusgroep
 805350;Brandweer;Noord- en Oost-Gelderland;Elspeet;Monitorcode
@@ -5385,11 +5374,11 @@
 806854;Brandweer;Noord- en Oost-Gelderland;Putten;Slangenwagen-7461
 806857;Brandweer;Noord- en Oost-Gelderland;Loenen;Tankautospuit-7746
 806860;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Tankautospuit-7141
-806861;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Tankautospuit-7142
-806862;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Hulpverleningsvoertuig-7171
-806869;Brandweer;Noord- en Oost-Gelderland;Elspeet;Tankautospuit-7143
-806870;Brandweer;Noord- en Oost-Gelderland;Elspeet;Hulpverleningsvoertuig-7172
-806878;Brandweer;Noord- en Oost-Gelderland;Elburg;Tankautospuit-6941
+806861;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Tankautospuit-7142;
+806862;Brandweer;Noord- en Oost-Gelderland;Nunspeet;Hulpverleningsvoertuig-7171;
+806869;Brandweer;Noord- en Oost-Gelderland;Elspeet;Tankautospuit-7143;
+806870;Brandweer;Noord- en Oost-Gelderland;Elspeet;Hulpverleningsvoertuig-7172;
+806878;Brandweer;Noord- en Oost-Gelderland;Elburg;Tankautospuit-6941;
 806879;Brandweer;Noord- en Oost-Gelderland;Elburg;Tankautospuit-6942;
 806880;Brandweer;Noord- en Oost-Gelderland;Elburg;Hoogwerker-6951;
 806881;Brandweer;Noord- en Oost-Gelderland;Elburg;Hulpverleningsvoertuig-6971;
@@ -5449,11 +5438,11 @@
 900042;Brandweer;Gelderland Midden;;Duikleider Wageningen;
 900043;Brandweer;Gelderland Midden;;Regionaal commandant;
 900045;Brandweer;Gelderland Midden;;Officier van Dienst Lingewaard - Overbetuwe;OvD
-900046;Brandweer;Gelderland Midden;;OvD Zuid groepscode;
-900048;Brandweer;Gelderland Midden;;Infocode Voorlichter van Dienst Oost;
-900049;Brandweer;Gelderland Midden;;Infocode Voorlichter van Dienst West;
-900051;Brandweer;Gelderland Midden;;Persoonlijke capcode;
-900053;Brandweer;Gelderland Midden;;Persoonlijke capcode;
+900046;Brandweer;Gelderland Midden;;OvD Zuid groepscode
+900048;Brandweer;Gelderland Midden;;Infocode Voorlichter van Dienst Oost
+900049;Brandweer;Gelderland Midden;;Infocode Voorlichter van Dienst West
+900051;Brandweer;Gelderland Midden;;Persoonlijke capcode
+900053;Brandweer;Gelderland Midden;;Persoonlijke capcode
 900054;Brandweer;Gelderland Midden;;Persoonlijke capcode
 900055;Brandweer;Gelderland Midden;;Persoonlijke capcode
 900056;Brandweer;Gelderland Midden;;Persoonlijke capcode
@@ -5481,11 +5470,11 @@
 900201;Brandweer;Gelderland Midden;Arnhem;Beroeps B1 noord
 900202;Brandweer;Gelderland Midden;Arnhem;Beroeps B2 noord
 900203;Brandweer;Gelderland Midden;Arnhem;Vrijwilligers B noord
-900249;Brandweer;Gelderland Midden;Arnhem;Korpsalarm groep B noord
-900250;Brandweer;Gelderland Midden;Arnhem;Bevelvoerders C noord
-900251;Brandweer;Gelderland Midden;Arnhem;Beroeps C1 noord
-900252;Brandweer;Gelderland Midden;Arnhem;Beroeps C2 noord
-900253;Brandweer;Gelderland Midden;Arnhem;Vrijwilligers C noord
+900249;Brandweer;Gelderland Midden;Arnhem;Korpsalarm groep B noord;
+900250;Brandweer;Gelderland Midden;Arnhem;Bevelvoerders C noord;
+900251;Brandweer;Gelderland Midden;Arnhem;Beroeps C1 noord;
+900252;Brandweer;Gelderland Midden;Arnhem;Beroeps C2 noord;
+900253;Brandweer;Gelderland Midden;Arnhem;Vrijwilligers C noord;
 900299;Brandweer;Gelderland Midden;Arnhem;Korpsalarm groep C noord;
 900300;Brandweer;Gelderland Midden;Arnhem;Lichtkrant noord;
 900301;Brandweer;Gelderland Midden;Arnhem;Blusgroep Noord;
@@ -5497,11 +5486,11 @@
 900314;Brandweer;Gelderland Midden;Arnhem;Duikgroep Regio Arnhem;
 900321;Brandweer;Gelderland Midden;Arnhem;??;
 900330;Brandweer;Gelderland Midden;Arnhem;Aansturing Navigatie;
-900341;Brandweer;Gelderland Midden;;HOvD/CvD Rivieren Infocode;
-900350;Brandweer;Gelderland Midden;Arnhem-Vredenburg;Kazernealarm Vredenburg;
-900351;Brandweer;Gelderland Midden;Arnhem-Vredenburg;Blusgroep Vredenburg;
-900450;Brandweer;Gelderland Midden;Barneveld;Blusgroep 1;
-900452;Brandweer;Gelderland Midden;Barneveld;Blusgroep 2;
+900341;Brandweer;Gelderland Midden;;HOvD/CvD Rivieren Infocode
+900350;Brandweer;Gelderland Midden;Arnhem-Vredenburg;Kazernealarm Vredenburg
+900351;Brandweer;Gelderland Midden;Arnhem-Vredenburg;Blusgroep Vredenburg
+900450;Brandweer;Gelderland Midden;Barneveld;Blusgroep 1
+900452;Brandweer;Gelderland Midden;Barneveld;Blusgroep 2
 900454;Brandweer;Gelderland Midden;Barneveld;Blusgroep 3
 900456;Brandweer;Gelderland Midden;Barneveld;Hulpverleningsgroep-1
 900458;Brandweer;Gelderland Midden;Barneveld;Hulpverleningsgroep-2
@@ -5550,33 +5539,33 @@
 900910;Brandweer;Gelderland Midden;Ede;Blusgroep 1
 900912;Brandweer;Gelderland Midden;Ede;Blusgroep 1A
 900914;Brandweer;Gelderland Midden;Ede;Blusgroep 1B
-900960;Brandweer;Gelderland Midden;Ede;Blusgroep 2;
-900962;Brandweer;Gelderland Midden;Ede;Blusgroep 2A;
-900964;Brandweer;Gelderland Midden;Ede;Blusgroep 2B;
-901010;Brandweer;Gelderland Midden;Ede;Blusgroep 3;
-901012;Brandweer;Gelderland Midden;Ede;Blusgroep 3A;
-901014;Brandweer;Gelderland Midden;Ede;Blusgroep 3B;
-901060;Brandweer;Gelderland Midden;Ede;Officier van Dienst;
-901061;Brandweer;Gelderland Midden;Ede;Officier van Dienst;
-901062;Brandweer;Gelderland Midden;Ede;Bevelvoerder van Dienst Alarmcode (Centrum);
-901064;Brandweer;Gelderland Midden;Ede;Dagdienst;
-901065;Brandweer;Gelderland Midden;Ede;Springbemanning (Centrum);
+900960;Brandweer;Gelderland Midden;Ede;Blusgroep 2
+900962;Brandweer;Gelderland Midden;Ede;Blusgroep 2A
+900964;Brandweer;Gelderland Midden;Ede;Blusgroep 2B
+901010;Brandweer;Gelderland Midden;Ede;Blusgroep 3
+901012;Brandweer;Gelderland Midden;Ede;Blusgroep 3A
+901014;Brandweer;Gelderland Midden;Ede;Blusgroep 3B
+901060;Brandweer;Gelderland Midden;Ede;Officier van Dienst
+901061;Brandweer;Gelderland Midden;Ede;Officier van Dienst
+901062;Brandweer;Gelderland Midden;Ede;Bevelvoerder van Dienst Alarmcode (Centrum)
+901064;Brandweer;Gelderland Midden;Ede;Dagdienst
+901065;Brandweer;Gelderland Midden;Ede;Springbemanning (Centrum)
 901066;Brandweer;Gelderland Midden;Ede;Kazernetechniek Centrum;
 901068;Brandweer;Gelderland Midden;Ede;Logistiek;
 901069;Brandweer;Gelderland Midden;;ROGS Vallei Infocode;
 901070;Brandweer;Gelderland Midden;Ede;Ademluchtgroep;
 901071;Brandweer;Gelderland Midden;Ede;Regio Officier Gevaarlijke Stoffen;ROGS
-901072;Brandweer;Gelderland Midden;Ede;Groepsoproep Officieren
-901073;Brandweer;Gelderland Midden;Ede;Ademluchtgroep Centrum
-901080;Brandweer;Gelderland Midden;Ede;Aansturing Navigatie Brandweer Ede
-901090;Brandweer;Gelderland Midden;Ede;Commandant
-901120;Brandweer;Gelderland Midden;Ede-Stadspoort;Blusgroep
-901140;Brandweer;Gelderland Midden;Ede-Stadspoort;Postcommandant
-901170;Brandweer;Gelderland Midden;Ede - Bennekom;Blusgroep 
-901190;Brandweer;Gelderland Midden;Ede - Bennekom;Postcommandant
-901220;Brandweer;Gelderland Midden;Ede - Ederveen;Blusgroep
-901226;Brandweer;Gelderland Midden;Ede - Ederveen;Postcommandant
-901270;Brandweer;Gelderland Midden;Ede - Harskamp;Blusgroep
+901072;Brandweer;Gelderland Midden;Ede;Groepsoproep Officieren;
+901073;Brandweer;Gelderland Midden;Ede;Ademluchtgroep Centrum;
+901080;Brandweer;Gelderland Midden;Ede;Aansturing Navigatie Brandweer Ede;
+901090;Brandweer;Gelderland Midden;Ede;Commandant;
+901120;Brandweer;Gelderland Midden;Ede-Stadspoort;Blusgroep;
+901140;Brandweer;Gelderland Midden;Ede-Stadspoort;Postcommandant;
+901170;Brandweer;Gelderland Midden;Ede - Bennekom;Blusgroep ;
+901190;Brandweer;Gelderland Midden;Ede - Bennekom;Postcommandant;
+901220;Brandweer;Gelderland Midden;Ede - Ederveen;Blusgroep;
+901226;Brandweer;Gelderland Midden;Ede - Ederveen;Postcommandant;
+901270;Brandweer;Gelderland Midden;Ede - Harskamp;Blusgroep;
 901290;Brandweer;Gelderland Midden;Ede - Harskamp;Postcommandant
 901320;Brandweer;Gelderland Midden;Ede - Lunteren;Blusgroep
 901340;Brandweer;Gelderland Midden;Ede - Lunteren;Postcommandant
@@ -5630,33 +5619,33 @@
 901982;Brandweer;Gelderland Midden;Overbetuwe - Heteren;Blusgroep 2
 901984;Brandweer;Gelderland Midden;Overbetuwe - Heteren;Postcommandant
 901985;Brandweer;Gelderland Midden;Overbetuwe - Heteren;First Responders
-902030;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Blusgroep;
-902032;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Meetploeg;
-902033;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Postcommandant Oosterhout/Valburg;
-902070;Brandweer;Gelderland Midden;Overbetuwe - Valburg;Blusgroep;
-902072;Brandweer;Gelderland Midden;Overbetuwe - Valburg;First Responders;
-902074;Brandweer;Gelderland Midden;Overbetuwe - Valburg;Postcommandant;
-902110;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Blusgroep 1;
-902112;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Blusgroep 2;
-902114;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Postcommandant;
-902115;Brandweer;Gelderland Midden;Overbetuwe - Zetten;First Responders;
-902160;Brandweer;Gelderland Midden;Renkum - Doorwerth;Blusgroep;
+902030;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Blusgroep
+902032;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Meetploeg
+902033;Brandweer;Gelderland Midden;Overbetuwe - Oosterhout;Postcommandant Oosterhout/Valburg
+902070;Brandweer;Gelderland Midden;Overbetuwe - Valburg;Blusgroep
+902072;Brandweer;Gelderland Midden;Overbetuwe - Valburg;First Responders
+902074;Brandweer;Gelderland Midden;Overbetuwe - Valburg;Postcommandant
+902110;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Blusgroep 1
+902112;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Blusgroep 2
+902114;Brandweer;Gelderland Midden;Overbetuwe - Zetten;Postcommandant
+902115;Brandweer;Gelderland Midden;Overbetuwe - Zetten;First Responders
+902160;Brandweer;Gelderland Midden;Renkum - Doorwerth;Blusgroep
 902162;Brandweer;Gelderland Midden;Renkum;Officier van Dienst;
 902164;Brandweer;Gelderland Midden;Renkum;Piketploeg;
 902172;Brandweer;Gelderland Midden;Renkum;First Responders;
 902173;Brandweer;Gelderland Midden;Renkum;BedrijfsOpvangTeam;BOT
 902180;Brandweer;Gelderland Midden;Renkum;Aansturing Navigatie;
-902190;Brandweer;Gelderland Midden;Renkum - Doorwerth;Postcommandant
-902220;Brandweer;Gelderland Midden;Renkum - Oosterbeek;Blusgroep
-902260;Brandweer;Gelderland Midden;Renkum;Blusgroep
-902262;Brandweer;Gelderland Midden;Renkum;Meetploeg
-902264;Brandweer;Gelderland Midden;Renkum;Postcommandant
-902300;Brandweer;Gelderland Midden;Renkum - Wolfheze;Blusgroep
-902340;Brandweer;Gelderland Midden;Renkum - Bedrijfsbrandweer Parenco;Blusgroep
-902390;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;Blusgroep
-902392;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;Hoogwerkergroep
-902395;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;First Responders
-902450;Brandweer;Gelderland Midden;Rijn-IJssel - Rheden;Blusgroep
+902190;Brandweer;Gelderland Midden;Renkum - Doorwerth;Postcommandant;
+902220;Brandweer;Gelderland Midden;Renkum - Oosterbeek;Blusgroep;
+902260;Brandweer;Gelderland Midden;Renkum;Blusgroep;
+902262;Brandweer;Gelderland Midden;Renkum;Meetploeg;
+902264;Brandweer;Gelderland Midden;Renkum;Postcommandant;
+902300;Brandweer;Gelderland Midden;Renkum - Wolfheze;Blusgroep;
+902340;Brandweer;Gelderland Midden;Renkum - Bedrijfsbrandweer Parenco;Blusgroep;
+902390;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;Blusgroep;
+902392;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;Hoogwerkergroep;
+902395;Brandweer;Gelderland Midden;Rijn-IJssel - Dieren;First Responders;
+902450;Brandweer;Gelderland Midden;Rijn-IJssel - Rheden;Blusgroep;
 902452;Brandweer;Gelderland Midden;Rijn-IJssel - Rheden;Hulpverleningsgroep
 902454;Brandweer;Gelderland Midden;Rijn-IJssel - Rheden;Officier van Dienst
 902471;Brandweer;Gelderland Midden;Rijn-IJssel - Velp;Commandant Rijn-IJssel
@@ -5724,7 +5713,7 @@
 903244;Brandweer;Gelderland Zuid;Regionale taken district west;WTS1000 Beusichem
 903248;Brandweer;Gelderland Zuid;Regionale taken district west;Compagniecommandant
 903249;Brandweer;Gelderland Zuid;Regionale taken district west;Plv. compagniecommandant
-903250;Reddingsbrigade;Gelderland Zuid;Culemborg;KNBRD
+903250;KNRM;Gelderland Zuid;Culemborg;KNBRD
 903251;Brandweer;Gelderland Zuid;Regionale taken district west;??
 903252;Brandweer;Gelderland Zuid;Regionale taken district west;Duikers Culemborg
 903253;Brandweer;Gelderland Zuid;Regionale taken district west;WTS1000 Ammerzoden/Hedel
@@ -5993,11 +5982,11 @@
 904444;Brandweer;Gelderland Zuid;Druten;Commandant
 904445;Brandweer;Gelderland Zuid;Geldermalsen/Neerijnen/Lingewaal;Commandant
 904446;Brandweer;Gelderland Zuid;Groesbeek;Commandant
-904447;Brandweer;Gelderland Zuid;Heumen;Commandant
-904448;Brandweer;Gelderland Zuid;Maasdriel;Commandant Bommelerwaard
-904449;Brandweer;Gelderland Zuid;Millingen aan de Rijn;Commandant
-904450;Brandweer;Gelderland Zuid;Neder-Betuwe;Commandant
-904451;Brandweer;Gelderland Zuid;Nijmegen;Commandant
+904447;Brandweer;Gelderland Zuid;Heumen;Commandant;
+904448;Brandweer;Gelderland Zuid;Maasdriel;Commandant Bommelerwaard;
+904449;Brandweer;Gelderland Zuid;Millingen aan de Rijn;Commandant;
+904450;Brandweer;Gelderland Zuid;Neder-Betuwe;Commandant;
+904451;Brandweer;Gelderland Zuid;Nijmegen;Commandant;
 904452;Brandweer;Gelderland Zuid;Tiel;Commandant;
 904453;Brandweer;Gelderland Zuid;Ubbergen;Commandant;
 904454;Brandweer;Gelderland Zuid;West Maas en Waal;Commandant;
@@ -6014,17 +6003,17 @@
 920026;Ambulance;Gelderland Midden;;BedrijfsOpvangTeam West;BOT
 920101;Ambulance;Gelderland Midden;;Ambulance-07-101;
 920102;Ambulance;Gelderland Midden;;Ambulance-07-102;
-920103;Ambulance;Gelderland Midden;;Ambulance-07-103
-920104;Ambulance;Gelderland Midden;;Ambulance-07-104
-920105;Ambulance;Gelderland Midden;;Ambulance-07-105
-920106;Ambulance;Gelderland Midden;;Ambulance-07-106
-920107;Ambulance;Gelderland Midden;;Ambulance-07-107
-920108;Ambulance;Gelderland Midden;;Ambulance-07-108
-920109;Ambulance;Gelderland Midden;;Ambulance-07-109
-920110;Ambulance;Gelderland Midden;;Ambulance-07-110
-920111;Ambulance;Gelderland Midden;;Ambulance-07-111
-920112;Ambulance;Gelderland Midden;;Ambulance-07-112
-920113;Ambulance;Gelderland Midden;;Ambulance-07-113
+920103;Ambulance;Gelderland Midden;;Ambulance-07-103;
+920104;Ambulance;Gelderland Midden;;Ambulance-07-104;
+920105;Ambulance;Gelderland Midden;;Ambulance-07-105;
+920106;Ambulance;Gelderland Midden;;Ambulance-07-106;
+920107;Ambulance;Gelderland Midden;;Ambulance-07-107;
+920108;Ambulance;Gelderland Midden;;Ambulance-07-108;
+920109;Ambulance;Gelderland Midden;;Ambulance-07-109;
+920110;Ambulance;Gelderland Midden;;Ambulance-07-110;
+920111;Ambulance;Gelderland Midden;;Ambulance-07-111;
+920112;Ambulance;Gelderland Midden;;Ambulance-07-112;
+920113;Ambulance;Gelderland Midden;;Ambulance-07-113;
 920114;Ambulance;Gelderland Midden;;Ambulance-07-114
 920115;Ambulance;Gelderland Midden;;Ambulance-07-115
 920116;Ambulance;Gelderland Midden;;Ambulance-07-116
@@ -6062,33 +6051,33 @@
 923126;Ambulance;Gelderland Zuid;;Ambulance Nijmegen
 923127;Ambulance;Gelderland Zuid;;Ambulance Wijchen
 923128;Ambulance;Gelderland Zuid;;Ambulance 08-123 Nijmegen
-923129;Ambulance;Gelderland Zuid;;Ambulance 08-124 Nijmegen;
-923131;Ambulance;Gelderland Zuid;;Ambulance 08-125 Nijmegen;
-923132;Ambulance;Gelderland Zuid;;Ambulance 08-126 Nijmegen;
-923301;Ambulance;Gelderland Zuid;;MICU Ambulance 08-301 Nijmegen;
-923322;Ambulance;Gelderland Zuid;;Motor 08-322 (RAV);
-923377;Ambulance;Gelderland Zuid;;Motorambulance 08-377 Nijmegen;
-923378;Ambulance;Gelderland Zuid;;Ambulance motor 08-378;
-923379;Ambulance;Gelderland Zuid;;Ambulance motor 08-379;
-923380;Ambulance;Gelderland Zuid;;Motorambulance 08-380 Nijmegen;
-923403;Ambulance;Gelderland Zuid;Nijmegen;Zorgambulance-08-403;
-923799;Ambulance;Gelderland Zuid;;Forensisch arts;
+923129;Ambulance;Gelderland Zuid;;Ambulance 08-124 Nijmegen
+923131;Ambulance;Gelderland Zuid;;Ambulance 08-125 Nijmegen
+923132;Ambulance;Gelderland Zuid;;Ambulance 08-126 Nijmegen
+923301;Ambulance;Gelderland Zuid;;MICU Ambulance 08-301 Nijmegen
+923322;Ambulance;Gelderland Zuid;;Motor 08-322 (RAV)
+923377;Ambulance;Gelderland Zuid;;Motorambulance 08-377 Nijmegen
+923378;Ambulance;Gelderland Zuid;;Ambulance motor 08-378
+923379;Ambulance;Gelderland Zuid;;Ambulance motor 08-379
+923380;Ambulance;Gelderland Zuid;;Motorambulance 08-380 Nijmegen
+923403;Ambulance;Gelderland Zuid;Nijmegen;Zorgambulance-08-403
+923799;Ambulance;Gelderland Zuid;;Forensisch arts
 923801;Ambulance;Gelderland Zuid;;OvDG Oost;
 923802;Ambulance;Gelderland Zuid;;OvD-G West;
 923993;Ambulance;Gelderland Zuid;;Traumaheli Lifeliner 3 - MMT;LifeLiner 3
 926666;Brandweer;Gelderland Midden;Scherpenzeel;Kazernetechniek;
 930105;Politie;Gelderland Midden;;Verkeers Ongevallen Analyse;voa
-930600;Politie;Gelderland Midden;;commandant ATBR
-930631;Politie;Gelderland Midden;;ATBR team 1
-930632;Politie;Gelderland Midden;;ATBR team 2
-930633;Politie;Gelderland Midden;;ATBR team 3
-930841;Politie;Gelderland Midden;Arnhem;Piket Milieu Inspectie Arnhem
-930842;Politie;Gelderland Midden;Arnhem;Persoonlijke code Milieu Inspectie Arnhem
-930982;Politie;Gelderland Midden;Wageningen;personeel GBT -GRIP 2-
-930983;Politie;Gelderland Midden;Wageningen;personeel GMT -GRIP 3-
-933300;Politie;Gelderland Zuid;;Persvoorlichter
-933914;Politie;Gelderland Zuid;;Dienst Verkeersongevals Analyse
-1001498;Brandweer;Limburg Noord;;Monitorcode Limburg-Noord
+930600;Politie;Gelderland Midden;;commandant ATBR;
+930631;Politie;Gelderland Midden;;ATBR team 1;
+930632;Politie;Gelderland Midden;;ATBR team 2;
+930633;Politie;Gelderland Midden;;ATBR team 3;
+930841;Politie;Gelderland Midden;Arnhem;Piket Milieu Inspectie Arnhem;
+930842;Politie;Gelderland Midden;Arnhem;Persoonlijke code Milieu Inspectie Arnhem;
+930982;Politie;Gelderland Midden;Wageningen;personeel GBT -GRIP 2-;
+930983;Politie;Gelderland Midden;Wageningen;personeel GMT -GRIP 3-;
+933300;Politie;Gelderland Zuid;;Persvoorlichter;
+933914;Politie;Gelderland Zuid;;Dienst Verkeersongevals Analyse;
+1001498;Brandweer;Limburg Noord;;Monitorcode Limburg-Noord;
 1001500;Brandweer;Limburg Noord;;Regionaal Proefalarm
 1001501;Brandweer;Limburg Noord;Baarlo;Korpsalarm
 1001502;Brandweer;Limburg Noord;Baarlo;Blusgroep
@@ -6297,11 +6286,11 @@
 1001930;Brandweer;Limburg Noord;Wessem;Korpsalarm
 1001931;Brandweer;Limburg Noord;Wessem;Blusgroep 1
 1001932;Brandweer;Limburg Noord;Wessem;Blusgroep 2
-1001940;Brandweer;Limburg Noord;Mook;Korpsalarm
-1001941;Brandweer;Limburg Noord;Mook;Blusgroep
-1001942;Brandweer;Limburg Noord;Mook;Bevelvoerders
-1001985;Brandweer;Limburg Noord;Venlo;Vrijwilligers Kazerne Techniek
-1001991;Brandweer;Limburg Noord;Swalmen;Kazernetechniek
+1001940;Brandweer;Limburg Noord;Mook;Korpsalarm;
+1001941;Brandweer;Limburg Noord;Mook;Blusgroep;
+1001942;Brandweer;Limburg Noord;Mook;Bevelvoerders;
+1001985;Brandweer;Limburg Noord;Venlo;Vrijwilligers Kazerne Techniek;
+1001991;Brandweer;Limburg Noord;Swalmen;Kazernetechniek;
 1001992;Brandweer;Limburg Noord;Stevensweert;Kazernetechniek;
 1001994;Brandweer;Limburg Noord;Wessem;Kazernetechniek;
 1001995;Brandweer;Limburg Noord;Bergen;Kazernetechniek;
@@ -6367,7 +6356,6 @@
 1003652;Brandweer;Limburg Zuid;Brunssum;Groep-2;
 1003654;Brandweer;Limburg Zuid;Brunssum;Groep-3;
 1003656;Brandweer;Limburg Zuid;Parkstad-Noord;OvD;
-1003656;Brandweer;Limburg Zuid;;OvD Parkstad Noord;
 1003658;Brandweer;Limburg Zuid;Brunssum;TS;
 1003660;Brandweer;Limburg Zuid;Brunssum;BvD;
 1003662;Brandweer;Limburg Zuid;Brunssum;HV;
@@ -6405,7 +6393,6 @@
 1004356;Brandweer;Limburg Zuid;Wittem;BvD;
 1004358;Brandweer;Limburg Zuid;Gulpen-Wittem;Commandant;
 1004366;Brandweer;Limburg Zuid;Gulpen;snelle interventie eenheid;SIE-0722
-1004366;Brandweer;Limburg Zuid;Wittem;Snelle Inzetbare Eenheid ;SIE-0722
 1004399;Brandweer;Limburg Zuid;Wittem;Korpsalarm;
 1004418;Brandweer;Limburg Zuid;Maastricht;Ontsmettingsploeg;
 1004420;Brandweer;Limburg Zuid;Maastricht;OvD;O.V.D-1590
@@ -6427,9 +6414,9 @@
 1004608;Brandweer;Limburg Zuid;;Chauffeur;
 1004612;Brandweer;Limburg Zuid;;C.O.H;C.O.H-1996
 1004614;Brandweer;Limburg Zuid;;Piket ROC;
-1004616;Brandweer;Limburg Zuid;;Voorlichter;
-1004670;Brandweer;Limburg Zuid;;Alarmcentrale;
-1004671;Brandweer;Limburg Zuid;;Alarmcentrale;
+1004616;Brandweer;Limburg Zuid;;Voorlichter
+1004670;Brandweer;Limburg Zuid;;Alarmcentrale
+1004671;Brandweer;Limburg Zuid;;Alarmcentrale
 1004672;Brandweer;Limburg Zuid;;Alarmcentrale
 1004673;Brandweer;Limburg Zuid;;Alarmcentrale
 1004674;Brandweer;Limburg Zuid;;Alarmcentrale
@@ -6459,9 +6446,9 @@
 1004698;Brandweer;Limburg Zuid;;Alarmcentrale
 1004699;Brandweer;Limburg Zuid;;Alarmcentrale
 1004700;Brandweer;Limburg Zuid;Schinnen;Groep-1
-1004702;Brandweer;Limburg Zuid;Schinnen;Groep-2
-1004704;Brandweer;Limburg Zuid;Schinnen;BvD Groep-1
-1004706;Brandweer;Limburg Zuid;Schinnen;BvD Groep-2
+1004702;Brandweer;Limburg Zuid;Schinnen;Groep-2;
+1004704;Brandweer;Limburg Zuid;Schinnen;BvD Groep-1;
+1004706;Brandweer;Limburg Zuid;Schinnen;BvD Groep-2;
 1004708;Brandweer;Limburg Zuid;Schinnen;Korpsalarm;
 1004800;Brandweer;Limburg Zuid;Stein;Groep-1;2742-1
 1004802;Brandweer;Limburg Zuid;Stein;Groep-2;2742-3
@@ -6491,9 +6478,9 @@
 1005116;Brandweer;Limburg Zuid;Kerkrade;Bemanning HV;
 1005120;Brandweer;Limburg Zuid;Duitsland;Kazerne Hertzogenratz;TS-0645
 1005121;Brandweer;Limburg Zuid;Duitsland;RAC Simmenratz;
-1005122;Brandweer;Limburg Zuid;Duitsland;Kazerne Kohlscheid;
-1005124;Brandweer;Limburg Zuid;Duitsland;Kazerne Merkstein;
-1005249;Brandweer;Limburg Zuid;Kerkrade;Korpsalarm;
+1005122;Brandweer;Limburg Zuid;Duitsland;Kazerne Kohlscheid
+1005124;Brandweer;Limburg Zuid;Duitsland;Kazerne Merkstein
+1005249;Brandweer;Limburg Zuid;Kerkrade;Korpsalarm
 1005250;Brandweer;Limburg Zuid;Heerlen;Piketgroep-1
 1005252;Brandweer;Limburg Zuid;Heerlen;Piketgroep-2
 1005254;Brandweer;Limburg Zuid;Parkstad-Centrum;OvD
@@ -6542,19 +6529,19 @@
 1005583;Brandweer;Limburg Zuid;Maastricht;Voorlichting
 1005584;Brandweer;Limburg Zuid;Maastricht;GBT
 1005600;Brandweer;Limburg Zuid;Meerssen;Burgemeester
-1005601;Brandweer;Limburg Zuid;Meerssen;Gemeentesecretaris;
-1005602;Brandweer;Limburg Zuid;Meerssen;AOV;
-1005603;Brandweer;Limburg Zuid;Meerssen;Voorlichting;
-1005604;Brandweer;Limburg Zuid;Meerssen;GBT;
-1005610;Brandweer;Limburg Zuid;Nuth;Burgemeester;
-1005611;Brandweer;Limburg Zuid;Nuth;Gemeentesecretaris;
-1005612;Brandweer;Limburg Zuid;Nuth;AOV;
-1005613;Brandweer;Limburg Zuid;Nuth;Voorlichting;
-1005614;Brandweer;Limburg Zuid;Nuth;GBT;
-1005620;Brandweer;Limburg Zuid;Onderbanken;Burgemeester;
-1005621;Brandweer;Limburg Zuid;Onderbanken;Gemeentesecretaris;
-1005622;Brandweer;Limburg Zuid;Onderbanken;AOV;
-1005623;Brandweer;Limburg Zuid;Onderbanken;Voorlichting;
+1005601;Brandweer;Limburg Zuid;Meerssen;Gemeentesecretaris
+1005602;Brandweer;Limburg Zuid;Meerssen;AOV
+1005603;Brandweer;Limburg Zuid;Meerssen;Voorlichting
+1005604;Brandweer;Limburg Zuid;Meerssen;GBT
+1005610;Brandweer;Limburg Zuid;Nuth;Burgemeester
+1005611;Brandweer;Limburg Zuid;Nuth;Gemeentesecretaris
+1005612;Brandweer;Limburg Zuid;Nuth;AOV
+1005613;Brandweer;Limburg Zuid;Nuth;Voorlichting
+1005614;Brandweer;Limburg Zuid;Nuth;GBT
+1005620;Brandweer;Limburg Zuid;Onderbanken;Burgemeester
+1005621;Brandweer;Limburg Zuid;Onderbanken;Gemeentesecretaris
+1005622;Brandweer;Limburg Zuid;Onderbanken;AOV
+1005623;Brandweer;Limburg Zuid;Onderbanken;Voorlichting
 1005624;Brandweer;Limburg Zuid;Onderbanken;GBT;
 1005650;Brandweer;Limburg Zuid;Sittard;Burgemeester;BURGEMEESTER
 1005651;Brandweer;Limburg Zuid;Sittard;Gemeentesecretaris;GEME SECR
@@ -6586,8 +6573,6 @@
 1005998;Brandweer;Limburg Zuid;;monitorcode;
 1005999;Brandweer;Limburg Zuid;;Regionaal Proefalarm;
 1020178;Ambulance;Limburg Noord;;OvD-G Noord;
-1020178;Ambulance;Limburg Noord;;OvD-G Noord;
-1020179;Ambulance;Limburg Noord;;OvD-G Midden;
 1020179;Ambulance;Limburg Noord;;OvD-G Midden;
 1020187;Ambulance;Limburg Noord;Roermond ;1e Ambulance;
 1020188;Ambulance;Limburg Noord;Roermond;Ambulance 23-102;
@@ -6669,7 +6654,7 @@
 1104738;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Geldrop-Mierlo;
 1104739;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Heeze-Leende;
 1104740;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Laarbeek;
-1104741;Brandweer;Brabant Zuid-Oost;;Staatsbosbeheer Heeze en De Kempen;
+1104741;Brandweer;Brabant Zuid-Oost;;Staatsbosbeheer Heeze en De Kempen
 1104742;Brandweer;Brabant Zuid-Oost;;Staatsbosbeheer Leenderbos
 1104744;Brandweer;Brabant Zuid-Oost;;Staatsbosbeheer Cartierheide
 1104745;Brandweer;Brabant Zuid-Oost;;Staatsbosbeheer Cartierheide Eersel
@@ -6685,7 +6670,7 @@
 1104755;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Oirschot
 1104758;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Deurne
 1104759;Brandweer;Brabant Zuid-Oost;;Ambtenaar Rampenbestrijding Someren
-1104760;Brandweer;Brabant Zuid-Oost;;Officier van Dienst Cluster West/Noord
+1104760;Brandweer;Brabant Zuid-Oost;;Officier van Dienst Cluster West/Noord;
 1104761;Brandweer;Brabant Zuid-Oost;;Officier van Dienst Cluster Midden/Noord;
 1104762;Brandweer;Brabant Zuid-Oost;Helmond;Officier van Dienst Cluster Oost/Noord;
 1104763;Brandweer;Brabant Zuid-Oost;;Officier van Dienst Nuenen;
@@ -6701,7 +6686,7 @@
 1104781;Brandweer;Brabant Zuid-Oost;;GRIP 1;
 1104782;Brandweer;Brabant Zuid-Oost;;GRIP 2;
 1104783;Brandweer;Brabant Zuid-Oost;;GRIP 3;
-1104784;Brandweer;Brabant Zuid-Oost;;GRIP 4;
+1104784;Brandweer;Brabant Zuid-Oost;;GRIP 4
 1104795;Brandweer;Brabant Zuid-Oost;;Calamiteitendienst milieu
 1104799;Brandweer;Brabant Zuid-Oost;;Monitorcode
 1104846;Brandweer;Brabant Zuid-Oost;Aalst;Postalarm
@@ -6717,7 +6702,7 @@
 1105121;Brandweer;Brabant Zuid-Oost;Asten;Hulpverleningsgroep-2
 1105149;Brandweer;Brabant Zuid-Oost;Asten;Korpsalarm
 1105160;Brandweer;Brabant Zuid-Oost;Asten;Blusgroep-1
-1105161;Brandweer;Brabant Zuid-Oost;Asten;Blusgroep-2
+1105161;Brandweer;Brabant Zuid-Oost;Asten;Blusgroep-2;
 1105172;Brandweer;Brabant Zuid-Oost;Asten;Bemanning Verbindings- en Commandovoertuig;
 1105198;Brandweer;Brabant Zuid-Oost;Asten;Lichtkrant Kazerne;
 1105246;Brandweer;Brabant Zuid-Oost;Beek en Donk;Postalarm;
@@ -6733,7 +6718,7 @@
 1105598;Brandweer;Brabant Zuid-Oost;de Rips;Lichtkrant Kazerne;
 1105633;Brandweer;Brabant Zuid-Oost;Gemert;First Responders;FRB
 1105646;Brandweer;Brabant Zuid-Oost;Gemert;Postalarm;
-1105689;Brandweer;Brabant Zuid-Oost;Gemert;Dagdienst;
+1105689;Brandweer;Brabant Zuid-Oost;Gemert;Dagdienst
 1105698;Brandweer;Brabant Zuid-Oost;Gemert;Lichtkrant Kazerne
 1105846;Brandweer;Brabant Zuid-Oost;Bergeijk;Postalarm
 1105849;Brandweer;Brabant Zuid-Oost;Bergeijk;Korpsalarm
@@ -6750,21 +6735,21 @@
 1106046;Brandweer;Brabant Zuid-Oost;Best;Postalarm
 1106049;Brandweer;Brabant Zuid-Oost;Best;Korpsalarm
 1106060;Brandweer;Brabant Zuid-Oost;Best;Blusgroep-1
-1106061;Brandweer;Brabant Zuid-Oost;Best;Blusgroep-2;
-1106062;Brandweer;Brabant Zuid-Oost;Best;Blusgroep-3;
-1106098;Brandweer;Brabant Zuid-Oost;Best;Lichtkrant Kazerne;
-1106146;Brandweer;Brabant Zuid-Oost;Bladel;Postalarm;
-1106160;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-1;
-1106161;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-2;
-1106162;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-3;
-1106198;Brandweer;Brabant Zuid-Oost;Bladel;Lichtkrant Kazerne;
-1106246;Brandweer;Brabant Zuid-Oost;Hapert;Postalarm;
-1106260;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-1;
-1106261;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-2;
-1106262;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-3;
-1106298;Brandweer;Brabant Zuid-Oost;Hapert;Lichtkrant Kazerne;
-1106346;Brandweer;Brabant Zuid-Oost;Budel;Postalarm;
-1106398;Brandweer;Brabant Zuid-Oost;Budel;Lichtkrant Kazerne;
+1106061;Brandweer;Brabant Zuid-Oost;Best;Blusgroep-2
+1106062;Brandweer;Brabant Zuid-Oost;Best;Blusgroep-3
+1106098;Brandweer;Brabant Zuid-Oost;Best;Lichtkrant Kazerne
+1106146;Brandweer;Brabant Zuid-Oost;Bladel;Postalarm
+1106160;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-1
+1106161;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-2
+1106162;Brandweer;Brabant Zuid-Oost;Bladel;Blusgroep-3
+1106198;Brandweer;Brabant Zuid-Oost;Bladel;Lichtkrant Kazerne
+1106246;Brandweer;Brabant Zuid-Oost;Hapert;Postalarm
+1106260;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-1
+1106261;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-2
+1106262;Brandweer;Brabant Zuid-Oost;Hapert;Blusgroep-3
+1106298;Brandweer;Brabant Zuid-Oost;Hapert;Lichtkrant Kazerne
+1106346;Brandweer;Brabant Zuid-Oost;Budel;Postalarm
+1106398;Brandweer;Brabant Zuid-Oost;Budel;Lichtkrant Kazerne
 1106438;Brandweer;Brabant Zuid-Oost;Maarheeze;Waarschuwings- en Verkenningsdienst (Meetgroep);WVD
 1106446;Brandweer;Brabant Zuid-Oost;Maarheeze;Postalarm;
 1106460;Brandweer;Brabant Zuid-Oost;Maarheeze;Blusgroep;
@@ -6797,7 +6782,7 @@
 1106952;Brandweer;Brabant Zuid-Oost;Eindhoven;Duikgroep Eindhoven-Centrum;
 1106960;Brandweer;Brabant Zuid-Oost;Eindhoven;Vrijwilligers Eindhoven-Centrum;
 1106973;Brandweer;Brabant Zuid-Oost;Eindhoven;Kazernealarm Eindhoven-Centrum;
-1106974;Brandweer;Brabant Zuid-Oost;Eindhoven;Kazernealarm Eindhoven-Woensel;
+1106974;Brandweer;Brabant Zuid-Oost;Eindhoven;Kazernealarm Eindhoven-Woensel
 1106997;Brandweer;Brabant Zuid-Oost;Eindhoven;Monitorcode Eindhoven-Woensel
 1106998;Brandweer;Brabant Zuid-Oost;Eindhoven;Lichtkrant Kazerne Eindhoven-Centrum
 1107026;Brandweer;Brabant Zuid-Oost;Heeze;Chauffeurs Haakarmvoertuig
@@ -6813,7 +6798,7 @@
 1107162;Brandweer;Brabant Zuid-Oost;Leende;Blusgroep-3
 1107198;Brandweer;Brabant Zuid-Oost;Leende;Lichtkrant Kazerne
 1107220;Brandweer;Brabant Zuid-Oost;Geldrop;Hoogwerker/Hulpverleningsgroep
-1107246;Brandweer;Brabant Zuid-Oost;Geldrop;Postalarm
+1107246;Brandweer;Brabant Zuid-Oost;Geldrop;Postalarm;
 1107260;Brandweer;Brabant Zuid-Oost;Geldrop;Blusgroep-1;
 1107261;Brandweer;Brabant Zuid-Oost;Geldrop;Blusgroep-2;
 1107262;Brandweer;Brabant Zuid-Oost;Geldrop;Blusgroep-3;
@@ -6893,7 +6878,7 @@
 1108998;Brandweer;Brabant Zuid-Oost;Helmond;Lichtkrant Kazerne Helmond-Brandevoort;
 1108999;Brandweer;Brabant Zuid-Oost;;Proefalarm;
 1120109;Ambulance;Brabant Noord;;21-109;
-1120112;Ambulance;Brabant Noord;;21-112;
+1120112;Ambulance;Brabant Noord;;21-112
 1120122;Ambulance;Brabant Noord;;21-122
 1120123;Ambulance;Brabant Noord;;21-123
 1120127;Ambulance;Brabant Noord;;21-127
@@ -6925,7 +6910,7 @@
 1121804;Ambulance;Brabant Noord;;OvD-G 804
 1121805;Ambulance;Brabant Noord;;OvD-G 805 reserve
 1123200;Ambulance;Brabant Zuid-Oost;;GAGS
-1124401;Ambulance;Brabant Zuid-Oost;;HS-GHOR
+1124401;Ambulance;Brabant Zuid-Oost;;HS-GHOR;
 1124402;Ambulance;Brabant Zuid-Oost;;HS-GHOR;
 1124403;Ambulance;Brabant Zuid-Oost;;HS-GHOR;
 1124405;Ambulance;Brabant Zuid-Oost;;HS-GHOR;
@@ -6941,7 +6926,7 @@
 1160924;Brandweer;Brabant Noord;;Operationele Informatie Voorziening;
 1161208;Brandweer;Brabant Noord;;Selectieve regionale oproep;
 1170001;Brandweer;Brabant Noord;;CvD;
-1170002;Brandweer;Brabant Noord;;HOvD;
+1170002;Brandweer;Brabant Noord;;HOvD
 1170005;Brandweer;Brabant Noord;;AGS - Adviseur Gevaarlijke Stoffen
 1170009;Ambulance;Brabant Noord;;Rode Kruis O&V
 1170010;Brandweer;Brabant Noord;;Piketgroep Centralisten
@@ -7597,7 +7582,7 @@
 1201979;Brandweer;Midden- en West-Brabant;Waalwijk;Lichtkrant
 1201981;Brandweer;Midden- en West-Brabant;Werkendam;Lichtkrant
 1201983;Brandweer;Midden- en West-Brabant;Wijk en Aalburg;Lichtkrant
-1201984;Brandweer;Midden- en West-Brabant;Willemstad;Lichtkrant
+1201984;Brandweer;Midden- en West-Brabant;Willemstad;Lichtkrant;
 1201985;Brandweer;Midden- en West-Brabant;Woensdrecht;Lichtkrant;
 1201986;Brandweer;Midden- en West-Brabant;Woudrichem;Lichtkrant;
 1201987;Brandweer;Midden- en West-Brabant;Wouw;Lichtkrant;
@@ -7613,7 +7598,7 @@
 1220499;Ambulance;Midden- en West-Brabant;;Monitorcode ;
 1220601;Ambulance;Midden- en West-Brabant;Bergen op Zoom;20-101;
 1220602;Ambulance;Midden- en West-Brabant;Bergen op Zoom;20-102;
-1220603;Ambulance;Midden- en West-Brabant;Bergen op Zoom;20-103;
+1220603;Ambulance;Midden- en West-Brabant;Bergen op Zoom;20-103
 1220604;Ambulance;Midden- en West-Brabant;Bergen op Zoom;20-104
 1220605;Ambulance;Midden- en West-Brabant;Roosendaal;20-105
 1220606;Ambulance;Midden- en West-Brabant;Roosendaal;20-106
@@ -7997,7 +7982,7 @@
 1320800;Ambulance;Zeeland;;HS-GHOR
 1320801;Ambulance;Zeeland;;CvD-G
 1320802;Ambulance;Zeeland;;OvD-G Noord
-1320803;Ambulance;Zeeland;;OvD-G Zuid
+1320803;Ambulance;Zeeland;;OvD-G Zuid;
 1400001;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Ouddorp Alarmploeg ;
 1400002;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Ouddorp Alarmploeg KHV;
 1400003;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Stellendam-Buiten Alarmploeg Reddingsboot;KNRM SDM-BU
@@ -8005,8 +7990,8 @@
 1400005;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Hoek van Holland Alarmploeg;
 1400006;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Monitor;
 1400007;KNRM;Rotterdam-Rijnmond;Rijnmond-KNRM;Proefalarm;
-1400008;Reddingsbrigade;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Hellevoetsluis Commando;
-1400009;Reddingsbrigade;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Hellevoetsluis Alarmploeg;
+1400008;KNRM;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Hellevoetsluis Commando;
+1400009;KNRM;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Hellevoetsluis Alarmploeg;
 1400010;Brandweer;Rotterdam-Rijnmond;Rijnmond-Extern;Persoonlijke code AG 90.1;AG901
 1400011;Brandweer;Rotterdam-Rijnmond;Rijnmond-Extern;Persoonlijke code AG 90.1;AG901
 1400012;Brandweer;Rotterdam-Rijnmond;Rijnmond-Extern;Persoonlijke code AG 90.1;AG901
@@ -8028,8 +8013,8 @@
 1400111;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;Korpsalarm Hoek van Holland ;KAZ 11-1
 1400112;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;Bevelvoerders Hoek van Holland ;BvD 11-0
 1400114;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;Meetploeg Hoek van Holland;MP11-1
-1400118;Reddingsbrigade;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Coördinator Hoek van Holland ;
-1400119;Reddingsbrigade;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Strandwacht Hoek van Holland ;
+1400118;KNRM;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Coördinator Hoek van Holland ;
+1400119;KNRM;Rotterdam-Rijnmond;Rijnmond-Reddingsbrigade;Strandwacht Hoek van Holland ;
 1400120;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;Proefalarm Maassluis ;KAZ 12-0
 1400121;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;Korpsalarm Maassluis ;KAZ 12-1
 1400122;Brandweer;Rotterdam-Rijnmond;Rijnmond-Maasmond;A - Ploeg Maassluis ;KAZ 12-1
@@ -8221,7 +8206,7 @@
 1400715;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Goedereede Blusgroep;
 1400716;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Goedereede WVD;
 1400717;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Stellendam Blusgroep;
-1400718;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Stellendam WVD;
+1400718;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Stellendam WVD
 1400720;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Dirksland Proefalarm
 1400721;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Melissant Blusgroep
 1400722;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Melissant WVD
@@ -8253,7 +8238,7 @@
 1400749;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Oude Tonge Bevelvoerder van Dienst
 1400750;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Den Bommel Bevelvoerder van Dienst
 1400751;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Ooltgensplaat Bevelvoerder van Dienst
-1400752;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Ouddorp Bevelvoerder van Dienst
+1400752;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Ouddorp Bevelvoerder van Dienst;
 1400753;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Goedereede Bevelvoerder van Dienst;
 1400754;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Stellendam Bevelvoerder van Dienst;
 1400755;Brandweer;Rotterdam-Rijnmond;VRR - Eilanden;Melissant Bevelvoerder van Dienst;
@@ -8318,7 +8303,6 @@
 1400947;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code CD 90.1;CD901
 1400948;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code CD 90.1;CD901
 1400949;Brandweer;Rotterdam-Rijnmond;Rijnmond-Putten;Persoonlijke code: IP90-1/1e bevelvoerder VG Spijkenisse;
-1400949;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code CD 90.1;CD901
 1400951;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
 1400952;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
 1400953;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
@@ -8331,10 +8315,9 @@
 1400963;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
 1400964;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
 1400965;Brandweer;Rotterdam-Rijnmond;Rijnmond-Haven;Industriele Brand Bestrijdings Pool;Rijnmond - IB
-1400965;Brandweer;Rotterdam-Rijnmond;Rijnmond-Haven;Industriele Brand Bestrijdings Pool;Rijnmond - IB
 1400966;Brandweer;Rotterdam-Rijnmond;VRR;Persoonlijke code BOT;
 1400967;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code OvD GMK;
-1400968;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code OvD GMK
+1400968;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code OvD GMK;
 1400969;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code OvD GMK
 1400970;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code OvD GMK
 1400971;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Albrandswaard
@@ -8350,7 +8333,7 @@
 1400982;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Middelharnis
 1400984;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Ridderkerk
 1400985;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Rotterdam
-1400986;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Rozenburg;
+1400986;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Rozenburg
 1400987;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Schiedam;
 1400988;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Spijkenisse;
 1400989;Brandweer;Rotterdam-Rijnmond;Rijnmond-Gemeente;OvD-Bevolkingszaken Vlaardingen;
@@ -8366,7 +8349,7 @@
 1400999;Brandweer;Rotterdam-Rijnmond;Rijnmond-Meldkamer;Lichtkrant MKB;
 1403000;Brandweer;Zuid-Holland Zuid;;Proefalarm;
 1403003;Brandweer;Zuid-Holland Zuid;;Lichtkrant GMC;
-1403004;Brandweer;Zuid-Holland Zuid;Dordrecht;Dordrecht
+1403004;Brandweer;Zuid-Holland Zuid;Dordrecht;Dordrecht;
 1403050;Brandweer;Zuid-Holland Zuid;;RCvD
 1403051;Brandweer;Zuid-Holland Zuid;;RCvD
 1403053;Brandweer;Zuid-Holland Zuid;;Milieudienst Zuid Holland Zuid
@@ -8398,7 +8381,7 @@
 1403082;Brandweer;Zuid-Holland Zuid;Drechtsteden;2e OVD noord prio 1
 1403083;Brandweer;Zuid-Holland Zuid;Drechtsteden;2e OVD noord prio 2
 1403084;Brandweer;Zuid-Holland Zuid;Alblasserwaard;2e OVD prio 1
-1403085;Brandweer;Zuid-Holland Zuid;Alblasserwaard;2e OVD prio 2;
+1403085;Brandweer;Zuid-Holland Zuid;Alblasserwaard;2e OVD prio 2
 1403086;Brandweer;Zuid-Holland Zuid;Gorichem;2e OVD prio 1;
 1403087;Brandweer;Zuid-Holland Zuid;Gorichem;2e OVD prio 2;
 1403088;Brandweer;Zuid-Holland Zuid;Vijfherenland;2e OVD prio 1;
@@ -8414,7 +8397,7 @@
 1403184;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Kinderdijk groep 3 - prio 1;
 1403185;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Dam groep 2 - prio 2;
 1403186;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Dam groep 2 - prio 1;
-1403187;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Dam groep 1 - prio 2
+1403187;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Dam groep 1 - prio 2;
 1403188;Brandweer;Zuid-Holland Zuid;Alblasserdam;Post Dam groep 1 - prio 1
 1403189;Brandweer;Zuid-Holland Zuid;Alblasserdam;Kazerne oproep
 1403280;Brandweer;Zuid-Holland Zuid;Hardinxveld-Giessendam;Rode Kruis
@@ -8651,11 +8634,10 @@
 1420014;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-114
 1420015;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-115
 1420016;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-116
-1420016;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-116
 1420017;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-117
 1420026;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-126
-1420027;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-127;
-1420028;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-128;
+1420027;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-127
+1420028;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-128
 1420029;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-129;
 1420035;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-135;
 1420036;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-136;
@@ -8670,11 +8652,10 @@
 1420056;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-156;
 1420059;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Traumaheli LifeLiner 2 - MMT 90.1;LifeLiner 2
 1420061;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-161;
-1420063;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-163
-1420064;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-164
+1420063;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-163;
+1420064;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-164;
 1420065;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-165
 1420066;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-166
-1420067;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-167
 1420067;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-167
 1420070;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-170
 1420072;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Ambulance 17-172
@@ -8718,9 +8699,9 @@
 1420138;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code Brandweerpiket
 1420139;Brandweer;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code Brandweerpiket
 1420141;Ambulance;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code CGV
-1420142;Ambulance;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code CGV;
-1420151;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Motorambulance 17-320;
-1420152;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Motorambulance 17-321;
+1420142;Ambulance;Rotterdam-Rijnmond;VRR - GMK;Persoonlijke code CGV
+1420151;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Motorambulance 17-320
+1420152;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Motorambulance 17-321
 1420153;Ambulance;Rotterdam-Rijnmond;VRR - AZRR;Motorambulance 17-322;
 1420171;Ambulance;Rotterdam-Rijnmond;;17-401 Low Care;
 1420174;Ambulance;Rotterdam-Rijnmond;;Ambulancepost;
@@ -8755,7 +8736,6 @@
 1433083;Politie;Zuid-Holland Zuid;Alblasserwaard / Vijfherenlanden;ARB piket Alblasserwaard / Vijfherenlanden;
 1433116;Politie;Zuid-Holland Zuid;;Persvoorlichting;
 1433120;Politie;Zuid-Holland Zuid;;Lokaal beheer GMC Prio 1;
-1433120;Politie;Zuid-Holland Zuid;;Lokaal beheer GMC Prio 1;
 1433227;Politie;Zuid-Holland Zuid;;Centralisten;
 1433228;Politie;Zuid-Holland Zuid;;Centralisten;
 1433860;Politie;Zuid-Holland Zuid;;Bureau Conflict- en Crisisbeheersing;
@@ -8769,7 +8749,7 @@
 1500011;Brandweer;Haaglanden;s-Gravenhage;GSE ploeg;
 1500012;Brandweer;Haaglanden;Westland;Monitorcode Westland;
 1500014;Brandweer;Haaglanden;Regionaal;Hoofd Alarmcentrale;HRH HFD RAC
-1500015;Reddingsbrigade;Haaglanden;Wassenaar;Reddingsbrigade;WS Reddingsbr
+1500015;KNRM;Haaglanden;Wassenaar;Reddingsbrigade;WS Reddingsbr
 1500016;Brandweer;Haaglanden;Regionaal;Infocode Hollands Midden;
 1500017;Brandweer;Haaglanden;Regionaal;Infocode Rotterdam-Rijnmond;
 1500020;Brandweer;Haaglanden;Regionaal;Hoofd Sectie Brandweer (HSB);HGL HSB
@@ -8795,7 +8775,6 @@
 1500080;Brandweer;Haaglanden;Regionaal;Adviseur Gevaalijke Stoffen ;HGL AGS
 1500081;Brandweer;Haaglanden;Regionaal;Stafofficier Operatiën Brandweer;HGL SOB
 1500082;Brandweer;Haaglanden;Regionaal;Vrije AGS-en;
-1500082;Brandweer;Haaglanden;Regionaal;Motor 15-9661;HGL MOB
 1500083;Brandweer;Haaglanden;Regionaal;Preventie Inspecteur van Dienst;HGL PID
 1500084;Brandweer;Haaglanden;Regionaal;Meetplanleider;HGL MPL
 1500085;Brandweer;Haaglanden;Regionaal;Team Brandonderzoek;HGL TBO
@@ -8951,22 +8930,22 @@
 1500535;Brandweer;Haaglanden;Wassenaar;OvD Bevolkingszorg;WS OvD BZ
 1500536;Brandweer;Haaglanden;Westland;OvD Bevolkingszorg;WL OvD BZ
 1500537;Brandweer;Haaglanden;Zoetermeer;OvD Bevolkingszorg;ZT OvD BZ
-1500550;Reddingsbrigade;Haaglanden;Scheveningen;HVRB Scheveningen;HVRB
-1500551;Reddingsbrigade;Haaglanden;'s-Gravenzande;Reddingsbrigade;GZ reddingsbr
-1500552;Reddingsbrigade;Haaglanden;Leidschendam-Voorburg;Reddingsbrigade (Vlietlanden);LV reddingsbr
-1500553;Reddingsbrigade;Haaglanden;Monster;Reddingsbrigade;MS reddingsbr
-1500554;Reddingsbrigade;Haaglanden;Wassenaar;Reddingsbrigade;WS reddingsbr
-1500555;Reddingsbrigade;Haaglanden;Zoetermeer;Reddingsbrigade;ZT Reddingsbr
+1500550;KNRM;Haaglanden;Scheveningen;HVRB Scheveningen;HVRB
+1500551;KNRM;Haaglanden;'s-Gravenzande;Reddingsbrigade;GZ reddingsbr
+1500552;KNRM;Haaglanden;Leidschendam-Voorburg;Reddingsbrigade (Vlietlanden);LV reddingsbr
+1500553;KNRM;Haaglanden;Monster;Reddingsbrigade;MS reddingsbr
+1500554;KNRM;Haaglanden;Wassenaar;Reddingsbrigade;WS reddingsbr
+1500555;KNRM;Haaglanden;Zoetermeer;Reddingsbrigade;ZT Reddingsbr
 1500608;Brandweer;Haaglanden;s-Gravenhage;TS-BT 7140;
 1500923;Brandweer;Haaglanden;Midden-Delfland;OvD Bevolkingszorg ;
-1500951;Reddingsbrigade;Haaglanden;s-Gravenhage;Alarmploeg;
-1500955;Reddingsbrigade;Haaglanden;s-Gravenhage;Lichtkrant;
-1500960;Reddingsbrigade;Haaglanden;Leidschendam-Voorburg;Reddingsbrigade;
-1500975;Reddingsbrigade;Haaglanden;Monster;Reddingsbrigade;MS reddingsbr
-1500977;Reddingsbrigade;Haaglanden;Monster;Alarmploeg;
-1500978;Reddingsbrigade;Haaglanden;Monster;OvD;
-1500982;Reddingsbrigade;Haaglanden;'s-Gravenzande;Alarmploeg;
-1500983;Reddingsbrigade;Haaglanden;'s-Gravenzande;OvD RB;
+1500951;KNRM;Haaglanden;s-Gravenhage;Alarmploeg;
+1500955;KNRM;Haaglanden;s-Gravenhage;Lichtkrant;
+1500960;KNRM;Haaglanden;Leidschendam-Voorburg;Reddingsbrigade;
+1500975;KNRM;Haaglanden;Monster;Reddingsbrigade;MS reddingsbr
+1500977;KNRM;Haaglanden;Monster;Alarmploeg;
+1500978;KNRM;Haaglanden;Monster;OvD;
+1500982;KNRM;Haaglanden;'s-Gravenzande;Alarmploeg;
+1500983;KNRM;Haaglanden;'s-Gravenzande;OvD RB;
 1500994;KNRM;Haaglanden;Scheveningen;"Bemanning Kitty Roosmale Nepveu""""";KNRM Sch JvE
 1500995;KNRM;Haaglanden;Scheveningen;Wipperploeg Scheveningen;KNRM Sch wipr
 1500996;KNRM;Haaglanden;Ter Heijde;Bemanning Reddingsboot George Dijkstra;KNRM TH boot
@@ -8974,11 +8953,11 @@
 1500999;KNRM;Haaglanden;;Monitorcode KNRM;KNRM HGL MONI
 1503001;Brandweer;Hollands Midden;;Regionaal Commandant;
 1503002;Brandweer;Hollands Midden;;Commandant van Dienst;
-1503005;Brandweer;Hollands Midden;;HOVD West
-1503006;Brandweer;Hollands Midden;;HOVD Oost
-1503011;Brandweer;Hollands Midden;;OVD Bollensteel
-1503012;Brandweer;Hollands Midden;;OVD Duinstreek
-1503013;Brandweer;Hollands Midden;;OVD Leiden e.o.
+1503005;Brandweer;Hollands Midden;;HOVD West;
+1503006;Brandweer;Hollands Midden;;HOVD Oost;
+1503011;Brandweer;Hollands Midden;;OVD Bollensteel;
+1503012;Brandweer;Hollands Midden;;OVD Duinstreek;
+1503013;Brandweer;Hollands Midden;;OVD Leiden e.o.;
 1503014;Brandweer;Hollands Midden;;OVD Rijnstreek
 1503015;Brandweer;Hollands Midden;;OVD Gouwe IJssel
 1503016;Brandweer;Hollands Midden;;OVD Krimpenerwaard
@@ -9022,11 +9001,11 @@
 1503090;Brandweer;Hollands Midden;Bergambacht;Chauffeurs
 1503091;Brandweer;Hollands Midden;Bergambacht;Bevelvoerders
 1503101;Brandweer;Hollands Midden;Bodegraven;Groep 1
-1503102;Brandweer;Hollands Midden;Bodegraven;Groep 2;
-1503103;Brandweer;Hollands Midden;Bodegraven;Groep 3;
-1503105;Brandweer;Hollands Midden;Bodegraven;Korpsalarm;
-1503106;Brandweer;Hollands Midden;Bodegraven;BOT;
-1503110;Brandweer;Hollands Midden;Bodegraven;Groep 1 + 2;
+1503102;Brandweer;Hollands Midden;Bodegraven;Groep 2
+1503103;Brandweer;Hollands Midden;Bodegraven;Groep 3
+1503105;Brandweer;Hollands Midden;Bodegraven;Korpsalarm
+1503106;Brandweer;Hollands Midden;Bodegraven;BOT
+1503110;Brandweer;Hollands Midden;Bodegraven;Groep 1 + 2
 1503111;Brandweer;Hollands Midden;Bodegraven;Groep 2 + 3;
 1503112;Brandweer;Hollands Midden;Bodegraven;Groep 1 + 3;
 1503113;Brandweer;Hollands Midden;Bodegraven;Chauffeurs;
@@ -9038,11 +9017,11 @@
 1503124;Brandweer;Hollands Midden;Nieuwerbrug;Bevelvoerders;
 1503125;Brandweer;Hollands Midden;Nieuwerbrug;Combi-alarm;
 1503128;Brandweer;Hollands Midden;Nieuwerbrug;Korpscoordinator;KC
-1503129;Brandweer;Hollands Midden;Bodegraven;Korpscoordinator
-1503130;Brandweer;Hollands Midden;Boskoop;Korpscoordinator
-1503131;Brandweer;Hollands Midden;Boskoop;Groep 1
-1503132;Brandweer;Hollands Midden;Boskoop;Groep 2
-1503133;Brandweer;Hollands Midden;Boskoop;Chauffeurs
+1503129;Brandweer;Hollands Midden;Bodegraven;Korpscoordinator;
+1503130;Brandweer;Hollands Midden;Boskoop;Korpscoordinator;
+1503131;Brandweer;Hollands Midden;Boskoop;Groep 1;
+1503132;Brandweer;Hollands Midden;Boskoop;Groep 2;
+1503133;Brandweer;Hollands Midden;Boskoop;Chauffeurs;
 1503134;Brandweer;Hollands Midden;Boskoop;Bevelvoerders
 1503135;Brandweer;Hollands Midden;Boskoop;Korpsalarm
 1503136;Brandweer;Hollands Midden;Boskoop;BOT
@@ -9206,7 +9185,6 @@
 1503423;Brandweer;Hollands Midden;Noordwijk;Groep 3
 1503424;Brandweer;Hollands Midden;Noordwijk;Halve korps even
 1503427;Brandweer;Hollands Midden;Noordwijk;Korpscoordinator
-1503427;Brandweer;Hollands Midden;Noordwijk;Halve korps oneven
 1503429;Brandweer;Hollands Midden;Noordwijk;BOT
 1503430;Brandweer;Hollands Midden;Noordwijk;Korpsalarm
 1503431;Brandweer;Hollands Midden;Noordwijk;Piketploeg
@@ -9364,32 +9342,32 @@
 1503745;Brandweer;Hollands Midden;Alkemade/Jacobswoude;Commandant
 1503750;Brandweer;Hollands Midden;Alkemade-de Kaag;Korpsalarm
 1503751;Brandweer;Hollands Midden;Alkemade-de Kaag;Korpscoordinator
-1503754;Brandweer;Hollands Midden;Alkemade-de Kaag/Roelofarendsveen;Combi-alarm
-1503864;Brandweer;Hollands Midden;Ter Aar;First Responders
-1503890;KNRM;Hollands Midden;KRV-Katwijk;Zeealarm
-1503891;KNRM;Hollands Midden;KRV-Katwijk;KNRM
-1503892;KNRM;Hollands Midden;Noordwijk;Zeealarm
-1503893;KNRM;Hollands Midden;Noordwijk;KNRM
-1503894;KNRM;Hollands Midden;;KNRM
-1503895;Brandweer;Hollands Midden;KRV-Katwijk;Piket medewerker
-1503900;Brandweer;Hollands Midden;;Monitorcode
-1503901;Brandweer;Hollands Midden;;Infocode Utrecht
+1503754;Brandweer;Hollands Midden;Alkemade-de Kaag/Roelofarendsveen;Combi-alarm;
+1503864;Brandweer;Hollands Midden;Ter Aar;First Responders;
+1503890;KNRM;Hollands Midden;KRV-Katwijk;Zeealarm;
+1503891;KNRM;Hollands Midden;KRV-Katwijk;KNRM;
+1503892;KNRM;Hollands Midden;Noordwijk;Zeealarm;
+1503893;KNRM;Hollands Midden;Noordwijk;KNRM;
+1503894;KNRM;Hollands Midden;;KNRM;
+1503895;Brandweer;Hollands Midden;KRV-Katwijk;Piket medewerker;
+1503900;Brandweer;Hollands Midden;;Monitorcode;
+1503901;Brandweer;Hollands Midden;;Infocode Utrecht;
 1503902;Brandweer;Hollands Midden;;Infocode Haaglanden;
 1503903;Brandweer;Hollands Midden;;Infocode Kennemerland;
 1503910;Brandweer;Hollands Midden;;AGS;HM AGS
 1503920;Brandweer;Hollands Midden;;Team Brandonderzoek;
 1503970;Brandweer;Hollands Midden;;Persvoorlichter;
 1503975;Brandweer;Hollands Midden;;Persvoorlichter Oost;
-1503980;Brandweer;Hollands Midden;;Persvoorlichter West;
-1503986;Brandweer;Hollands Midden;;Persvoorlichter ROT;
-1503987;Brandweer;Hollands Midden;;Brandweerfotograaf;
-1503989;Brandweer;Hollands Midden;;Informatiemanager CoPI West;
-1503990;Brandweer;Hollands Midden;;Staffunctionaris ROT;
-1503991;Brandweer;Hollands Midden;;Informatiemanager ROT;
-1503992;Brandweer;Hollands Midden;;Plotter ROT;
-1503993;Brandweer;Hollands Midden;;Informatie Manager ROT;
-1503994;Brandweer;Hollands Midden;;Notulist ROT;
-1503995;Brandweer;Hollands Midden;;Persvoorlichter COPI;
+1503980;Brandweer;Hollands Midden;;Persvoorlichter West
+1503986;Brandweer;Hollands Midden;;Persvoorlichter ROT
+1503987;Brandweer;Hollands Midden;;Brandweerfotograaf
+1503989;Brandweer;Hollands Midden;;Informatiemanager CoPI West
+1503990;Brandweer;Hollands Midden;;Staffunctionaris ROT
+1503991;Brandweer;Hollands Midden;;Informatiemanager ROT
+1503992;Brandweer;Hollands Midden;;Plotter ROT
+1503993;Brandweer;Hollands Midden;;Informatie Manager ROT
+1503994;Brandweer;Hollands Midden;;Notulist ROT
+1503995;Brandweer;Hollands Midden;;Persvoorlichter COPI
 1503999;Brandweer;Hollands Midden;;Staf sectie Infovoorziening
 1504000;Brandweer;Hollands Midden;;Proefalarm
 1504002;Brandweer;Hollands Midden;;Personeel ROT en RBT
@@ -9444,26 +9422,22 @@
 1504221;Brandweer;Hollands Midden;Waddinxveen;MOV Waddinxveen (Medewerker Openbare Orde en Veiligheid)
 1504222;Brandweer;Hollands Midden;Zoeterwoude;MOV Zoeterwoude (Medewerker Openbare Orde en Veiligheid)
 1504224;Brandweer;Hollands Midden;Bergambacht;Medewerker Openbare Orde en Veiligheid
-1504224;Brandweer;Hollands Midden;Bergambacht;MOV Bergambacht (Medewerker Openbare Orde en Veiligheid)
 1504225;Brandweer;Hollands Midden;Nederlek;Medewerker Openbare Orde en Veiligheid
-1504225;Brandweer;Hollands Midden;Vlist;MOV Vlist (Medewerker Openbare Orde en Veiligheid)
 1504226;Brandweer;Hollands Midden;Ouderkerk;Medewerker Openbare Orde en Veiligheid
-1504226;Brandweer;Hollands Midden;Ouderkerk a/d IJssel;MOV Ouderkerk a/d IJssel (Medewerker Openbare Orde en Veilig
 1504227;Brandweer;Hollands Midden;Schoonhoven;Medewerker Openbare Orde en Veiligheid
 1504228;Brandweer;Hollands Midden;Vlist;Medewerker Openbare Orde en Veiligheid
-1504228;Brandweer;Hollands Midden;Nederlek;MOV Nederlek (Medewerker Openbare Orde en Veiligheid)
 1504391;Brandweer;Hollands Midden;;Monitorcode Noordwijk - Noordwijkerhout
 1504392;Brandweer;Hollands Midden;;Monitorcode Hillegom - Lisse - Teylingen
-1504393;Brandweer;Hollands Midden;;Monitorcode Boskoop - Waddinxveen - Bodegraven-Reeuwijk;
-1504394;Brandweer;Hollands Midden;;Monitorcode Gouda - Zuidplas;
-1504395;Brandweer;Hollands Midden;;Monitorcode Krimpenerwaard;
-1504396;Brandweer;Hollands Midden;;Monitorcode Nieuwkoop - Kaag en Braassem;
-1504397;Brandweer;Hollands Midden;;Monitorcode Rijnwoude - Alphen a/d Rijn;
-1504398;Brandweer;Hollands Midden;;Monitorcode Leiden eo;
-1504413;Brandweer;Hollands Midden;;Clustercommandant Boskoop - Waddinxveen - Bodegraven-Reeuwij;
-1504414;Brandweer;Hollands Midden;;Clustercommandant Gouda - Zuidplas;
-1504415;Brandweer;Hollands Midden;;Clustercommandant Krimpenerwaard;
-1505641;Brandweer;Hollands Midden;Leiden;Burgemeester;
+1504393;Brandweer;Hollands Midden;;Monitorcode Boskoop - Waddinxveen - Bodegraven-Reeuwijk
+1504394;Brandweer;Hollands Midden;;Monitorcode Gouda - Zuidplas
+1504395;Brandweer;Hollands Midden;;Monitorcode Krimpenerwaard
+1504396;Brandweer;Hollands Midden;;Monitorcode Nieuwkoop - Kaag en Braassem
+1504397;Brandweer;Hollands Midden;;Monitorcode Rijnwoude - Alphen a/d Rijn
+1504398;Brandweer;Hollands Midden;;Monitorcode Leiden eo
+1504413;Brandweer;Hollands Midden;;Clustercommandant Boskoop - Waddinxveen - Bodegraven-Reeuwij
+1504414;Brandweer;Hollands Midden;;Clustercommandant Gouda - Zuidplas
+1504415;Brandweer;Hollands Midden;;Clustercommandant Krimpenerwaard
+1505641;Brandweer;Hollands Midden;Leiden;Burgemeester
 1505666;Brandweer;Hollands Midden;Noordwijk;Burgemeester;
 1505716;Brandweer;Hollands Midden;Waddinxveen;Burgemeester;
 1505726;Brandweer;Hollands Midden;Zevenhuizen-Moerkapelle;Burgemeester;
@@ -9512,7 +9486,6 @@
 1520085;Ambulance;Haaglanden;RAV Haaglanden;Rapid Responder 15-385;RRH 15-385
 1520088;Ambulance;Haaglanden;RAV Haaglanden;Rapid Responder 15-388;RRH 15-388
 1520089;Ambulance;Haaglanden;;GHOR Piketvoertuig ambulance;GHOR PIKET
-1520089;Ambulance;Haaglanden;RAV Haaglanden;Rapid Responder 15-389;RRH 15-389
 1520091;Ambulance;Haaglanden;;GHOR Piketvoertuig Chef CPA (VW Sharan);GHOR piketCPA
 1520092;Ambulance;Haaglanden;s-Gravenhage;Bestelbus 15-192 GGD 's-Gravenhage;GGD Kangoo
 1520095;Ambulance;Haaglanden;;Sigma Voertuig Sigma-team (sprinter);Sigma team
@@ -9545,22 +9518,22 @@
 1523102;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-102;
 1523103;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-103;
 1523104;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-104;
-1523105;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-105;
-1523106;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-106;
-1523107;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-107;
-1523108;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-108;
-1523109;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-109;
-1523110;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-110;
-1523111;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-111;
-1523114;Ambulance;Hollands Midden;Gouda;Ambulance 16-114;
-1523123;Ambulance;Hollands Midden;Leiden;Ambulance-16-123 Leiden;
-1523125;Ambulance;Hollands Midden;Leiden;Ambulance-16-125 Leiden;
-1523152;Ambulance;Hollands Midden;;16-152;
-1523153;Ambulance;Hollands Midden;;16-153;
-1523154;Ambulance;Hollands Midden;;16-154;
-1523155;Ambulance;Hollands Midden;;16-155;
-1523160;Ambulance;Hollands Midden;;16-160;
-1523162;Ambulance;Hollands Midden;;16-162;
+1523105;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-105
+1523106;Ambulance;Hollands Midden;Duin en Bollenstreek;Ambulance 16-106
+1523107;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-107
+1523108;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-108
+1523109;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-109
+1523110;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-110
+1523111;Ambulance;Hollands Midden;Rijn en Venen;Ambulance 16-111
+1523114;Ambulance;Hollands Midden;Gouda;Ambulance 16-114
+1523123;Ambulance;Hollands Midden;Leiden;Ambulance-16-123 Leiden
+1523125;Ambulance;Hollands Midden;Leiden;Ambulance-16-125 Leiden
+1523152;Ambulance;Hollands Midden;;16-152
+1523153;Ambulance;Hollands Midden;;16-153
+1523154;Ambulance;Hollands Midden;;16-154
+1523155;Ambulance;Hollands Midden;;16-155
+1523160;Ambulance;Hollands Midden;;16-160
+1523162;Ambulance;Hollands Midden;;16-162
 1523171;Ambulance;Hollands Midden;;16-171;
 1523176;Ambulance;Hollands Midden;;16-176;
 1523179;Ambulance;Hollands Midden;;16-179;

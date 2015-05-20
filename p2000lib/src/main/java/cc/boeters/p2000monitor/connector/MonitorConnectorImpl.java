@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import cc.boeters.p2000monitor.model.CapcodeInfo;
 import cc.boeters.p2000monitor.model.Message;
+import cc.boeters.p2000monitor.processing.capcode.MysqlCapcodeDatabase;
 import cc.boeters.p2000monitor.support.LimitedQueue;
 import cc.boeters.p2000monitor.support.annotation.NewMessage;
 import cc.boeters.p2000monitor.support.annotation.Property;
@@ -31,9 +32,9 @@ public class MonitorConnectorImpl implements MonitorConnector {
 
 	enum MessageToken {
 
-		BEGIN("BEGIN MSG"), CAPCODE("Capcode: "), TYPE("Type: "), MSG(
-				"Message: "), TIME("Time: "), DATE("Date: "), TIMESTAMP(
-				"Timestamp: "), END("END MSG"), UNKNOWN(null);
+		BEGIN("BEGIN MSG"), CAPCODE("Capcode: "), DATE("Date: "), END("END MSG"), MSG(
+				"Message: "), TIME("Time: "), TIMESTAMP("Timestamp: "), TYPE(
+				"Type: "), UNKNOWN(null);
 
 		public static MessageToken resolve(String line) {
 
@@ -112,20 +113,20 @@ public class MonitorConnectorImpl implements MonitorConnector {
 
 	private static final String CAPCODE_UNKOWN = "???";
 
+	static final Logger LOG = LoggerFactory.getLogger(MonitorConnector.class);
+
 	@Inject
-	private CapcodeDatabase capcodeDatabase;
+	private MysqlCapcodeDatabase capcodeDatabase;
+
+	private Message currentMessage;
 
 	@Inject
 	@NewMessage
 	private Event<MonitorEvent> event;
 
-	static final Logger LOG = LoggerFactory.getLogger(MonitorConnector.class);
+	private final List<CapcodeInfo> group;
 
 	private final Deque<Message> messagesQueue;
-
-	private Message currentMessage;
-
-	private final List<CapcodeInfo> group;
 
 	private boolean running;
 
@@ -139,6 +140,14 @@ public class MonitorConnectorImpl implements MonitorConnector {
 		return new ArrayList<Message>(messagesQueue);
 	}
 
+	private String getValue(String line, MessageToken token) {
+		String[] split = line.split(token.prefix);
+		if (split.length > 1) {
+			return split[1];
+		}
+		return null;
+	}
+
 	private void handleLine(String line) {
 
 		MessageToken token = MessageToken.resolve(line);
@@ -149,7 +158,7 @@ public class MonitorConnectorImpl implements MonitorConnector {
 			currentMessage = new Message();
 			break;
 		case CAPCODE:
-			val = line.split("Capcode: ")[1];
+			val = getValue(line, token);
 			if (val == null || val.contains(CAPCODE_UNKOWN))
 				break;
 
@@ -159,13 +168,9 @@ public class MonitorConnectorImpl implements MonitorConnector {
 					.getCapcodeInfo(capcode));
 			break;
 		case END:
-			if (currentMessage.getCapcodeInfo() != null) {
-				currentMessage.getGroup().add(currentMessage.getCapcodeInfo());
-			}
+			currentMessage.getGroup().add(currentMessage.getCapcodeInfo());
 			if (currentMessage.isGroupMessage()) {
-				if (currentMessage.getCapcodeInfo() != null) {
-					group.add(currentMessage.getCapcodeInfo());
-				}
+				group.add(currentMessage.getCapcodeInfo());
 			} else if (currentMessage.isAlphaMessage()) {
 				currentMessage.getGroup().addAll(group);
 				group.clear();
@@ -176,26 +181,26 @@ public class MonitorConnectorImpl implements MonitorConnector {
 			LOG.trace("New message: {}.", currentMessage);
 			break;
 		case MSG:
-			val = line.split(token.prefix)[1];
+			val = getValue(line, token);
 			currentMessage.setMessage(val);
 			break;
 		case TIMESTAMP:
-			val = line.split(token.prefix)[1];
+			val = getValue(line, token);
 			currentMessage.setTimestamp(Long.valueOf(val));
 			break;
 		case TYPE:
-			val = line.split(token.prefix)[1];
+			val = getValue(line, token);
 			currentMessage.setType(Message.MessageType.valueOf(val));
 			break;
 		case UNKNOWN:
 			LOG.warn("Unknown message token [{}].", line);
 			break;
 		case DATE:
-			val = line.split(token.prefix)[1];
+			val = getValue(line, token);
 			currentMessage.setDate(val);
 			break;
 		case TIME:
-			val = line.split(token.prefix)[1];
+			val = getValue(line, token);
 			currentMessage.setTime(val);
 			break;
 		}

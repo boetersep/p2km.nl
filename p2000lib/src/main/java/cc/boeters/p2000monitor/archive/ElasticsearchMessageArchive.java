@@ -8,6 +8,7 @@ import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.ImmutableSettings;
@@ -55,8 +56,8 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 				.put("cluster.name", cluster).build();
 
 		client = new TransportClient(settings)
-				.addTransportAddress(new InetSocketTransportAddress(host,
-						Integer.valueOf(port)));
+		.addTransportAddress(new InetSocketTransportAddress(host,
+				Integer.valueOf(port)));
 	}
 
 	@PreDestroy
@@ -66,10 +67,15 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 
 	@Override
 	public Message retrieveMessage(String hash) {
-		String src = client.prepareGet(p2000Index, "message", hash).get()
-				.getSourceAsString();
+		GetResponse response = client.prepareGet(p2000Index, "message", hash)
+				.get();
+		if (!response.isExists()) {
+			return null;
+		}
+
 		try {
-			return objectMapper.readValue(src, Message.class);
+			return objectMapper.readValue(response.getSourceAsString(),
+					Message.class);
 		} catch (IOException e) {
 			LOG.error("Unable to unmarshall Elasticsearch source.", e);
 			return null;
@@ -95,7 +101,7 @@ public class ElasticsearchMessageArchive implements MessageArchive {
 		try {
 			String jsonMessage = objectMapper.writeValueAsString(message);
 			client.prepareIndex(p2000Index, "message", id)
-					.setSource(jsonMessage).get();
+			.setSource(jsonMessage).get();
 		} catch (JsonProcessingException e) {
 			LOG.error("Unable to marshall Elasticsearch source.", e);
 

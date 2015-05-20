@@ -1,4 +1,4 @@
-package cc.boeters.p2000monitor.connector;
+package cc.boeters.p2000monitor.processing.capcode;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import javax.inject.Singleton;
 import cc.boeters.p2000monitor.model.CapcodeInfo;
 
 @Singleton
-public class CapcodeDatabase {
+public class StaticCapcodeDatabase implements CapcodeDatabase {
 
 	private static Map<Integer, CapcodeInfo> DB;
 
@@ -21,7 +21,8 @@ public class CapcodeDatabase {
 	static {
 		DB = new HashMap<Integer, CapcodeInfo>(10000);
 
-		InputStream stream = CapcodeDatabase.class.getResourceAsStream(SOURCE);
+		InputStream stream = StaticCapcodeDatabase.class
+				.getResourceAsStream(SOURCE);
 
 		BufferedReader reader = new BufferedReader(
 				new InputStreamReader(stream));
@@ -58,8 +59,15 @@ public class CapcodeDatabase {
 
 	}
 
+	@Override
 	public CapcodeInfo getCapcodeInfo(int capcode) {
-		return DB.get(capcode);
+		CapcodeInfo capcodeInfo = DB.get(capcode);
+		if (capcodeInfo == null) {
+			capcodeInfo = new CapcodeInfo();
+			capcodeInfo.setCapcode(capcode);
+			capcodeInfo.setDescription(String.valueOf(capcode));
+		}
+		return capcodeInfo;
 	}
 
 }
