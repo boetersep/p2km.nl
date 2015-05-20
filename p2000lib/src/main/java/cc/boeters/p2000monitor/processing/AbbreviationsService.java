@@ -46,6 +46,9 @@ public class AbbreviationsService {
 	}
 
 	public String translate(String value) {
+		if (value == null) {
+			return value;
+		}
 		Matcher matcher = ABBR_PATTERN.matcher(value);
 		while (matcher.find()) {
 			String abbreviation = matcher.group().trim();
@@ -56,5 +59,4 @@ public class AbbreviationsService {
 		}
 		return value;
 	}
-
 }

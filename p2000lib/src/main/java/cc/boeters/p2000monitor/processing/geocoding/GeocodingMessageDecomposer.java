@@ -51,8 +51,8 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 		new GeocodingMessageDecomposer();
 	}
 
-	@Resource(name = "jdbc/postcodeDb")
-	private DataSource postcodeDb;
+	@Resource(name = "jdbc/p2000metadata")
+	private DataSource p2000metadata;
 
 	private double succesful;
 
@@ -97,7 +97,7 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 	private List<Map<String, Object>> executeQuery(Query query) {
 		List<Map<String, Object>> metadata = new ArrayList<Map<String, Object>>();
 		try {
-			Connection connection = postcodeDb.getConnection();
+			Connection connection = p2000metadata.getConnection();
 			PreparedStatement prepareStatement = connection
 					.prepareStatement(query.getQuery());
 			prepareStatement.closeOnCompletion();
@@ -198,12 +198,12 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 		case STREETCITY:
 			queryBuilder = newPostcodeQuery().mapColumn("street",
 					MessageSource.MESSAGE, message, MatchType.LIKE).and(
-					newPostcodeQuery()
+							newPostcodeQuery()
 							.mapColumn("city", MessageSource.MESSAGE, message,
 									MatchType.LIKE)
-							.or()
-							.mapColumn("municipality", MessageSource.MESSAGE,
-									message, MatchType.LIKE));
+									.or()
+									.mapColumn("municipality", MessageSource.MESSAGE,
+											message, MatchType.LIKE));
 			break;
 		case STREETSECTOR:
 			if (message.getGroup().isEmpty()) {
@@ -212,70 +212,70 @@ public class GeocodingMessageDecomposer implements MessageDecomposer {
 			queryBuilder = newPostcodeQuery()
 					.mapColumn("street", MessageSource.MESSAGE, message,
 							MatchType.LIKE)
-					.and()
-					.mapColumn("city", MessageSource.SECTOR, message,
-							MatchType.EXACT);
+							.and()
+							.mapColumn("city", MessageSource.SECTOR, message,
+									MatchType.EXACT);
 			break;
 		case STREETPARTIALPOSTCODE:
 			queryBuilder = newPostcodeQuery()
-					.mapColumn("street", MessageSource.MESSAGE, message,
-							MatchType.LIKE)
+			.mapColumn("street", MessageSource.MESSAGE, message,
+					MatchType.LIKE)
 					.and()
 					.mapColumn("pnum", MessageSource.MESSAGE, message,
 							MatchType.LIKE);
 			break;
 		case ROAD_HECTO_RPE:
 			queryBuilder = newHectopaalQuery()
-					.mapColumn("weg", MessageSource.MESSAGE, message,
-							MatchType.LIKE)
+			.mapColumn("weg", MessageSource.MESSAGE, message,
+					MatchType.LIKE)
 					.and(newHectopaalQuery()
 							.mapColumn("hectometrering_comma",
 									MessageSource.MESSAGE, message,
 									MatchType.LIKE)
-							.or()
-							.mapColumn("hectometrering_dot",
-									MessageSource.MESSAGE, message,
-									MatchType.LIKE))
-					.and()
-					.mapColumn("rpe_code", MessageSource.MESSAGE, message,
-							MatchType.LIKE);
+									.or()
+									.mapColumn("hectometrering_dot",
+											MessageSource.MESSAGE, message,
+											MatchType.LIKE))
+											.and()
+											.mapColumn("rpe_code", MessageSource.MESSAGE, message,
+													MatchType.LIKE);
 			break;
 		case ROAD_HECTO:
 			queryBuilder = newHectopaalQuery().mapColumn("weg",
 					MessageSource.MESSAGE, message, MatchType.LIKE).and(
-					newHectopaalQuery()
+							newHectopaalQuery()
 							.mapColumn("hectometrering_comma",
 									MessageSource.MESSAGE, message,
 									MatchType.LIKE)
-							.or()
-							.mapColumn("hectometrering_dot",
-									MessageSource.MESSAGE, message,
-									MatchType.LIKE));
+									.or()
+									.mapColumn("hectometrering_dot",
+											MessageSource.MESSAGE, message,
+											MatchType.LIKE));
 			break;
 		case ROAD_CITY_STREET_RPE:
 			queryBuilder = newHectopaalQuery()
-					.mapColumn("weg", MessageSource.MESSAGE, message,
-							MatchType.LIKE)
+			.mapColumn("weg", MessageSource.MESSAGE, message,
+					MatchType.LIKE)
 					.and(newHectopaalQuery()
 							.mapColumn("city", MessageSource.MESSAGE, message,
 									MatchType.LIKE)
-							.or()
-							.mapColumn("street", MessageSource.MESSAGE,
-									message, MatchType.LIKE))
-					.and()
-					.mapColumn("rpe_code", MessageSource.MESSAGE, message,
-							MatchType.LIKE);
+									.or()
+									.mapColumn("street", MessageSource.MESSAGE,
+											message, MatchType.LIKE))
+											.and()
+											.mapColumn("rpe_code", MessageSource.MESSAGE, message,
+													MatchType.LIKE);
 			;
 			break;
 		case ROAD_CITY_STREET:
 			queryBuilder = newHectopaalQuery().mapColumn("weg",
 					MessageSource.MESSAGE, message, MatchType.LIKE).and(
-					newHectopaalQuery()
+							newHectopaalQuery()
 							.mapColumn("city", MessageSource.MESSAGE, message,
 									MatchType.LIKE)
-							.or()
-							.mapColumn("street", MessageSource.MESSAGE,
-									message, MatchType.LIKE));
+									.or()
+									.mapColumn("street", MessageSource.MESSAGE,
+											message, MatchType.LIKE));
 			break;
 		default:
 			break;

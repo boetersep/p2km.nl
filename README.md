@@ -5,8 +5,8 @@ P2000 monitor webapp. Polls messages from Multimon and send them using a websock
  
 
 Elasticsearch index settings:
+PUT /p2000/_mapping/message
 ```javascript
-curl -XPUT localhost:9200/p2000/_mapping/message -d '
 {
     "message" : {
         "properties" : {
@@ -14,12 +14,18 @@ curl -XPUT localhost:9200/p2000/_mapping/message -d '
                 "properties": {
                     "geodata": {
                         "properties": {
-                            "location": { type: "geo_point" }
+                            "location": { "type": "geo_point" }
+                        }
+                    },
+                    "emergency": {
+                        "properties": {
+                            "urgency": { "type" : "string", "index" : "not_analyzed" },
+                            "service": { "type" : "string", "index" : "not_analyzed" }
                         }
                     }
                 }
             }
         }
     }
-}'
+}
 ```
