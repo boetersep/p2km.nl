@@ -6,6 +6,8 @@ import java.util.Properties;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
+import org.apache.commons.lang3.BooleanUtils;
+
 import cc.boeters.p2000monitor.support.annotation.Property;
 
 public class PropertyInjectionManager {
@@ -24,9 +26,18 @@ public class PropertyInjectionManager {
 
 	@Produces
 	@Property
-	public String injectConfiguration(InjectionPoint ip)
+	public Boolean injectConfigurationBoolean(InjectionPoint ip)
+			throws IllegalStateException {
+		Property param = ip.getAnnotated().getAnnotation(Property.class);
+		return BooleanUtils.toBoolean(properties.getProperty(param.value()));
+	}
+
+	@Produces
+	@Property
+	public String injectConfigurationString(InjectionPoint ip)
 			throws IllegalStateException {
 		Property param = ip.getAnnotated().getAnnotation(Property.class);
 		return properties.getProperty(param.value());
 	}
+
 }

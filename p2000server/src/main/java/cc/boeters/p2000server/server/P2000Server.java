@@ -6,10 +6,10 @@ import java.net.Socket;
 
 public class P2000Server implements Runnable {
 
-	protected int serverPort;
-	protected ServerSocket serverSocket = null;
 	protected boolean isStopped = false;
 	protected Thread runningThread = null;
+	protected int serverPort;
+	protected ServerSocket serverSocket = null;
 
 	public P2000Server(int port) {
 		this.serverPort = port;
@@ -23,7 +23,7 @@ public class P2000Server implements Runnable {
 		try {
 			this.serverSocket = new ServerSocket(this.serverPort);
 		} catch (IOException e) {
-			throw new RuntimeException("Cannot open port 8080", e);
+			throw new RuntimeException("Cannot open port " + serverPort, e);
 		}
 	}
 
