@@ -10,6 +10,7 @@
 		<module>p2000lib</module>
 		<module>p2000web</module>
 		<module>p2000server</module>
+		<module>p2000decoder</module>
 	</modules>
 
 	<properties>
