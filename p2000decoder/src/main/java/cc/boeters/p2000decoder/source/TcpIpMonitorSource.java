@@ -154,7 +154,11 @@ public class TcpIpMonitorSource implements MonitorSource {
 				currentMessage.getGroup().addAll(group);
 				group.clear();
 				for (MonitorListener listener : listeners) {
-					listener.onNewMessage(currentMessage);
+					try {
+						listener.onNewMessage(currentMessage);
+					} catch (Throwable e) {
+						LOG.warn("Exception while invoking onNewMessage.", e);
+					}
 				}
 			}
 			LOG.trace("New message: {}.", currentMessage);
