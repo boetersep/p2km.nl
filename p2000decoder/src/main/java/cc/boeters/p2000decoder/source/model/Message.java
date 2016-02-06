@@ -1,9 +1,7 @@
 package cc.boeters.p2000decoder.source.model;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Message {
 
@@ -27,11 +25,8 @@ public class Message {
 
 	private CapcodeInfo capcodeInfo;
 
-	private final Map<String, Object> metadata;
-
 	public Message() {
 		group = new ArrayList<CapcodeInfo>(10);
-		metadata = new HashMap<String, Object>();
 	}
 
 	public int getCapcode() {
@@ -52,10 +47,6 @@ public class Message {
 
 	public String getMessage() {
 		return message;
-	}
-
-	public Map<String, Object> getMetadata() {
-		return metadata;
 	}
 
 	public String getTime() {

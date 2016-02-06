@@ -107,15 +107,22 @@ public class TcpIpMonitorSource implements MonitorSource {
 
 	private List<MonitorListener> listeners;
 
-	public TcpIpMonitorSource() {
+	private final CapcodeDatabase capcodeDatabase;
+
+	private final String host;
+	private final int port;
+
+	public TcpIpMonitorSource(CapcodeDatabase capcodeDatabase, String host, int port) {
+		this.capcodeDatabase = capcodeDatabase;
+		this.host = host;
+		this.port = port;
 		listeners = new ArrayList<MonitorListener>();
 		group = new ArrayList<CapcodeInfo>(10);
+
 	}
 
 	@Override
 	public void start() {
-		String host = "172.16.68.21";
-		int port = 2000;
 		Thread t = new Thread(new MonitorClient(host, port), String.format("Monitor client %s:%s", host, port));
 		t.start();
 	}
@@ -144,7 +151,7 @@ public class TcpIpMonitorSource implements MonitorSource {
 
 			Integer capcode = Integer.valueOf(val);
 			currentMessage.setCapcode(capcode);
-			// currentMessage.setCapcodeInfo(capcodeDatabase.getCapcodeInfo(capcode));
+			currentMessage.setCapcodeInfo(capcodeDatabase.getCapcodeInfo(capcode));
 			break;
 		case END:
 			currentMessage.getGroup().add(currentMessage.getCapcodeInfo());
@@ -153,9 +160,11 @@ public class TcpIpMonitorSource implements MonitorSource {
 			} else if (currentMessage.isAlphaMessage()) {
 				currentMessage.getGroup().addAll(group);
 				group.clear();
+
+				Message newMessage = currentMessage;
 				for (MonitorListener listener : listeners) {
 					try {
-						listener.onNewMessage(currentMessage);
+						newMessage = listener.onNewMessage(newMessage);
 					} catch (Throwable e) {
 						LOG.warn("Exception while invoking onNewMessage.", e);
 					}

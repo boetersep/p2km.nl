@@ -4,6 +4,6 @@ import cc.boeters.p2000decoder.source.model.Message;
 
 public interface MonitorListener {
 
-	void onNewMessage(Message message) throws Throwable;
+	Message onNewMessage(Message message) throws Throwable;
 
 }

@@ -17,10 +17,11 @@ public class WebsocketBroadcasterListener implements MonitorListener {
 	}
 
 	@Override
-	public void onNewMessage(Message message) throws Throwable {
+	public Message onNewMessage(Message message) throws Throwable {
 		Set<WebSocketSession> openSessions = wssf.getOpenSessions();
 		for (WebSocketSession webSocketSession : openSessions) {
 			webSocketSession.getRemote().sendString(message.toString());
 		}
+		return message;
 	}
 }
