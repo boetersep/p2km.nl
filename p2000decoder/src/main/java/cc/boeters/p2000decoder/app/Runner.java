@@ -37,6 +37,8 @@ import cc.boeters.p2000decoder.source.listener.geocoding.GeocodingMessageUpdater
 public class Runner {
 
 	private MonitorSource source;
+	private MongoClient mongoClient;
+	private ComboPooledDataSource cpds;
 
 	public static void main(String[] args) throws Exception {
 		Options options = createCommandLineOptions();
@@ -70,13 +72,13 @@ public class Runner {
 	}
 
 	public Runner(CommandLine line) throws Exception {
+		Runtime.getRuntime().addShutdownHook(new Thread(new Destroyer()));
 
-		ComboPooledDataSource cpds = new ComboPooledDataSource();
+		cpds = new ComboPooledDataSource();
 		cpds.setDriverClass("com.mysql.jdbc.Driver"); // loads the jdbc driver
 		cpds.setJdbcUrl("jdbc:mysql://" + line.getOptionValue("mysql-host") + "/" + line.getOptionValue("mysql-db"));
 		cpds.setUser(line.getOptionValue("mysql-user"));
 		cpds.setPassword(line.getOptionValue("mysql-pass"));
-		cpds.setMinPoolSize(5);
 		cpds.setAcquireIncrement(5);
 		cpds.setMaxPoolSize(20);
 
@@ -84,12 +86,12 @@ public class Runner {
 				+ line.getOptionValue("mongo-pass") + "@" + line.getOptionValue("mongo-host") + "/?authSource="
 				+ line.getOptionValue("mongo-db") + "&authMechanism=SCRAM-SHA-1");
 
-		MongoClient mongoClient = new MongoClient(uri);
+		mongoClient = new MongoClient(uri);
 		MongoDatabase database = mongoClient.getDatabase(line.getOptionValue("mongo-db"));
 
 		source = new TcpIpMonitorSource(new MysqlCapcodeDatabase(cpds), line.getOptionValue("monitor-host"),
 				Integer.valueOf(line.getOptionValue("monitor-port")));
-		ResourceConfig config = new AppResourceConfig(source, cpds);
+		ResourceConfig config = new AppResourceConfig(source, cpds, database);
 		JettyHttpContainer restHandler = ContainerFactory.createContainer(JettyHttpContainer.class, config);
 		WebSocketHandler.Simple wsHandler = new WebSocketHandler.Simple(AppWebSocket.class);
 		final WebSocketServletFactory webSocketFactory = wsHandler.getWebSocketFactory();
@@ -104,11 +106,16 @@ public class Runner {
 		Server server = new Server(9998);
 		server.setHandler(handlers);
 		server.start();
-		Runtime.getRuntime().addShutdownHook(new Thread(new Destroyer(this)));
 	}
 
-	public void stop() {
-		source.stop();
+	class Destroyer implements Runnable {
+
+		@Override
+		public void run() {
+			source.stop();
+			cpds.close();
+			mongoClient.close();
+		}
 	}
 
 }
