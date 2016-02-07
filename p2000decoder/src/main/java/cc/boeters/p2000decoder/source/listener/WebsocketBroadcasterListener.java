@@ -7,6 +7,7 @@ import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 
 import cc.boeters.p2000decoder.source.MonitorListener;
 import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.util.MessageUtil;
 
 public class WebsocketBroadcasterListener implements MonitorListener {
 
@@ -20,8 +21,9 @@ public class WebsocketBroadcasterListener implements MonitorListener {
 	public Message onNewMessage(Message message) throws Throwable {
 		Set<WebSocketSession> openSessions = wssf.getOpenSessions();
 		for (WebSocketSession webSocketSession : openSessions) {
-			webSocketSession.getRemote().sendString(message.toString());
+			webSocketSession.getRemote().sendString(MessageUtil.toDocument(message).toJson());
 		}
+
 		return message;
 	}
 }
