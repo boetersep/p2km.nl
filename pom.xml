@@ -7,9 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>p2000lib</module>
-		<module>p2000web</module>
-		<module>p2000server</module>
+		
+		
+		
 		<module>p2000decoder</module>
 	</modules>
 
@@ -34,24 +34,4 @@
 		</pluginManagement>
 	</build>
 
-	<dependencies>
-		<!-- Servlet 3.0 API -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.websocket</groupId>
-			<artifactId>javax.websocket-api</artifactId>
-			<version>1.1</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.openejb</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>6.0-6</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
 </project>

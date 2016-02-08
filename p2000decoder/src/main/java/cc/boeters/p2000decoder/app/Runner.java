@@ -11,7 +11,6 @@ import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.websocket.server.WebSocketHandler;
-import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 import org.eclipse.jetty.websocket.servlet.WebSocketServletFactory;
 import org.glassfish.jersey.jetty.JettyHttpContainer;
 import org.glassfish.jersey.server.ContainerFactory;
@@ -95,7 +94,7 @@ public class Runner {
 		JettyHttpContainer restHandler = ContainerFactory.createContainer(JettyHttpContainer.class, config);
 		WebSocketHandler.Simple wsHandler = new WebSocketHandler.Simple(AppWebSocket.class);
 		final WebSocketServletFactory webSocketFactory = wsHandler.getWebSocketFactory();
-		source.addListener(new WebsocketBroadcasterListener((WebSocketServerFactory) webSocketFactory));
+		source.addListener(new WebsocketBroadcasterListener());
 		source.addListener(new ReplaceAbbreviationMonitorListener(new AbbreviationsService()));
 		source.addListener(new SaveMessageListener(database));
 		source.addListener(new GeocodingMessageUpdater(cpds, database));
