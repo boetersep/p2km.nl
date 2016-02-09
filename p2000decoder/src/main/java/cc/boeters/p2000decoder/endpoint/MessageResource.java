@@ -28,7 +28,7 @@ public class MessageResource {
 				.find(Filters.and(Filters.eq("capcode", capcode), Filters.eq("timestamp", timestamp)));
 		Document message = messages.first();
 		if (message != null) {
-			return Response.ok(message.toJson()).build();
+			return Response.ok(message).build();
 		}
 		return Response.noContent().build();
 	}

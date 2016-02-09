@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 import javax.sql.DataSource;
 
+import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,8 +32,8 @@ import cc.boeters.p2000decoder.source.model.Message;
 
 public class GeocodingMessageUpdater extends MessageUpdater {
 
-	public GeocodingMessageUpdater(DataSource dataSource, MongoDatabase db) {
-		super(dataSource, db);
+	public GeocodingMessageUpdater(DataSource dataSource, MongoDatabase db, WebSocketServerFactory webSocketFactory) {
+		super(dataSource, db, webSocketFactory);
 	}
 
 	enum GeocodingMethod {
@@ -52,7 +53,7 @@ public class GeocodingMessageUpdater extends MessageUpdater {
 	private double total;
 
 	@Override
-	public Map<String, Object> decompose(Message message) {
+	public Map<String, Object> getUpdateData(Message message) {
 		Map<String, Object> decomposed = new HashMap<String, Object>(2);
 		total++;
 

@@ -8,6 +8,8 @@ import java.util.regex.Pattern;
 
 import javax.sql.DataSource;
 
+import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
+
 import com.mongodb.client.MongoDatabase;
 
 import cc.boeters.p2000decoder.source.listener.MessageUpdater;
@@ -17,8 +19,9 @@ import jersey.repackaged.com.google.common.collect.Sets;
 
 public class ClassificationMessageUpdater extends MessageUpdater {
 
-	public ClassificationMessageUpdater(DataSource dataSource, MongoDatabase db) {
-		super(dataSource, db);
+	public ClassificationMessageUpdater(DataSource dataSource, MongoDatabase db,
+			WebSocketServerFactory webSocketFactory) {
+		super(dataSource, db, webSocketFactory);
 	}
 
 	public enum EmergencyService {
@@ -68,7 +71,7 @@ public class ClassificationMessageUpdater extends MessageUpdater {
 			.compile("\\b(TEST|PROEFALARM|TESTPAGE|TESTOPROEP|TESTPAGING)\\b", Pattern.CASE_INSENSITIVE);
 
 	@Override
-	public Map<String, Object> decompose(Message message) {
+	public Map<String, Object> getUpdateData(Message message) {
 
 		Map<String, Object> data = new HashMap<String, Object>();
 

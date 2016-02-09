@@ -25,7 +25,8 @@
 			<ul class="messages">
           		<li ng-repeat="message in messages | filter:query track by $index">
           			<a href="#/message/{{message.capcode}}/{{message.timestamp.$numberLong}}">
-            			<span class="title">{{message.message}}</span>
+            			<span ng-show="message.geodata && message.emergency">{{message.emergency.service | emergencyService}} {{message.emergency.urgency | emergencyUrgency}} {{message.geodata.source[0] ? ('naar ' + message.geodata.source[0].city) : '' }}</span>
+            			<span ng-show="!message.geodata && !message.emergency" class="title">{{message.message}}</span>
            	 			<p>{{message.date}} {{message.time}}</p>
           				<p><small ng-repeat="capcodeInfo in message.group track by $index">{{capcodeInfo.discipline}}, {{capcodeInfo.region}}, {{capcodeInfo.sector}} {{capcodeInfo.description}}<br /></small></p>
             		</a>

@@ -2,7 +2,43 @@
 
 /* Controllers */
 
+var service = {
+	'AMBULANCE': 'ambulance',
+	'FIREDEPARTMENT': 'brandweer',
+	'KNRM': 'kustwacht',
+	'LIFELINER': 'traumaheli',
+	'POLICE': 'politie',
+	'TEST': '',
+	'OTHER': ''
+};
+
+
+var urgency = {
+	'HIGH': 'spoed',
+	'LOW': '',
+	'MEDIUM': 'gepaste spoed'
+};
+
 var p2000Controllers = angular.module('p2000Controllers', []);
+
+p2000Controllers.filter('emergencyService', function() {
+	return function(input) {
+		input = input || [];
+		var out = '';
+		for (var i = 0; i < input.length; i++) {
+			out += service[input[i]];
+			out += input.length == i ? '' : ', ';
+		}
+		return out;
+	};
+}).filter('emergencyUrgency', function() {
+	return function(input) {
+		input = input || '';
+		var out = urgency[input];
+		return out ? 'met ' + out : '';
+	};
+})
+
 
 p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
   function($scope, $http) {
@@ -12,9 +48,18 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 
 	ws.onmessage = function(message) {
 		var message = JSON.parse(message.data);
-		$scope.messages.unshift(message);
-		if ($scope.messages.length > 100) {
-			$scope.messages.pop();
+		if (message.update) {
+			angular.forEach($scope.messages, function(candidateMsg) {
+				if (message.capcode == candidateMsg.capcode && message.timestamp == candidateMsg.timestamp.$numberLong) {
+					angular.extend(candidateMsg, message.data);
+					return;
+				}
+			});
+		} else {
+			$scope.messages.unshift(message);
+			if ($scope.messages.length > 100) {
+				$scope.messages.pop();
+			}			
 		}
 		$scope.$apply();
 	};
