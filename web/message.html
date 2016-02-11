@@ -1,0 +1,5 @@
+<a href="#/message/{{message.capcode}}/{{message.timestamp}}">
+	<span ng-show="emergencyText" class="title">{{ emergencyText }}{{ geodataText }}</span>
+	<span ng-show="!emergencyText" class="title">{{ message.message }}</span>	
+	<p ng-show="detail"><small ng-repeat="capcodeInfo in message.group track by $index">{{capcodeInfo.discipline}}, {{capcodeInfo.region}}, {{capcodeInfo.sector}} {{capcodeInfo.description}}<br /></small></p>
+</a>

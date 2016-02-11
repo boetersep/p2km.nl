@@ -2,18 +2,15 @@
 
 /* Controllers */
 
-var service = {
+var serviceValues = {
 	'AMBULANCE': 'ambulance',
 	'FIREDEPARTMENT': 'brandweer',
 	'KNRM': 'kustwacht',
 	'LIFELINER': 'traumaheli',
-	'POLICE': 'politie',
-	'TEST': '',
-	'OTHER': ''
+	'POLICE': 'politie'
 };
 
-
-var urgency = {
+var urgencyValues = {
 	'HIGH': 'spoed',
 	'LOW': '',
 	'MEDIUM': 'gepaste spoed'
@@ -21,24 +18,56 @@ var urgency = {
 
 var p2000Controllers = angular.module('p2000Controllers', []);
 
-p2000Controllers.filter('emergencyService', function() {
-	return function(input) {
-		input = input || [];
-		var out = '';
-		for (var i = 0; i < input.length; i++) {
-			out += service[input[i]];
-			out += input.length == i ? '' : ', ';
-		}
-		return out;
+p2000Controllers.directive('message', function() {
+	return {
+		restrict : 'E',
+		templateUrl : 'message.html',
+		scope : {
+			message : '=data',
+			detail : '=detail',
+		},
+		transclude: true,
+		controller: ['$scope', function($scope) {
+			var watchEmergency = $scope.$watch('message.emergency', function(emergency) {
+				if (emergency) {
+					var services = emergency.service;
+					if (services.indexOf('TEST') > -1) {
+						services.splice(services.indexOf('TEST'), 1);						
+					}
+					if (services.indexOf('OTHER') > -1) {
+						services.splice(services.indexOf('OTHER'), 1);
+					}
+					
+					var emergencyText = '';
+					for (var i = 0; i < services.length; i++) {
+						emergencyText += i == 0 ? serviceValues[services[i]].capitalize() : serviceValues[services[i]];
+						emergencyText += (i == services.length - 2 ? ' en ' : (i == services.length - 1 ? '' : ', ' ))  
+					}
+					var urgency = urgencyValues[emergency.urgency];
+					$scope.emergencyText = emergencyText + (urgency ? ' met ' + urgency : '');
+				}
+			});	
+			
+			var watchGeodata = $scope.$watch('message.geodata', function(geodata) {
+				if (geodata && geodata.source && geodata.source.length) {
+					var geodataText = ' naar ';
+					var source = geodata.source[0];
+					if (source.hectometrering) {
+						geodataText += 'de ' + source.weg + ' ter hoogte van hectometerpaal ';
+						geodataText += (source.hectometrering / 10.0);
+						if (source.street && source.city) {
+							geodataText += ' nabij ' + source.street.capitalize() + ' te ' + source.municipality;
+						}
+					} else {
+						geodataText += source.street.capitalize() + (source.housenumber ? ' ' + source.housenumber : '');
+						geodataText += ', ' + source.postcode + ' te ' + source.city;
+					}
+					$scope.geodataText = geodataText;
+				}
+			});
+		}]
 	};
-}).filter('emergencyUrgency', function() {
-	return function(input) {
-		input = input || '';
-		var out = urgency[input];
-		return out ? 'met ' + out : '';
-	};
-})
-
+});
 
 p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
   function($scope, $http) {
@@ -50,7 +79,7 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 		var message = JSON.parse(message.data);
 		if (message.update) {
 			angular.forEach($scope.messages, function(candidateMsg) {
-				if (message.capcode == candidateMsg.capcode && message.timestamp == candidateMsg.timestamp.$numberLong) {
+				if (message.capcode == candidateMsg.capcode && message.timestamp == candidateMsg.timestamp) {
 					angular.extend(candidateMsg, message.data);
 					return;
 				}
@@ -59,7 +88,7 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 			$scope.messages.unshift(message);
 			if ($scope.messages.length > 100) {
 				$scope.messages.pop();
-			}			
+			}
 		}
 		$scope.$apply();
 	};

@@ -1,8 +1,8 @@
 package cc.boeters.p2000decoder.source.listener;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -83,10 +83,10 @@ public abstract class MessageUpdater implements MonitorListener {
 					updateJson.put("data", value);
 
 					String updateJsonString = JSON_MAPPER.writeValueAsString(updateJson);
-					Set<WebSocketSession> openSessions = webSocketFactory.getOpenSessions();
+					Collection<WebSocketSession> openSessions = webSocketFactory.getOpenSessions();
 					for (WebSocketSession webSocketSession : openSessions) {
 						if (webSocketSession.isOpen()) {
-							webSocketSession.getRemote().sendString(updateJsonString);
+							webSocketSession.getRemote().sendStringByFuture(updateJsonString);
 						}
 					}
 				} catch (Throwable t) {
