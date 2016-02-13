@@ -1,6 +1,6 @@
 package cc.boeters.p2000decoder.source.listener.abbreviation;
 
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
 
 public class NoAbbrCapcodeInfoDecorator extends CapcodeInfo {
 

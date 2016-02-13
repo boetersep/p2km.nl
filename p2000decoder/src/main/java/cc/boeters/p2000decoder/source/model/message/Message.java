@@ -1,7 +1,9 @@
-package cc.boeters.p2000decoder.source.model;
+package cc.boeters.p2000decoder.source.model.message;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
 
 public class Message {
 

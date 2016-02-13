@@ -20,7 +20,7 @@ import com.mongodb.client.model.UpdateOptions;
 import com.mongodb.client.result.UpdateResult;
 
 import cc.boeters.p2000decoder.source.MonitorListener;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public abstract class MessageUpdater implements MonitorListener {
 

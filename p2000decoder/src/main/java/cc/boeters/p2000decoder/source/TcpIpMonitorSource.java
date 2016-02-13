@@ -14,8 +14,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public class TcpIpMonitorSource implements MonitorSource {
 

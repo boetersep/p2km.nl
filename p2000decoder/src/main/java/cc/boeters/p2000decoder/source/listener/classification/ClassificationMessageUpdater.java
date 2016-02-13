@@ -13,8 +13,8 @@ import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 import com.mongodb.client.MongoDatabase;
 
 import cc.boeters.p2000decoder.source.listener.MessageUpdater;
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.Message;
 import jersey.repackaged.com.google.common.collect.Sets;
 
 public class ClassificationMessageUpdater extends MessageUpdater {

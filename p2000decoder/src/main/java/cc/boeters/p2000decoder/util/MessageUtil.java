@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.bson.Document;
 
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public class MessageUtil {
 

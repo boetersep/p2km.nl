@@ -3,8 +3,8 @@ package cc.boeters.p2000decoder.source.listener.geocoding;
 import java.util.ArrayList;
 import java.util.List;
 
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public abstract class QueryBuilder {
 

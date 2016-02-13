@@ -20,52 +20,58 @@ var p2000Controllers = angular.module('p2000Controllers', []);
 
 p2000Controllers.directive('message', function() {
 	return {
-		restrict : 'E',
-		templateUrl : 'message.html',
-		scope : {
-			message : '=data',
-			detail : '=detail',
+		restrict: 'E',
+		templateUrl: 'message.html',
+		transclude : 'element',
+		scope: {
+			message: '=data',
+			detail: '=detail',
 		},
 		transclude: true,
-		controller: ['$scope', function($scope) {
-			var watchEmergency = $scope.$watch('message.emergency', function(emergency) {
-				if (emergency) {
-					var services = emergency.service;
-					if (services.indexOf('TEST') > -1) {
-						services.splice(services.indexOf('TEST'), 1);						
-					}
-					if (services.indexOf('OTHER') > -1) {
-						services.splice(services.indexOf('OTHER'), 1);
-					}
-					
-					var emergencyText = '';
-					for (var i = 0; i < services.length; i++) {
-						emergencyText += i == 0 ? serviceValues[services[i]].capitalize() : serviceValues[services[i]];
-						emergencyText += (i == services.length - 2 ? ' en ' : (i == services.length - 1 ? '' : ', ' ))  
-					}
-					var urgency = urgencyValues[emergency.urgency];
-					$scope.emergencyText = emergencyText + (urgency ? ' met ' + urgency : '');
-				}
-			});	
-			
-			var watchGeodata = $scope.$watch('message.geodata', function(geodata) {
-				if (geodata && geodata.source && geodata.source.length) {
-					var geodataText = ' naar ';
-					var source = geodata.source[0];
-					if (source.hectometrering) {
-						geodataText += 'de ' + source.weg + ' ter hoogte van hectometerpaal ';
-						geodataText += (source.hectometrering / 10.0);
-						if (source.street && source.city) {
-							geodataText += ' nabij ' + source.street.capitalize() + ' te ' + source.municipality;
+		compile: function(element, attr, linker) {
+			return function($scope, $element, $attr) {
+				$scope.message = {};
+				$scope.message.geodataText = '';
+				$scope.message.emergencyText = ''; 
+				var watchEmergency = $scope.$watch('message.emergency', function(emergency) {
+					if (emergency) {
+						var services = emergency.service;
+						if (services.indexOf('TEST') > -1) {
+							services.splice(services.indexOf('TEST'), 1);						
 						}
-					} else {
-						geodataText += source.street.capitalize() + (source.housenumber ? ' ' + source.housenumber : '');
-						geodataText += ', ' + source.postcode + ' te ' + source.city;
+						if (services.indexOf('OTHER') > -1) {
+							services.splice(services.indexOf('OTHER'), 1);
+						}
+					
+						var emergencyText = '';
+						for (var i = 0; i < services.length; i++) {
+							emergencyText += i == 0 ? serviceValues[services[i]].capitalize() : serviceValues[services[i]];
+							emergencyText += (i == services.length - 2 ? ' en ' : (i == services.length - 1 ? '' : ', ' ))  
+						}
+						var urgency = urgencyValues[emergency.urgency];
+						$scope.message.emergencyText = emergencyText + (urgency ? ' met ' + urgency : '');
 					}
-					$scope.geodataText = geodataText;
-				}
-			});
-		}]
+				});	
+				
+				var watchGeodata = $scope.$watch('message.geodata', function(geodata) {
+					if (geodata && geodata.source && geodata.source.length) {
+						var geodataText = ' naar ';
+						var source = geodata.source[0];
+						if (source.hectometrering) {
+							geodataText += 'de ' + source.weg + ' ter hoogte van hectometerpaal ';
+							geodataText += (source.hectometrering / 10.0);
+							if (source.street && source.city) {
+								geodataText += ' nabij ' + source.street.capitalize() + ' te ' + source.municipality;
+							}
+						} else {
+							geodataText += source.street.capitalize() + (source.housenumber ? ' ' + source.housenumber : '');
+							geodataText += ', ' + source.postcode + ' ' + source.city;
+						}
+						$scope.message.geodataText = geodataText;
+					}
+				});
+			}	
+		}
 	};
 });
 
@@ -86,7 +92,7 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 			});
 		} else {
 			$scope.messages.unshift(message);
-			if ($scope.messages.length > 100) {
+			if ($scope.messages.length > 20) {
 				$scope.messages.pop();
 			}
 		}
@@ -94,8 +100,7 @@ p2000Controllers.controller('MessageListCtrl', ['$scope', '$http',
 	};
   }]);
 
-p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams', '$http',
-  function($scope, $routeParams, $http) {
+p2000Controllers.controller('MessageDetailCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
 	 $scope.capcode = $routeParams.capcode;
 	 $scope.timestamp = $routeParams.timestamp;
 	   

@@ -9,7 +9,7 @@ import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import cc.boeters.p2000decoder.source.MonitorListener;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public class WebsocketBroadcasterListener implements MonitorListener {
 

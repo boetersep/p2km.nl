@@ -5,7 +5,7 @@ import org.bson.Document;
 import com.mongodb.client.MongoDatabase;
 
 import cc.boeters.p2000decoder.source.MonitorListener;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.Message;
 import cc.boeters.p2000decoder.util.MessageUtil;
 
 public class SaveMessageListener implements MonitorListener {

@@ -1,5 +1,8 @@
 package cc.boeters.p2000decoder.app;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -16,6 +19,9 @@ import org.glassfish.jersey.jetty.JettyHttpContainer;
 import org.glassfish.jersey.server.ContainerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -32,6 +38,7 @@ import cc.boeters.p2000decoder.source.listener.abbreviation.AbbreviationsService
 import cc.boeters.p2000decoder.source.listener.abbreviation.ReplaceAbbreviationMonitorListener;
 import cc.boeters.p2000decoder.source.listener.classification.ClassificationMessageUpdater;
 import cc.boeters.p2000decoder.source.listener.geocoding.GeocodingMessageUpdater;
+import cc.boeters.p2000decoder.source.model.area.Country;
 
 public class Runner {
 
@@ -90,7 +97,7 @@ public class Runner {
 
 		source = new TcpIpMonitorSource(new MysqlCapcodeDatabase(cpds), line.getOptionValue("monitor-host"),
 				Integer.valueOf(line.getOptionValue("monitor-port")));
-		ResourceConfig config = new AppResourceConfig(source, cpds, database);
+		ResourceConfig config = new AppResourceConfig(source, cpds, database, getCountryNl());
 		JettyHttpContainer restHandler = ContainerFactory.createContainer(JettyHttpContainer.class, config);
 		WebSocketHandler.Simple wsHandler = new WebSocketHandler.Simple(AppWebSocket.class);
 		final WebSocketServerFactory webSocketFactory = (WebSocketServerFactory) wsHandler.getWebSocketFactory();
@@ -105,6 +112,24 @@ public class Runner {
 		Server server = new Server(9998);
 		server.setHandler(handlers);
 		server.start();
+	}
+
+	private Country getCountryNl() {
+		try {
+			InputStream resourceAsStream = getClass().getResourceAsStream("/data/nederland.json");
+
+			return new ObjectMapper().readValue(resourceAsStream, Country.class);
+		} catch (JsonParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	class Destroyer implements Runnable {

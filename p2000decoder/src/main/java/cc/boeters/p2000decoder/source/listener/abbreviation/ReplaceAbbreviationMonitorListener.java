@@ -1,7 +1,7 @@
 package cc.boeters.p2000decoder.source.listener.abbreviation;
 
 import cc.boeters.p2000decoder.source.MonitorListener;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public class ReplaceAbbreviationMonitorListener implements MonitorListener {
 

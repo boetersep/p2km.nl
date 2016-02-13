@@ -28,7 +28,7 @@ import cc.boeters.p2000decoder.source.listener.MessageUpdater;
 import cc.boeters.p2000decoder.source.listener.geocoding.QueryBuilder.MatchType;
 import cc.boeters.p2000decoder.source.listener.geocoding.QueryBuilder.MessageSource;
 import cc.boeters.p2000decoder.source.listener.geocoding.QueryBuilder.Query;
-import cc.boeters.p2000decoder.source.model.Message;
+import cc.boeters.p2000decoder.source.model.message.Message;
 
 public class GeocodingMessageUpdater extends MessageUpdater {
 

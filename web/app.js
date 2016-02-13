@@ -4,7 +4,6 @@ String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 }
 
-/* App Module */
 
 var p2000App = angular.module('p2000App', [
   'ngRoute',

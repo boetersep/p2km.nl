@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cc.boeters.p2000decoder.source.model.CapcodeInfo;
+import cc.boeters.p2000decoder.source.model.message.CapcodeInfo;
 import jersey.repackaged.com.google.common.cache.CacheBuilder;
 import jersey.repackaged.com.google.common.cache.CacheLoader;
 import jersey.repackaged.com.google.common.cache.LoadingCache;

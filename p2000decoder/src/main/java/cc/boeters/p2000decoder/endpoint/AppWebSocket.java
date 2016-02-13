@@ -12,7 +12,7 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 @WebSocket
 public class AppWebSocket {
 
-	private static Set<Session> clients = Collections.synchronizedSet(new HashSet<Session>());
+	private Set<Session> clients = Collections.synchronizedSet(new HashSet<Session>());
 
 	@OnWebSocketConnect
 	public void onConnect(Session session) {
@@ -24,7 +24,4 @@ public class AppWebSocket {
 		clients.remove(session);
 	}
 
-	public static Set<Session> getClients() {
-		return clients;
-	}
 }

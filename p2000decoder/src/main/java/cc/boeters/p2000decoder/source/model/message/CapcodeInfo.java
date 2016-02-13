@@ -1,4 +1,4 @@
-package cc.boeters.p2000decoder.source.model;
+package cc.boeters.p2000decoder.source.model.message;
 
 public class CapcodeInfo {
 
