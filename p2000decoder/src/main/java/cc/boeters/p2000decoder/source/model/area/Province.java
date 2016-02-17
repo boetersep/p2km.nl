@@ -3,18 +3,37 @@ package cc.boeters.p2000decoder.source.model.area;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.Objects;
 
 import jersey.repackaged.com.google.common.base.MoreObjects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Province extends Area<Municipality> {
 
+	@XmlID
+	@XmlAttribute
+	@XmlJavaTypeAdapter(AreaIdAdapter.class)
 	private Integer id;
 
+	@XmlAttribute
 	private String name;
 
+	@XmlAttribute
+	@XmlIDREF
 	private Country country;
 
+	@JsonIgnore
+	@XmlElement(name = "municipality")
 	private List<Municipality> municipalities;
 
 	public Province() {
@@ -39,6 +58,7 @@ public class Province extends Area<Municipality> {
 		return name;
 	}
 
+	@JsonIgnore
 	public List<Municipality> getMunicipalities() {
 		return municipalities;
 	}
@@ -47,8 +67,14 @@ public class Province extends Area<Municipality> {
 		this.country = country;
 	}
 
+	@JsonProperty
 	public void setMunicipalities(List<Municipality> municipalities) {
 		this.municipalities = municipalities;
+	}
+
+	@Override
+	public Country getCoveringArea() {
+		return null;
 	}
 
 	public Country getCountry() {

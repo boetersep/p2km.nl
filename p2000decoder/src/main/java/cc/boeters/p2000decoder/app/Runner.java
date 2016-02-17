@@ -1,7 +1,10 @@
 package cc.boeters.p2000decoder.app;
 
-import java.io.IOException;
 import java.io.InputStream;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -19,9 +22,6 @@ import org.glassfish.jersey.jetty.JettyHttpContainer;
 import org.glassfish.jersey.server.ContainerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -116,16 +116,17 @@ public class Runner {
 
 	private Country getCountryNl() {
 		try {
-			InputStream resourceAsStream = getClass().getResourceAsStream("/data/nederland.json");
+			// InputStream resourceAsStream =
+			// getClass().getResourceAsStream("/data/nederland.json");
 
-			return new ObjectMapper().readValue(resourceAsStream, Country.class);
-		} catch (JsonParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
+			JAXBContext jc = JAXBContext.newInstance(Country.class);
+			Unmarshaller unmarshaller = jc.createUnmarshaller();
+			InputStream resourceAsStream = getClass().getResourceAsStream("/data/nederland.xml");
+			Country country = (Country) unmarshaller.unmarshal(resourceAsStream);
+			return country;
+			// return new ObjectMapper().readValue(resourceAsStream,
+			// Country.class);
+		} catch (JAXBException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
